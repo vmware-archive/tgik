@@ -16,3 +16,4 @@
  - [Update on Ark - New design meetings](https://twitter.com/HeptioArk/status/997497054753705984)
  - [Last week in Kubernetes](https://discuss.kubernetes.io/t/last-week-in-kubernetes-development-week-ending-may-13th/339)
  - Request for calendar recommendations from folks
+ - [Easy helm install](https://medium.com/@pczarkowski/easily-install-uninstall-helm-on-rbac-kubernetes-8c3c0e22d0d7)
