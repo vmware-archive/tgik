@@ -13,4 +13,4 @@
  - [Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet)
  - [Meet our contributors - First Wed every month](https://github.com/kubernetes/community/blob/master/mentoring/meet-our-contributors.md) 
  - [Under the hood of the Operator SDK](https://medium.com/@cloudark/under-the-hood-of-the-operator-sdk-eebc8fdeebbf)
- 
+ - [Update on Ark - New design meetings](https://twitter.com/HeptioArk/status/997497054753705984)
