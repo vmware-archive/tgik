@@ -14,4 +14,5 @@
  - [Meet our contributors - First Wed every month](https://github.com/kubernetes/community/blob/master/mentoring/meet-our-contributors.md) 
  - [Under the hood of the Operator SDK](https://medium.com/@cloudark/under-the-hood-of-the-operator-sdk-eebc8fdeebbf)
  - [Update on Ark - New design meetings](https://twitter.com/HeptioArk/status/997497054753705984)
- - [Community meeting update](https://discuss.kubernetes.io/t/last-week-in-kubernetes-development-week-ending-may-13th/339)
+ - [Last week in Kubernetes](https://discuss.kubernetes.io/t/last-week-in-kubernetes-development-week-ending-may-13th/339)
+ - Request for calendar recommendations from folks
