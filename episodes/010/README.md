@@ -10,9 +10,9 @@
 ### Links
 
 - [Sonobuoy Scanner](https://scanner.heptio.com)
-- [Kubernetes 1.8 release notes(https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v180)
+- [Kubernetes 1.8 release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG.md#v180)
 - [Ingress repo](https://github.com/kubernetes/ingress-nginx)
 - [kube-lego repo](https://github.com/jetstack/kube-lego)
-- [kube-lego RBAC rules(https://github.com/jetstack/kube-lego/issues/99#issuecomment-320342156)
+- [kube-lego RBAC rules](https://github.com/jetstack/kube-lego/issues/99#issuecomment-320342156)
 - [kuard example server](https://github.com/kubernetes-up-and-running/kuard)
 - [Ingress docs](https://kubernetes.io/docs/concepts/services-networking/ingress/)

@@ -13,6 +13,6 @@
    - [Sonobuoy](https://twitter.com/LachlanEvenson/status/893563156324208641)
    - [Ark](https://twitter.com/LachlanEvenson/status/893509442750169088)
  - [Kubeadm docs](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm)
- - [Gist with commands I was copy/pasting(https://gist.github.com/jbeda/2317cbfdd6b75288254a79468ed30200)
+ - [Gist with commands I was copy/pasting](https://gist.github.com/jbeda/2317cbfdd6b75288254a79468ed30200)
  - [K8s Quickstart from Heptio repo (for reference)](https://github.com/heptio/aws-quickstart)
  - [AWS cloud provider notes (need to get these into official docs)](https://docs.google.com/document/d/17d4qinC_HnIwrK0GHnRlD1FKkTNdN__VO4TH9-EzbIY/edit#heading=h.2hif681swxfg)
