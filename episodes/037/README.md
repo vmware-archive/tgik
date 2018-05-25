@@ -13,3 +13,4 @@ https://j.hept.io/tgik037
 - [Tweet for above](https://twitter.com/CloudNativeFdn/status/998698548576174080)
 - SIG UI and SIG Scalability are looking for contributors 
 - [All the operator framework tools](https://github.com/operator-framework)
+- [Russ Cox PRs to Go Buffalo](https://github.com/gobuffalo/buffalo/pull/1074)
