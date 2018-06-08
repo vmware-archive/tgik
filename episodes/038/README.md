@@ -1,5 +1,11 @@
 # Kata containers
 
+
+### Misc 
+
+Clear Linux has Kata containers ootb in the `containers-basic` bundle: https://clearlinux.org/documentation/clear-linux/reference/bundles/containers-basic
+
+
 # Links
 
  - https://coreos.com/blog/introducing-operator-framework-metering
