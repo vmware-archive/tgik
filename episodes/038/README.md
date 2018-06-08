@@ -18,3 +18,4 @@
      - https://aws.amazon.com/blogs/opensource/ekosystem-day-eks-community/
      - https://aws.amazon.com/blogs/aws/amazon-eks-now-generally-available/
  - https://kubernetes.io/blog/2018/06/06/4-years-of-k8s/
+ - https://groups.google.com/forum/#!topic/agones-discuss/-0E0vWi1dqM
