@@ -1,0 +1,145 @@
+/* CREDITS =====================================================================
+============================================================================= */
+
+/**
+* @file Youtube Popout Chat BrowserSource stylesheet for use with OBS. The
+        latest version can always be found at the following url:
+        https://bitbucket.org/Frosthaven/youtube-chat-obs-styles/
+* @author Frosthaven @thefrosthaven
+* @todo Complete donation message styling
+*/
+
+/* USER CONFIG =================================================================
+============================================================================= */
+
+/* Load Google Font (Optional) -----------------------------
+    Use any import command for fonts at https://fonts.google.com
+*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+/* Set Page Font -------------------------------------------
+  font-family can be any font installed on your computer or one that you
+  imported from above
+*/
+#items #message,
+#items #author-name,
+#items .mention.yt-live-chat-text-message-renderer {
+  font-family: "Ubuntu";
+  font-size:18px;
+}
+
+/* Colors --------------------------------------------------
+    color settings can be in one of the following formats:
+    - hex  - color: #ffffff;
+    - rgb  - color: rgb(255,255,255);
+    - rgba - color: rgba(255,255,255,1);
+
+    If you want an interactive rgba color picker, try this url:
+    http://www.css3maker.com/css-3-rgba.html
+*/
+
+/* User Name Color */
+#items #author-name {
+  color: #999999;
+}
+
+/* Owner Name Color */
+#items #author-name[type='owner'].yt-live-chat-text-message-renderer,
+#items .yt-live-chat-author-badge-renderer-0[type='owner'] {
+  color:#ffd600;
+}
+
+/* Moderator Name Color */
+#items #author-name[type='moderator'].yt-live-chat-text-message-renderer,
+#items .yt-live-chat-author-badge-renderer-0[type='moderator'] {
+  color:#5e84f1;
+}
+
+/* Message Text Color */
+#items #message.yt-live-chat-text-message-renderer {
+  color:#d0d0d0;
+}
+
+/* Chat Message Background (even rows) */
+#items yt-live-chat-text-message-renderer:nth-child(even) {
+  background-color: rgb(0,0,0);
+}
+
+/* Chat Message Background (odd rows) */
+#items yt-live-chat-text-message-renderer:nth-child(odd) {
+  background-color: rgb(0,0,0);
+}
+
+/* ADVANCED ====================================================================
+============================================================================= */
+
+/* Transparency And Borderless */
+body {
+  margin: 0px auto; overflow: hidden;
+}
+body, yt-live-chat-renderer, #content-pages, #chat-messages {
+  background:rgba(0,0,0,1) !important;
+}
+
+/* Hide Scrollbar */
+* ::-webkit-scrollbar {
+  width: 0 !important;
+  opacity: 0 !important;
+} * {
+  overflow: hidden !important;
+}
+
+/* Stay Scrolled To Bottom At All Times */
+#items {
+  position:fixed !important;
+  bottom:0 !important;
+  left:0 !important;
+  right:0 !important;
+  overflow:hidden !important;
+}
+
+/* Hide Chat Elements */
+#items .yt-live-chat-author-badge-renderer-0,
+yt-live-chat-pinned-message-renderer,
+yt-live-chat-ticker-renderer,
+yt-live-chat-ticker-paid-message-item-renderer,
+#action-panel,
+yt-live-chat-header-renderer,
+#author-photo,
+#show-more,
+yt-live-chat-text-message-renderer #menu {
+  display:none !important;
+}
+
+/* Messages Appear Under Author Name Instead Of Beside It */
+#items #message.yt-live-chat-text-message-renderer {
+  display:block;
+}
+
+/* Minimize Chat Padding */
+.yt-live-chat-text-message-renderer-0 {
+  padding:4px 4px;
+}
+
+/* Remove Link Decorations */
+#items a.yt-live-chat-text-message-renderer {
+  text-decoration: none;
+}
+
+/* Space Between Message Blocks */
+#items yt-live-chat-text-message-renderer {
+  margin-bottom:8px;
+}
+
+/* Pretty Chat Panels */
+#items yt-live-chat-text-message-renderer {
+  border-radius: 4px;
+}
+
+/* Not Working Yet / Incompatible with CLR Browser */
+#items .mention {
+  color:#ff0000;
+  background:none;
+  padding:0;
+}
