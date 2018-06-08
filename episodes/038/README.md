@@ -3,7 +3,9 @@
 
 ### Misc 
 
-Clear Linux has Kata containers ootb in the `containers-basic` bundle: https://clearlinux.org/documentation/clear-linux/reference/bundles/containers-basic
+- [Kata Container Overview](https://www.youtube.com/watch?v=-87q13IAHVE) - Intro session from the OpenStack Summit last month
+- [Kata Containers](https://www.youtube.com/watch?v=vK_gdy2kdPM) - More indepth session from the OpenStack Summit last month
+- Clear Linux has Kata containers ootb in the `containers-basic` bundle: https://clearlinux.org/documentation/clear-linux/reference/bundles/containers-basic
 
 
 # Links
