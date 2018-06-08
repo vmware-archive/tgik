@@ -1,0 +1,5 @@
+{
+    "bitrate": 4500,
+    "limit_bitrate": true,
+    "max_bitrate": 5000
+}
