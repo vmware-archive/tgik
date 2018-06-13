@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: dex
+  namespace: dex
+spec:
+  selector:
+    app: dex
+  ports:
+  - name: dex
+    port: 5556
+    protocol: TCP
+    targetPort: 5556
