@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dex
+  namespace: dex
+data:
+  config.yaml: |
+    issuer: https://dex.tgik.io/
+    web:
+      http: 0.0.0.0:5556
+    frontend:
+      theme: custom
+    telemetry:
+      http: 0.0.0.0:5558
+    staticClients:
+    - id: example-app
+      redirectURIs:
+      - 'http://127.0.0.1:5555/callback'
+      name: 'Example App'
+      secret: ZXhhbXBsZS1hcHAtc2VjcmV0
+    - id: gangway
+      redirectURIs:
+      - 'https://gangway.tgik.io/callback'
+      name: 'Gangway'
+      secret: supersecret
+    connectors:
+    - type: github
+      id: github
+      name: GitHub
+      config:
+        clientID: $GITHUB_CLIENT_ID
+        clientSecret: $GITHUB_CLIENT_SECRET
+        redirectURI: https://dex.tgik.io/callback
+    oauth2:
+      # skipApprovalScreen: true
+    storage:
+      type: kubernetes
+      config:
+        inCluster: true
+    # enablePasswordDB: true

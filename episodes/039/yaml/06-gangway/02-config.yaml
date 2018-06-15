@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gangway
+  namespace: gangway
+data:
+  gangway.yaml: |
+    # The cluster name
+    clusterName: "TGIK"
+
+    # The URL to send authorize requests to
+    authorizeURL: "https://dex.tgik.io/auth"
+
+    # URL to get a token from
+    tokenURL: "https://dex.tgik.io/token"
+
+    # API client ID as indicated by the identity provider
+    clientID: "gangway"
+
+    # API client secret as indicated by the identity provider
+    clientSecret: "supersecret"
+
+    # # Endpoint that provides user profile information
+    # audience: "https://example.auth0.com/userinfo"
+
+    # Where to redirect back to. This should be a URL
+    # Where gangway is reachable
+    redirectURL: "https://gangway.tgik.io/callback"
+
+    # Used to specify the scope of the requested Oauth authorization.
+    scopes: ["openid", "profile", "email", "offline_access"]
+
+    # The JWT claim to use as the Kubnernetes username
+    usernameClaim: "email"
+
+    # The JWT claim to use as the email claim
+    emailClaim: "email"
