@@ -8,6 +8,10 @@ data:
     # The cluster name
     clusterName: "TGIK"
 
+    # This is the API server URL that you want users to use and configure in
+    # their Kubectl. For the Heptio AWS quickstart this'll be an ELB name.
+    apiServerURL: "https://cluster.example.com"
+
     # The URL to send authorize requests to
     authorizeURL: "https://dex.tgik.io/auth"
 
