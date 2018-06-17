@@ -32,7 +32,7 @@ data:
         clientSecret: $GITHUB_CLIENT_SECRET
         redirectURI: https://dex.tgik.io/callback
     oauth2:
-      # skipApprovalScreen: true
+      skipApprovalScreen: true
     storage:
       type: kubernetes
       config:

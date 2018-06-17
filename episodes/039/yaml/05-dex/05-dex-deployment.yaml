@@ -19,7 +19,7 @@ spec:
     metadata:
       labels:
         app: dex
-        generation: "9"
+        revision: "1"
     spec:
       initContainers:
       - name: dl-theme

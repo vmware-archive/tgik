@@ -17,11 +17,11 @@ spec:
     metadata:
       labels:
         app: gangway
-        revision: "2"
+        revision: "1"
     spec:
       containers:
         - name: gangway
-          image: gcr.io/heptio-images/gangway:joe
+          image: gcr.io/heptio-images/gangway:v2.0.0
           imagePullPolicy: Always
           command: ["gangway", "-config", "/gangway/gangway.yaml"]
           env:
