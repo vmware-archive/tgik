@@ -8,7 +8,7 @@
 - [Kata Containers](https://www.youtube.com/watch?v=vK_gdy2kdPM) - More indepth session from the OpenStack Summit last month
 - [Kata Containers Project Update](https://www.youtube.com/watch?v=JyDcvlv0vQI) - Update on what's going on with Kata.
 - Clear Linux has Kata containers ootb in the `containers-basic` bundle: https://clearlinux.org/documentation/clear-linux/reference/bundles/containers-basic
-
+- [Kata Containers vs gVisor?](https://stackoverflow.com/questions/50143367/kata-container-vs-gvisor) - Discussion of KataContainers versus gVisor on StackOverflow.
 
 # Links
 
