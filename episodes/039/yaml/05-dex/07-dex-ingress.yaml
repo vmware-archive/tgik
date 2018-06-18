@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: dex
+  namespace: dex
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    certmanager.k8s.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+  - secretName: dex
+    hosts:
+    - dex.tgik.io
+  rules:
+  - host: dex.tgik.io
+    http:
+      paths:
+      - backend:
+          serviceName: dex
+          servicePort: 5556
