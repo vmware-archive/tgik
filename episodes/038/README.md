@@ -20,4 +20,5 @@
  - https://kubernetes.io/blog/2018/06/06/4-years-of-k8s/
  - https://groups.google.com/forum/#!topic/agones-discuss/-0E0vWi1dqM
  - https://github.com/kata-containers/documentation/blob/master/install/ubuntu-installation-guide.md
+ - https://github.com/jon/kubeadm-single-node-cluster/tree/kata
  - http://elegance.abdennoor.com/successfully-running-kata-containers-in-the-cloud
