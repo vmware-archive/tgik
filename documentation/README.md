@@ -71,7 +71,7 @@ Include the image created above
 
 *Example:*
 
-<p align="center"><img src="example-tweet.png" width="360"></p>
+<p align="center"><img src="https://github.com/heptio/tgik/blob/master/example-tweet.png" width="360"></p>
 
 ### Schedule reminder tweets from the Heptio twitter account
 
