@@ -13,4 +13,7 @@ Learning about Kubebuilder!
  - Ark 0.9 Alpha [release](https://github.com/heptio/ark/releases/tag/v0.9.0-alpha.2)
  - History of Kubernetes [blog](https://blog.risingstack.com/the-history-of-kubernetes/)
 
+### Additional Links
 
+ - https://www.reddit.com/r/kubernetes/comments/8ien90/if_i_were_to_build_an_operator_what_should_i_use/
+ - https://itnext.io/under-the-hood-of-kubebuilder-framework-ff6b38c10796
