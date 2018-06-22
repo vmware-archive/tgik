@@ -1,5 +1,9 @@
 # TGIK Playlist Index
 
+- [040: Kubebuilder](episodes/040/README.md)
+- [039:  Cluster auth with GitHub, Dex and Gangway](episodes/039/README.md)
+- [038: Kata Containers](episodes/038/README.md)
+- [037: Operator Framework](episodes/037/README.md)
 - [036: Virtual Kubelet](episodes/036/README.md)
 - [035: WeaveWorks Flux and GitOps](episodes/035/README.md)
 - [034: Elasticsearch Operator](episodes/034/README.md)
