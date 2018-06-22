@@ -44,3 +44,7 @@ This week Kris will be looking at Kubebuilder, a framework for building Kubernet
 
 - https://www.reddit.com/r/kubernetes/comments/8ien90/if_i_were_to_build_an_operator_what_should_i_use/
 - https://itnext.io/under-the-hood-of-kubebuilder-framework-ff6b38c10796
+
+### Documentation Used in The Episode:
+
+ - http://book.kubebuilder.io/quick_start.html
