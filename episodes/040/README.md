@@ -24,6 +24,7 @@ This week Kris will be looking at Kubebuilder, a framework for building Kubernet
 ### The Week in Review
 
 - Clusterctl [release](https://github.com/kubernetes-sigs/cluster-api)
+   - https://github.com/kubernetes-sigs/cluster-api/issues/383
 - https://cloudplatform.googleblog.com/2018/06/GPUs-as-a-service-with-Kubernetes-Engine-are-now-generally-available.html
 - https://blog.risingstack.com/the-history-of-kubernetes/
 - https://medium.com/@brendanrius/scaling-kubernetes-for-25m-users-a7937e3536a0
