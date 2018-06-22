@@ -14,6 +14,16 @@ alt="Episode 40 - Kubebuilder" width="640" height="360" border="10" /></a>
 
 - 00:00:00 - Welcome to TGIK!
 - 00:00:00 - Week in Review
+- 00:00:00 - Kubebuilder
+- 00:00:00 - Installing Kubebuilder
+- 00:00:00 - Running Kubebuilder
+- 00:00:00 - Our first `kubebuilder init`
+- 00:00:00 - Creating our first API
+- 00:00:00 - Looking at the files Kubebuilder just created (IDE time)
+- 00:00:00 - Why do Kubernetes projects have these hack directories? 
+- 00:00:00 - Adding a Schema and Business Logic
+
+Timestamps will be filled out a working day after the broadcast as we have to wait for YouTube to render the stream. Timestamps will also be published to the YouTube video description. 
 
 ## Show Notes
 
@@ -23,20 +33,32 @@ This week Kris will be looking at Kubebuilder, a framework for building Kubernet
 
 ### The Week in Review
 
-- Clusterctl [release](https://github.com/kubernetes-sigs/cluster-api)
-   - https://github.com/kubernetes-sigs/cluster-api/issues/383
-- https://cloudplatform.googleblog.com/2018/06/GPUs-as-a-service-with-Kubernetes-Engine-are-now-generally-available.html
-- https://blog.risingstack.com/the-history-of-kubernetes/
-- https://medium.com/@brendanrius/scaling-kubernetes-for-25m-users-a7937e3536a0
-- https://akomljen.com/aws-cost-savings-by-utilizing-kubernetes-ingress-with-classic-elb/
-- https://kubeip.com/
- - Heptio Authenticator and Helm [blog](https://itnext.io/manage-kubernetes-authentication-and-authorization-using-heptio-authenticator-and-helm-222df63d805c)
- - Ark 0.9 Alpha [release](https://github.com/heptio/ark/releases/tag/v0.9.0-alpha.2)
+- Clusterctl [release](https://github.com/kubernetes-sigs/cluster-api) - part of SIG Cluster Lifecycle. Example of how folks are thinking of deploying clusters in a standardized way. 
+    - https://github.com/kubernetes-sigs/cluster-api/issues/383
+- [GPUs go GA on GKE](https://cloudplatform.googleblog.com/2018/06/GPUs-as-a-service-with-Kubernetes-Engine-are-now-generally-available.html)
+    - Check out Kris' talk with Dave Aronchik showing off [Kubeflow](https://www.youtube.com/watch?v=givpqZ2IchI)
+- The [History of Kubernetes](https://blog.risingstack.com/the-history-of-kubernetes/)
+- [Scaling Kubernetes to 25m users](https://medium.com/@brendanrius/scaling-kubernetes-for-25m-users-a7937e3536a0)
+- [AWS Cost Savings by Utilizing Kubernetes Ingress with Classic ELB](https://akomljen.com/aws-cost-savings-by-utilizing-kubernetes-ingress-with-classic-elb/)
+- [KubeIP](https://kubeip.com/)
+
+## Kubebuilder
+
+Part of SIG Cluster lifecycle / Cluster API. 
+
+Starting with [main.go](https://github.com/kubernetes-sigs/kubebuilder/blob/master/cmd/kubebuilder/main.go). 
+
+### Installing Kubebuilder
+
+Do not use `go get`, grab the tarball for your system. 
+
+- There's a [book](http://book.kubebuilder.io) with getting started documentation. We're following the quickstart section. 
+- You'll end up with it in `/usr/local/kubebuilder/bin`
+- Using GOOS and GOARCH (@kris-nova mentions a video from Rob Pike on this, anyone have a link?)
 
 ## Reference Links
 
 - https://github.com/kubernetes-sigs/kubebuilder
-- GitBook: [book.kubebuilder.com](http://book.kubebuilder.io)
 - GitHub Repo: [kubernetes-sigs/kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
 - Slack channel: [#kubebuilder](http://slack.k8s.io/#kubebuilder)
 - Google Group: [kubebuilder@googlegroups.com](https://groups.google.com/forum/#!forum/kubebuilder)
@@ -45,6 +67,6 @@ This week Kris will be looking at Kubebuilder, a framework for building Kubernet
 - https://www.reddit.com/r/kubernetes/comments/8ien90/if_i_were_to_build_an_operator_what_should_i_use/
 - https://itnext.io/under-the-hood-of-kubebuilder-framework-ff6b38c10796
 
-### Documentation Used in The Episode:
+## Documentation Used in this Episode 
 
- - http://book.kubebuilder.io/quick_start.html
+- GitBook: [book.kubebuilder.com](http://book.kubebuilder.io)
