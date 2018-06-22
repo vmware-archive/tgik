@@ -1,5 +1,7 @@
 # Kubebuilder
 
+Learning about Kubebuilder!
+
 
 # This week in Kubernetes
 
@@ -9,3 +11,6 @@
  - Documentation [book.kubebuilder.io](http://book.kubebuilder.io/)
  - Heptio Authenticator and Helm [blog](https://itnext.io/manage-kubernetes-authentication-and-authorization-using-heptio-authenticator-and-helm-222df63d805c)
  - Ark 0.9 Alpha [release](https://github.com/heptio/ark/releases/tag/v0.9.0-alpha.2)
+ - History of Kubernetes [blog](https://blog.risingstack.com/the-history-of-kubernetes/)
+
+
