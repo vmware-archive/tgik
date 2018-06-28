@@ -12,16 +12,19 @@ alt="Episode 40 - Kubebuilder" width="640" height="360" border="10" /></a>
 
 ## Table of Contents
 
-- 00:00:00 - Welcome to TGIK!
-- 00:00:00 - Week in Review
-- 00:00:00 - Kubebuilder
-- 00:00:00 - Installing Kubebuilder
-- 00:00:00 - Running Kubebuilder
-- 00:00:00 - Our first `kubebuilder init`
-- 00:00:00 - Creating our first API
-- 00:00:00 - Looking at the files Kubebuilder just created (IDE time)
-- 00:00:00 - Why do Kubernetes projects have these hack directories? 
-- 00:00:00 - Adding a Schema and Business Logic
+- [00:00:14](https://youtu.be/N-lTSk1bGAg?t=14s) - Welcome to TGIK!
+- [00:02:56](https://youtu.be/N-lTSk1bGAg?t=2m56s) - Week in Review
+- [00:10:50](https://youtu.be/N-lTSk1bGAg?t=10m50s) - Kubebuilder
+- [00:13:48](https://youtu.be/N-lTSk1bGAg?t=13m48s) - Installing Kubebuilder
+- [00:19:40](https://youtu.be/N-lTSk1bGAg?t=19m40s) - Running Kubebuilder
+- [00:24:45](https://youtu.be/N-lTSk1bGAg?t=24m45s) - Creating our first API
+- [00:26:10](https://youtu.be/N-lTSk1bGAg?t=26m10s) - Our first `kubebuilder init`
+- [00:34:30](https://youtu.be/N-lTSk1bGAg?t=34m30s) - Looking at the files Kubebuilder just created (IDE time)
+- [00:37:35](https://youtu.be/N-lTSk1bGAg?t=37m35s) - Why do Kubernetes projects have these hack directories? 
+- [00:43:56](https://youtu.be/N-lTSk1bGAg?t=43m56s) - Adding a Schema and Business Logic
+- [00:54:56](https://youtu.be/N-lTSk1bGAg?t=54m56s) - Integration Tests and Pushing to Kubernetes
+- [01:09:09](https://youtu.be/N-lTSk1bGAg?t=1h9m9s) - Watching our status
+- [01:15:00](https://youtu.be/N-lTSk1bGAg?t=1h15m) - Generating our documentation
 
 Timestamps will be filled out a working day after the broadcast as we have to wait for YouTube to render the stream. Timestamps will also be published to the YouTube video description. 
 
