@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: statefulapp-ingress
+  #namespace: kube-system
+spec:
+  rules:
+  - host: fabulous.af
+    http:
+      paths:
+      - path: /state
+        backend:
+          serviceName: statefulapp-service
+          servicePort: 80
