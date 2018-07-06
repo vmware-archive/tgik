@@ -1,0 +1,146 @@
+
+---
+# Source: postgresql/templates/secrets.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: statefulapp-db-postgresql
+  labels:
+    app: postgresql
+    chart: postgresql-0.13.1
+    release: statefulapp-db
+    heritage: Tiller
+type: Opaque
+data:
+
+  postgres-password: "aVEzNmRVSGx4Rg=="
+---
+# Source: postgresql/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: statefulapp-db-postgresql
+  labels:
+    app: postgresql
+    chart: postgresql-0.13.1
+    release: statefulapp-db
+    heritage: Tiller
+data:
+---
+# Source: postgresql/templates/pvc.yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: statefulapp-db-postgresql
+  labels:
+    app: postgresql
+    chart: postgresql-0.13.1
+    release: statefulapp-db
+    heritage: Tiller
+spec:
+  accessModes:
+    - "ReadWriteOnce"
+  resources:
+    requests:
+      storage: "8Gi"
+---
+# Source: postgresql/templates/svc.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: statefulapp-db-postgresql
+  labels:
+    app: postgresql
+    chart: postgresql-0.13.1
+    release: statefulapp-db
+    heritage: Tiller
+spec:
+  type: ClusterIP
+  ports:
+  - name: postgresql
+    port: 5432
+    targetPort: postgresql
+  selector:
+    app: postgresql
+    release: statefulapp-db
+---
+# Source: postgresql/templates/deployment.yaml
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: statefulapp-db-postgresql
+  labels:
+    app: postgresql
+    chart: postgresql-0.13.1
+    release: statefulapp-db
+    heritage: Tiller
+spec:
+  template:
+  selector:
+    matchLabels:
+      app: postgresql
+      release: statefulapp-db
+  template:
+    metadata:
+      labels:
+        app: postgresql
+        release: statefulapp-db
+    spec:
+      containers:
+      - name: statefulapp-db-postgresql
+        image: "postgres:9.6.2"
+        imagePullPolicy: ""
+        args:
+        env:
+        - name: POSTGRES_USER
+          value: "postgres"
+          # Required for pg_isready in the health probes.
+        - name: PGUSER
+          value: "postgres"
+        - name: POSTGRES_DB
+          value: ""
+        - name: POSTGRES_INITDB_ARGS
+          value: ""
+        - name: PGDATA
+          value: /var/lib/postgresql/data/pgdata
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: statefulapp-db-postgresql
+              key: postgres-password
+        - name: POD_IP
+          valueFrom: { fieldRef: { fieldPath: status.podIP } }
+        ports:
+        - name: postgresql
+          containerPort: 5432
+        livenessProbe:
+          exec:
+            command:
+            - sh
+            - -c
+            - exec pg_isready --host $POD_IP
+          initialDelaySeconds: 120
+          timeoutSeconds: 5
+          failureThreshold: 6
+        readinessProbe:
+          exec:
+            command:
+            - sh
+            - -c
+            - exec pg_isready --host $POD_IP
+          initialDelaySeconds: 5
+          timeoutSeconds: 3
+          periodSeconds: 5
+        resources:
+          requests:
+            cpu: 100m
+            memory: 256Mi
+
+        volumeMounts:
+        - name: data
+          mountPath: /var/lib/postgresql/data/pgdata
+          subPath: postgresql-db
+      volumes:
+      - name: data
+        persistentVolumeClaim:
+          claimName: statefulapp-db-postgresql

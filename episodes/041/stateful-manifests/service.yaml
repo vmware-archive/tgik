@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: statefulapp-service
+  #namespace: kube-system
+spec:
+  type: NodePort
+  selector:
+    app: statefulapp
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
