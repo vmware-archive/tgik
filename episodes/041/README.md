@@ -24,6 +24,7 @@ alt="IMAGE ALT TEXT HERE" width="640" height="360" border="10" /></a>
  - https://github.com/kris-nova/krex
  - https://www.lfasiallc.com/events/kubecon-cloudnativecon-china-2018/program/call-for-proposals-cfp/
  - https://events.linuxfoundation.org/events/kubecon-cloudnativecon-north-america-2018/
+ - https://github.com/kubernetes/website/blob/release-1.11/content/en/blog/_posts/2018-06-26-kubernetes-1.11-release-announcement.md
 
 ## Stateful Application
 
