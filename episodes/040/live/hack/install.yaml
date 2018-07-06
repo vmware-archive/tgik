@@ -1,0 +1,149 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  labels:
+    api: kubebirds
+    kubebuilder.k8s.io: 0.1.11
+  name: kubebirds-system
+spec: {}
+status: {}
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  labels:
+    api: kubebirds
+    kubebuilder.k8s.io: 0.1.11
+  name: kubebirds-role
+rules:
+- apiGroups:
+  - birds.fabulous.af
+  resources:
+  - '*'
+  verbs:
+  - '*'
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  creationTimestamp: null
+  labels:
+    api: kubebirds
+    kubebuilder.k8s.io: 0.1.11
+  name: kubebirds-rolebinding
+  namespace: kubebirds-system
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: kubebirds-role
+subjects:
+- kind: ServiceAccount
+  name: default
+  namespace: kubebirds-system
+---
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  creationTimestamp: null
+  labels:
+    api: kubebirds
+    kubebuilder.k8s.io: 0.1.11
+  name: puffins.birds.fabulous.af
+spec:
+  group: birds.fabulous.af
+  names:
+    kind: Puffin
+    plural: puffins
+  scope: Namespaced
+  validation:
+    openAPIV3Schema:
+      properties:
+        apiVersion:
+          type: string
+        kind:
+          type: string
+        metadata:
+          type: object
+        spec:
+          properties:
+            color:
+              type: string
+          type: object
+        status:
+          properties:
+            message:
+              type: string
+          type: object
+      type: object
+  version: v1beta1
+status:
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: null
+---
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    api: kubebirds
+    control-plane: controller-manager
+    kubebuilder.k8s.io: 0.1.11
+  name: kubebirds-controller-manager-service
+  namespace: kubebirds-system
+spec:
+  clusterIP: None
+  selector:
+    api: kubebirds
+    control-plane: controller-manager
+    kubebuilder.k8s.io: 0.1.11
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  creationTimestamp: null
+  labels:
+    api: kubebirds
+    control-plane: controller-manager
+    kubebuilder.k8s.io: 0.1.11
+  name: kubebirds-controller-manager
+  namespace: kubebirds-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      api: kubebirds
+      control-plane: controller-manager
+      kubebuilder.k8s.io: 0.1.11
+  serviceName: kubebirds-controller-manager-service
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        api: kubebirds
+        control-plane: controller-manager
+        kubebuilder.k8s.io: 0.1.11
+    spec:
+      containers:
+      - args:
+        - --install-crds=false
+        command:
+        - /root/controller-manager
+        image: krisnova/kubebuilder-example:latest
+        name: controller-manager
+        resources:
+          limits:
+            cpu: 100m
+            memory: 30Mi
+          requests:
+            cpu: 100m
+            memory: 20Mi
+      terminationGracePeriodSeconds: 10
+  updateStrategy: {}
+status:
+  replicas: 0
