@@ -1,0 +1,10 @@
+example_location: "examples"
+api_groups: 
+  - "Birds"
+resource_categories: 
+- name: "Birds"
+  include: "birds"
+  resources: 
+  - name: "Puffin"
+    version: "v1beta1"
+    group: "birds"

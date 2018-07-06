@@ -1,0 +1,6 @@
+apiVersion: birds.fabulous.af/v1beta1
+kind: Puffin
+metadata:
+  name: charlie
+spec:
+  color: blue
