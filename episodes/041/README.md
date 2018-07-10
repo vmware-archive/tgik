@@ -31,7 +31,7 @@ alt="IMAGE ALT TEXT HERE" width="640" height="360" border="10" /></a>
 
 ## Stateful Application
 
-This is the demo application Kris will use ot test ingress with Traefik.
+This is the [demo application](https://github.com/kris-nova/stateful_app) Kris will use to test ingress with Traefik.
 
 Create DB
 
