@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [041: Traefik](episodes/041/README.md)
 - [040: Kubebuilder](episodes/040/README.md)
 - [039:  Cluster auth with GitHub, Dex and Gangway](episodes/039/README.md)
 - [038: Kata Containers](episodes/038/README.md)
