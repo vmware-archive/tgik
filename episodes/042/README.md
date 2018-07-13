@@ -17,6 +17,11 @@ alt="IMAGE ALT TEXT HERE" width="640" height="360" border="10" /></a>
 
 ## Show Notes
 
+ - https://ballerina.io/learn/quick-tour/
+ - https://medium.com/@anuruddhal/deploy-a-rest-service-in-kubernetes-in-5-minutes-with-ballerina-40a39586ba92
+ - https://www.jetbrains.com/idea/download/download-thanks.html?platform=mac&code=IIC
+ - https://rimusz.net/lets-encrypt-wildcard-certs-in-kubernetes/
+ - https://www.reddit.com/r/golang/comments/8ycahl/best_practices_for_return_user_vs_user_user_vs/
 
 ## Reference Links
 
