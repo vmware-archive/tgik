@@ -1,0 +1,123 @@
+[2018-07-13 10:05:05,435] ERROR {org.ballerinalang.net.http.BallerinaHTTPConnectorListener} - Error in HTTP server connector: Remote client closed connection before initiating inbound request  
+[2018-07-13 10:05:17,038] ERROR {org.ballerinalang.net.http.BallerinaHTTPConnectorListener} - Error in HTTP server connector: Remote client closed connection before initiating inbound request  
+[2018-07-13 10:05:17,039] ERROR {org.ballerinalang.net.http.BallerinaHTTPConnectorListener} - Error in HTTP server connector: Remote client closed connection before initiating inbound request  
+[2018-07-13 10:05:17,038] ERROR {org.ballerinalang.net.http.BallerinaHTTPConnectorListener} - Error in HTTP server connector: Remote client closed connection before initiating inbound request  
+[2018-07-13 10:05:54,289] ERROR {org.ballerinalang.net.http.BallerinaHTTPConnectorListener} - Error in HTTP server connector: Remote client closed connection before initiating inbound request  
+[2018-07-13 10:05:54,289] ERROR {org.ballerinalang.net.http.BallerinaHTTPConnectorListener} - Error in HTTP server connector: Remote client closed connection before initiating inbound request  
+[2018-07-13 10:39:27,452] ERROR {org.ballerinalang.launcher.Main} - null 
+java.lang.NullPointerException
+	at org.ballerinax.kubernetes.KubernetesPlugin.codeGenerated(KubernetesPlugin.java:121)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.lambda$writeExecutableBinary$336(BinaryFileWriter.java:119)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.writeExecutableBinary(BinaryFileWriter.java:118)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.write(BinaryFileWriter.java:90)
+	at org.wso2.ballerinalang.compiler.Compiler.build(Compiler.java:96)
+	at org.ballerinalang.packerina.BuilderUtils.compileAndWrite(BuilderUtils.java:54)
+	at org.ballerinalang.packerina.cmd.BuildCommand.execute(BuildCommand.java:94)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-13 10:40:10,279] ERROR {org.ballerinalang.launcher.Main} - null 
+java.lang.NullPointerException
+	at org.ballerinax.kubernetes.KubernetesPlugin.codeGenerated(KubernetesPlugin.java:121)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.lambda$writeExecutableBinary$336(BinaryFileWriter.java:119)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.writeExecutableBinary(BinaryFileWriter.java:118)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.write(BinaryFileWriter.java:90)
+	at org.wso2.ballerinalang.compiler.Compiler.build(Compiler.java:96)
+	at org.ballerinalang.packerina.BuilderUtils.compileAndWrite(BuilderUtils.java:54)
+	at org.ballerinalang.packerina.cmd.BuildCommand.execute(BuildCommand.java:94)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-13 10:41:33,240] ERROR {org.ballerinalang.launcher.Main} - null 
+java.lang.NullPointerException
+	at org.ballerinax.kubernetes.KubernetesPlugin.codeGenerated(KubernetesPlugin.java:121)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.lambda$writeExecutableBinary$336(BinaryFileWriter.java:119)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.writeExecutableBinary(BinaryFileWriter.java:118)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.write(BinaryFileWriter.java:90)
+	at org.wso2.ballerinalang.compiler.Compiler.build(Compiler.java:96)
+	at org.ballerinalang.packerina.BuilderUtils.compileAndWrite(BuilderUtils.java:54)
+	at org.ballerinalang.packerina.cmd.BuildCommand.execute(BuildCommand.java:94)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-13 10:41:53,854] ERROR {org.ballerinalang.launcher.Main} - null 
+java.lang.NullPointerException
+	at org.ballerinax.kubernetes.KubernetesPlugin.codeGenerated(KubernetesPlugin.java:121)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.lambda$writeExecutableBinary$336(BinaryFileWriter.java:119)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.writeExecutableBinary(BinaryFileWriter.java:118)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.write(BinaryFileWriter.java:90)
+	at org.wso2.ballerinalang.compiler.Compiler.build(Compiler.java:96)
+	at org.ballerinalang.packerina.BuilderUtils.compileAndWrite(BuilderUtils.java:54)
+	at org.ballerinalang.packerina.cmd.BuildCommand.execute(BuildCommand.java:94)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-13 10:42:36,418] ERROR {org.ballerinalang.launcher.Main} - null 
+java.lang.NullPointerException
+	at org.ballerinax.kubernetes.KubernetesPlugin.codeGenerated(KubernetesPlugin.java:121)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.lambda$writeExecutableBinary$336(BinaryFileWriter.java:119)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.writeExecutableBinary(BinaryFileWriter.java:118)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.write(BinaryFileWriter.java:90)
+	at org.wso2.ballerinalang.compiler.Compiler.build(Compiler.java:96)
+	at org.ballerinalang.packerina.BuilderUtils.compileAndWrite(BuilderUtils.java:54)
+	at org.ballerinalang.packerina.cmd.BuildCommand.execute(BuildCommand.java:94)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-13 10:43:01,064] ERROR {org.ballerinalang.launcher.Main} - null 
+java.lang.NullPointerException
+	at org.ballerinax.kubernetes.KubernetesPlugin.codeGenerated(KubernetesPlugin.java:121)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.lambda$writeExecutableBinary$336(BinaryFileWriter.java:119)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.writeExecutableBinary(BinaryFileWriter.java:118)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.write(BinaryFileWriter.java:90)
+	at org.wso2.ballerinalang.compiler.Compiler.build(Compiler.java:96)
+	at org.ballerinalang.packerina.BuilderUtils.compileAndWrite(BuilderUtils.java:54)
+	at org.ballerinalang.packerina.cmd.BuildCommand.execute(BuildCommand.java:94)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-13 10:43:35,582] ERROR {org.ballerinalang.launcher.Main} - null 
+java.lang.NullPointerException
+	at org.ballerinax.kubernetes.KubernetesPlugin.codeGenerated(KubernetesPlugin.java:121)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.lambda$writeExecutableBinary$336(BinaryFileWriter.java:119)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.writeExecutableBinary(BinaryFileWriter.java:118)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.write(BinaryFileWriter.java:90)
+	at org.wso2.ballerinalang.compiler.Compiler.build(Compiler.java:96)
+	at org.ballerinalang.packerina.BuilderUtils.compileAndWrite(BuilderUtils.java:54)
+	at org.ballerinalang.packerina.cmd.BuildCommand.execute(BuildCommand.java:94)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-13 10:45:04,451] ERROR {org.ballerinalang.launcher.Main} - null 
+java.lang.NullPointerException
+	at org.ballerinax.kubernetes.KubernetesPlugin.codeGenerated(KubernetesPlugin.java:121)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.lambda$writeExecutableBinary$336(BinaryFileWriter.java:119)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.writeExecutableBinary(BinaryFileWriter.java:118)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.write(BinaryFileWriter.java:90)
+	at org.wso2.ballerinalang.compiler.Compiler.build(Compiler.java:96)
+	at org.ballerinalang.packerina.BuilderUtils.compileAndWrite(BuilderUtils.java:54)
+	at org.ballerinalang.packerina.cmd.BuildCommand.execute(BuildCommand.java:94)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
+[2018-07-13 10:51:21,384] ERROR {org.ballerinalang.launcher.Main} - null 
+java.lang.NullPointerException
+	at org.ballerinax.kubernetes.KubernetesPlugin.codeGenerated(KubernetesPlugin.java:121)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.lambda$writeExecutableBinary$336(BinaryFileWriter.java:119)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.writeExecutableBinary(BinaryFileWriter.java:118)
+	at org.wso2.ballerinalang.compiler.BinaryFileWriter.write(BinaryFileWriter.java:90)
+	at org.wso2.ballerinalang.compiler.Compiler.build(Compiler.java:96)
+	at org.ballerinalang.packerina.BuilderUtils.compileAndWrite(BuilderUtils.java:54)
+	at org.ballerinalang.packerina.cmd.BuildCommand.execute(BuildCommand.java:94)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.launcher.Main.main(Main.java:66)
+ 
