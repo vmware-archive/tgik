@@ -109,8 +109,9 @@ Want to lock down a domain names to namespaces, so that
 different tenants cannot impersonate each other. Istio
 doesn't currently allow you to lock it down.
 
-It would be great to swap Istio for other systems like
-Contour that give controls for multi-tenancy.
+It's be great to use the ecosystem around ingress with Knative but Istio doesn't allow that. 
+Things like Contour would help. 
+Also can't do TLS with Let's Encrypt through cert-manager easily with Istio.
 
 ## Concluding Thoughts
 
