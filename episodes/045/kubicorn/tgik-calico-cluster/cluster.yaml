@@ -1,0 +1,90 @@
+clusterAPI:
+  metadata:
+    creationTimestamp: null
+    name: tgik-calico-cluster
+  spec:
+    clusterNetwork:
+      dnsDomain: ""
+      pods:
+        cidrBlocks: null
+      services:
+        cidrBlocks: null
+    providerConfig: '{"cloud":"amazon","location":"us-west-2","SSH":{"metadata":{"creationTimestamp":null},"name":"tgik-calico-cluster","user":"ubuntu","identifier":"tgik-calico-cluster","publicKeyPath":"~/.ssh/id_rsa.pub","publicKeyData":"c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFCQVFDMzRRR0plMStNa2NpbW1RbWlSZ1ppWlg1eTdrL3o3WTRXMkgwV1RuaC9XaEtrVXZqUmdXY2QzQTBrVWI1TUlXOXpiUnpCRklKQkVCcm04SFJsRjRlblhSQUNyK3RWYkhVcUk1Sk8zeElFSEtXa0pIR2YwQmc0MytWVzhYLzdmdFA3UVBlNWltZXQ1VEwrQXFzQzYyV3EyYVVUWk1IYWcxUjZ4djRBR0hIUE54L2RiYlJuMjZNdHJjOEpoNFdKWHRZZmszQ0RVNDZ6SEhVVytWSW51RE1GbXRXNHlrZXlQcUJhS1F2cmpyK1hRbTE1dmZzcnRvYUJHNEp3ZUtPRC9MSkxzK3RpS3RzVk1mNTVzV1p4ZFBkSEx0TzEvUnNiK1orMXdTZVQ4bU0xdEJhbmlnU2h4bUplQzBnWjhIUU9PMk92ZUYwallVak1LNHdQd0dyeVBaa2YK","publicKeyFingerprint":"19:3e:90:6f:46:9d:43:b8:4e:c9:35:31:f7:1d:a8:5d","port":"22"},"network":{"metadata":{"name":"tgik-calico-cluster","creationTimestamp":null},"cidr":"10.0.0.0/16","identifier":"vpc-bdc33cc5","type":"public","internetgw":{"metadata":{"creationTimestamp":null},"identifier":"igw-62d2f004"}},"values":{"metadata":{"creationTimestamp":null},"itemMap":{"INJECTEDMASTER":"10.0.0.185:443","INJECTEDPORT":"443","INJECTEDTOKEN":"8f7f8e.a3d5cd1026f940ef"}},"kubernetesAPI":{"metadata":{"creationTimestamp":null},"endpoint":"54.202.130.80","port":"443"}}'
+  status:
+    apiEndpoints: null
+    errorMessage: ""
+    errorReason: ""
+    providerStatus: ""
+controlPlane:
+  metadata:
+    creationTimestamp: null
+  spec:
+    selector: {}
+    template:
+      metadata:
+        creationTimestamp: null
+      spec:
+        metadata:
+          creationTimestamp: null
+        providerConfig: ""
+        versions:
+          containerRuntime:
+            name: ""
+            version: ""
+          kubelet: ""
+  status:
+    replicas: 0
+machineSets:
+- metadata:
+    creationTimestamp: null
+    name: tgik-calico-cluster.master
+  spec:
+    selector: {}
+    template:
+      metadata:
+        creationTimestamp: null
+      spec:
+        metadata:
+          creationTimestamp: null
+        providerConfig: '{"serverPool":{"metadata":{"creationTimestamp":null},"identifier":"tgik-calico-cluster.master","type":"master","name":"tgik-calico-cluster.master","image":"ami-79873901","size":"t2.xlarge","instanceProfile":{"metadata":{"creationTimestamp":null},"name":"tgik-calico-cluster-KubicornMasterInstanceProfile","role":{"metadata":{"creationTimestamp":null},"name":"tgik-calico-cluster-KubicornMasterRole","policies":[{"name":"MasterPolicy","document":"{\n\t\t\t\t\t\t\t\t  \"Version\":
+          \"2012-10-17\",\n\t\t\t\t\t\t\t\t  \"Statement\": [\n\t\t\t\t\t\t\t\t\t
+          {\n\t\t\t\t\t\t\t\t\t\t\"Effect\": \"Allow\",\n\t\t\t\t\t\t\t\t\t\t\"Action\":
+          [\n\t\t\t\t\t\t\t\t\t\t   \"ec2:*\",\n\t\t\t\t\t\t\t\t\t\t   \"elasticloadbalancing:*\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetAuthorizationToken\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:BatchCheckLayerAvailability\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetDownloadUrlForLayer\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetRepositoryPolicy\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:DescribeRepositories\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:ListImages\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:BatchGetImage\",\n\t\t\t\t\t\t\t\t\t\t   \"autoscaling:DescribeAutoScalingGroups\",\n\t\t\t\t\t\t\t\t\t\t   \"autoscaling:UpdateAutoScalingGroup\"\n\t\t\t\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t\t\t\t\"Resource\":
+          \"*\"\n\t\t\t\t\t\t\t\t\t }\n\t\t\t\t\t\t\t\t  ]\n\t\t\t\t\t\t\t\t}"}]}},"bootstrapScripts":["kubicorn/amazon_k8s_ubuntu_16.04_master.sh"],"subnets":[{"metadata":{"creationTimestamp":null},"identifier":"subnet-ede89da6","cidr":"10.0.0.0/24","zone":"us-west-2a","name":"tgik-calico-cluster.master"}],"firewalls":[{"metadata":{"creationTimestamp":null},"identifier":"sg-d01e13a0","ingressRules":[{"metadata":{"creationTimestamp":null},"ingressFromPort":"22","ingressToPort":"22","ingressSource":"0.0.0.0/0","ingressProtocol":"tcp"},{"metadata":{"creationTimestamp":null},"ingressFromPort":"443","ingressToPort":"443","ingressSource":"0.0.0.0/0","ingressProtocol":"tcp"},{"metadata":{"creationTimestamp":null},"ingressFromPort":"0","ingressToPort":"65535","ingressSource":"10.0.100.0/24","ingressProtocol":"-1"}],"name":"tgik-calico-cluster.master-external-5b64887b-2def-4935-67db-859d27afed15"}],"awsconfiguration":{}}}'
+        roles:
+        - Master
+        versions:
+          containerRuntime:
+            name: ""
+            version: ""
+          kubelet: ""
+  status:
+    replicas: 0
+- metadata:
+    creationTimestamp: null
+    name: tgik-calico-cluster.node
+  spec:
+    selector: {}
+    template:
+      metadata:
+        creationTimestamp: null
+      spec:
+        metadata:
+          creationTimestamp: null
+        providerConfig: '{"serverPool":{"metadata":{"creationTimestamp":null},"identifier":"tgik-calico-cluster.node","type":"node","name":"tgik-calico-cluster.node","image":"ami-79873901","size":"t2.medium","instanceProfile":{"metadata":{"creationTimestamp":null},"name":"tgik-calico-cluster-KubicornNodeInstanceProfile","role":{"metadata":{"creationTimestamp":null},"name":"tgik-calico-cluster-KubicornNodeRole","policies":[{"name":"NodePolicy","document":"{\n\t\t\t\t\t\t\t\t  \"Version\":
+          \"2012-10-17\",\n\t\t\t\t\t\t\t\t  \"Statement\": [\n\t\t\t\t\t\t\t\t\t
+          {\n\t\t\t\t\t\t\t\t\t\t\"Effect\": \"Allow\",\n\t\t\t\t\t\t\t\t\t\t\"Action\":
+          [\n\t\t\t\t\t\t\t\t\t\t   \"ec2:Describe*\",\n\t\t\t\t\t\t\t\t\t\t   \"ec2:AttachVolume\",\n\t\t\t\t\t\t\t\t\t\t   \"ec2:DetachVolume\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetAuthorizationToken\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:BatchCheckLayerAvailability\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetDownloadUrlForLayer\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetRepositoryPolicy\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:DescribeRepositories\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:ListImages\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:BatchGetImage\",\n\t\t\t\t\t\t\t\t\t\t   \"autoscaling:DescribeAutoScalingGroups\",\n\t\t\t\t\t\t\t\t\t\t   \"autoscaling:UpdateAutoScalingGroup\"\n\t\t\t\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t\t\t\t\"Resource\":
+          \"*\"\n\t\t\t\t\t\t\t\t\t }\n\t\t\t\t\t\t\t\t  ]\n\t\t\t\t\t\t\t\t}"}]}},"bootstrapScripts":["bootstrap/amazon_k8s_ubuntu_16.04_node.sh"],"subnets":[{"metadata":{"creationTimestamp":null},"identifier":"subnet-2b591252","cidr":"10.0.100.0/24","zone":"us-west-2b","name":"tgik-calico-cluster.node"}],"firewalls":[{"metadata":{"creationTimestamp":null},"identifier":"sg-9a1e13ea","ingressRules":[{"metadata":{"creationTimestamp":null},"ingressFromPort":"22","ingressToPort":"22","ingressSource":"0.0.0.0/0","ingressProtocol":"tcp"},{"metadata":{"creationTimestamp":null},"ingressFromPort":"0","ingressToPort":"65535","ingressSource":"10.0.0.0/24","ingressProtocol":"-1"}],"name":"tgik-calico-cluster.node-external-5b64887b-2e78-ddea-8dae-36b16e334d65"}],"awsconfiguration":{}}}'
+        roles:
+        - Node
+        versions:
+          containerRuntime:
+            name: ""
+            version: ""
+          kubelet: ""
+  status:
+    replicas: 0
+metadata:
+  creationTimestamp: null
+name: tgik-calico-cluster
