@@ -91,6 +91,7 @@ cat /etc/systemd/system/kubelet.service.d/*
 
 ## Reference Links
 
+ - Shared note pad https://hackmd.io/EPAzAheuRbqlMGi4uATLlQ#
  - Kubernetes CNI Plugin documentation https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/#cni
  - Kubicorn bootstrap scripts https://github.com/kubicorn/bootstrap
  - Examples of configuring a cluster bootstrap script https://github.com/kubicorn/kubicorn/tree/master/examples/pipeline
