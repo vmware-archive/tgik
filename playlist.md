@@ -1,5 +1,7 @@
 # TGIK Playlist Index
 
+- [045: Calico (CNI)](episodes/045/README.md)
+- [044: Knative](episodes/044/README.md)
 - [043: Kops revisited](episodes/043/README.md)
 - [042: Ballerina](episodes/042/README.md)
 - [041: Traefik](episodes/041/README.md)
