@@ -22,4 +22,5 @@ alt="IMAGE ALT TEXT HERE" width="640" height="360" border="10" /></a>
 ## Reference Links
 
 - [Knative CLI](https://github.com/cppforlife/knctl)
+- [Starting Doodles and Docs for AWS Cluster API Implemenation (sig-aws, sig-cluster-lifecycle)](https://groups.google.com/forum/#!topic/kubernetes-sig-cluster-lifecycle/__XIKigkxkA)
 - [Support rapid switching between multiple kubeconfigs](https://github.com/Azure/vscode-kubernetes-tools/pull/337)
