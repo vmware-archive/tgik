@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [046: Continue exploring Knative](episodes/046/README.md)
 - [045: Calico (CNI)](episodes/045/README.md)
 - [044: Knative](episodes/044/README.md)
 - [043: Kops revisited](episodes/043/README.md)
