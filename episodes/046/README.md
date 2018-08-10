@@ -21,6 +21,7 @@ alt="IMAGE ALT TEXT HERE" width="640" height="360" border="10" /></a>
 
 ## Reference Links
 
+- [Harbor for the CNCF from VMWare](https://thenewstack.io/cncf-cloud-native-stack-gets-a-private-container-registry-from-vmware/)
 - [Last call for Kubecon Seattle CFP](https://events.linuxfoundation.org/events/kubecon-cloudnativecon-north-america-2018/program/call-for-proposals-cfp/)
 - [Knative CLI](https://github.com/cppforlife/knctl)
 - [Starting Doodles and Docs for AWS Cluster API Implemenation (sig-aws, sig-cluster-lifecycle)](https://groups.google.com/forum/#!topic/kubernetes-sig-cluster-lifecycle/__XIKigkxkA)
