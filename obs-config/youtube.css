@@ -57,7 +57,7 @@
 }
 
 /* Message Text Color */
-#items #message.yt-live-chat-text-message-renderer {
+#items #message.yt-live-chat-text-message-renderer, .yt-simple-endpoint {
   color:#d0d0d0;
 }
 
