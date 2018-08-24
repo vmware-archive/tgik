@@ -1,5 +1,7 @@
 # TGIK Playlist Index
 
+- [048: Exploring the Harbor](episodes/048/README.md)
+- [047: Networking with Cilium (CNI)](episodes/047/README.md)
 - [046: Continue exploring Knative](episodes/046/README.md)
 - [045: Calico (CNI)](episodes/045/README.md)
 - [044: Knative](episodes/044/README.md)
