@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  name: echo
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: echo
+status:
+  loadBalancer: {}
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: echo
+  name: echo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      run: echo
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: echo
+    spec:
+      containers:
+      - image: nginx
+        name: echo
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}

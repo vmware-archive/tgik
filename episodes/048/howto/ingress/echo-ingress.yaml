@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: echo
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+spec:
+  tls:
+  - hosts:
+    - "echo.c1.k8s.work"
+  rules:
+  - host: "echo.c1.k8s.work"
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: echo
+          servicePort: 8080

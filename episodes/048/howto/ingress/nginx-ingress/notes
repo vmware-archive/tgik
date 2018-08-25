@@ -1,0 +1,1 @@
+ helm template --name std-ingress --namespace ingress --set controller.kind=DaemonSet,controller.hostNetwork=true,controller.extraArgs.default-ssl-certificate=ingress/defaultssl,controller.service.type=None . 
