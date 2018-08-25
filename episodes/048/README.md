@@ -24,17 +24,27 @@ alt="IMAGE ALT TEXT HERE" width="640" height="360" border="10" /></a>
 
 ## Show Notes
 [Community Meeting Summary](http://lwkd.info/2018/20180820)
+
 [Kubernetes Steering Committee Elections](https://www.surveymonkey.com/r/k8s-sc-election-2018)
+
 [discuss.kubernetes.io howto and info](https://www.youtube.com/watch?v=7wTLgeM25Pk)
+
 [Contributor Role Board](https://discuss.kubernetes.io/c/contributors/role-board)
 
 
 ## Reference Links
 [kubeadm dind](https://github.com/kubernetes-sigs/kubeadm-dind-cluster)
+
 [goharbor.io](https://goharbor.io)
+
 [portieris](https://github.com/IBM/portieris)
+
 [Securing your Kubernetes Delivery Pipelines with Notary and TUF - Liam White & Michael Hough](https://www.youtube.com/watch?v=JK70k_B87mw)
+
 [theupdateframework](https://theupdateframework.github.io/)
+
 [notary github](https://github.com/theupdateframework/notary)
+
 [tuf github](https://github.com/theupdateframework/tuf)
+
 [go work on tuf!](https://twitter.com/cra/status/1027933234355752960)
