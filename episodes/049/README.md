@@ -2,6 +2,7 @@
 
 - Hosted by @kris-nova
 - Recording date
+- HackMD: https://hackmd.io/Vd_cF06PRvSovEoMvn2Riw?both
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url
 Note the 0.jpg for the thumbnail --->
