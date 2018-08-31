@@ -88,6 +88,12 @@ Exec into a flannel pod on the master
 kubectl exec -it <pod> sh
 ```
 
+Show route table
+
+```
+ip route show
+```
+
 Build and run flanneld locally
 
 ```
@@ -108,8 +114,23 @@ sh build.sh
 
 ## Reference Links
 
+
+ - [Go IPTables for Flannel](https://github.com/coreos?utf8=%E2%9C%93&q=iptables&type=&language=)
  - [Found this looking for flannel docs, not the best](https://chrislovecnm.com/kubernetes/cni/choosing-a-cni-provider/)
  - [Fantastic resource](https://github.com/containernetworking/cni#3rd-party-plugins)
  - [Release for Ubuntu Xenial](https://github.com/kubernetes/release/tree/master/debian/xenial)
 
+
+## Duffie notes
+
+People complain about VXLan because of multicast, but flannel knows the answers from the Node object.
+Flannel doesn't need to use multicast.
+Flannel only uses VXLan for encapsulation.
+All flat network - Think of it like base64
+Security might be a concern here.
+VXLan TCP Port: 4789
+
+This is really interesting: https://github.com/projectcalico/canal
+
+Canal is basically a wrapper that wires up Calico and Flannel at the same time: https://github.com/projectcalico/canal#policy-based-networking-for-cloud-native-applications
 
