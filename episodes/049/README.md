@@ -14,7 +14,18 @@ alt="IMAGE ALT TEXT HERE" width="640" height="360" border="10" /></a>
 ## Table of Contents
 
 - 00:00:00 - Welcome to TGIK!
-- 00:00:00 - Week in Review
+- 00:07:00 - Week in Review
+- 00:29:00 - Introduction - Looking at Flannel
+- 00:31:15 - How to turn on --pod-network-cidr
+- 00:39:57 - Deploying a pod that doesn't work
+- 00:42:47 - Installing Flannel
+- 00:51:50 - Looking at various types of Flannel backends
+- 00:58:28 - Trick to run CNI Linux-compiled binaries on a Mac
+- 01:00:07 - Looking at the Flannel source code
+- 01:12:25 - Observing iptables and route tables mutations
+- 01:16:48 - Looking at how Calico, Flannel and Canal fit together
+- 01:25:05 - Back to iptables and route tables mutations
+- 01:30:35 - Wrapping up
 
 ## Show Notes
 
