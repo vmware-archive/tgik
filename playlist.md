@@ -1,5 +1,7 @@
 # TGIK Playlist Index
 
+- [051: Linkerd 2.0](episodes/051/README.md)
+- [050: Weave (CNI)](episodes/050/README.md)
 - [049: Flannel (CNI)](episodes/049/README.md)
 - [048: Exploring the Harbor](episodes/048/README.md)
 - [047: Networking with Cilium (CNI)](episodes/047/README.md)
@@ -10,7 +12,7 @@
 - [042: Ballerina](episodes/042/README.md)
 - [041: Traefik](episodes/041/README.md)
 - [040: Kubebuilder](episodes/040/README.md)
-- [039:  Cluster auth with GitHub, Dex and Gangway](episodes/039/README.md)
+- [039: Cluster auth with GitHub, Dex and Gangway](episodes/039/README.md)
 - [038: Kata Containers](episodes/038/README.md)
 - [037: Operator Framework](episodes/037/README.md)
 - [036: Virtual Kubelet](episodes/036/README.md)

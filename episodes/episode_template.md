@@ -8,7 +8,7 @@ Note the 0.jpg for the thumbnail --->
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ixs2-UnWiGU
 " target="_blank"><img src="http://img.youtube.com/vi/ixs2-UnWiGU/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="640" height="360" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="560" height="315" border="10" /></a>
 
 ## Table of Contents
 
