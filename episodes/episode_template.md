@@ -3,12 +3,10 @@
 - Hosted by @jbeda / @kris-nova
 - Recording date
 
-<!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url
-Note the 0.jpg for the thumbnail --->
+<!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=ixs2-UnWiGU
-" target="_blank"><img src="http://img.youtube.com/vi/ixs2-UnWiGU/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="560" height="315" border="10" /></a>
+<a href="https://www.youtube.com/watch?v=ivZIf34zYuQ
+" target="_blank"><img src="http://img.youtube.com/vi/ivZIf34zYuQ/hqdefault.jpg" width="480" height="360" border="10" /></a>
 
 ## Table of Contents
 
