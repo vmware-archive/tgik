@@ -56,7 +56,7 @@ Exploring the dashboard - https://linkerd.io/2/getting-started/index.html#step-4
 
 ## Reference Links
 
-* Heptio Academy with Craig McLuckie: [San Francisco](https://www.eventbrite.com/e/heptio-academy-hands-on-kubernetes-training-in-san-francisco-tickets-49439435683), [New York].(https://www.eventbrite.com/e/heptio-academy-hands-on-kubernetes-training-in-new-york-tickets-49439430668)
+* Heptio Academy with Craig McLuckie: [San Francisco](https://www.eventbrite.com/e/heptio-academy-hands-on-kubernetes-training-in-san-francisco-tickets-49439435683), [New York](https://www.eventbrite.com/e/heptio-academy-hands-on-kubernetes-training-in-new-york-tickets-49439430668).
 * [Election](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/kubernetes-dev/0gEdp_xdzEI/214wEaVbCgAJ)
 * [Chuck's YAML Tool](https://kubeyaml.com/)
 * [1.12 is here](https://github.com/kubernetes/sig-release/blob/master/releases/release-1.12/README.md)
