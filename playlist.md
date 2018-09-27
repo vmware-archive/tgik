@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [future-01: Contour v0.6](episodes/future-01/README.md)
 - [051: Linkerd 2.0](episodes/051/README.md)
 - [050: Weave (CNI)](episodes/050/README.md)
 - [049: Flannel (CNI)](episodes/049/README.md)
