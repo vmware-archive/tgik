@@ -1,7 +1,7 @@
 # Securing the k8s dashboard and beyond!
 
 - Recording date: 2018-02-23
-- Video: https://www.youtube.com/watch?v=t3kmscqbFHg
+- Video: https://www.youtube.com/watch?v=od8TnIvuADg
 
 ### Show notes
 
