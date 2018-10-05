@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build:
+    docker:
+      # CircleCI Go images available at: https://hub.docker.com/r/circleci/golang/
+      - image: circleci/golang:1.10
+
+      - image: minio/minio
+        command: [server, /data]
+        environment:
+          MINIO_ACCESS_KEY: KubicornAccess
+          MINIO_SECRET_KEY: KubicornSecret
+
+      - image: kubicorn/ci-ssh-test
+
+    environment:
+      KUBICORN_TEST_SSH_PORT: 22
+
+    working_directory: /go/src/github.com/kubicorn/kubicorn
+
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Check headers
+          command: make check-headers
+      - run:
+          name: Check go files
+          command: make check-code
+      - run:
+          name: Compile
+          command: make compile
+      - run:
+          name: CI
+          command: make ci
