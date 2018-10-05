@@ -1,5 +1,3 @@
-# Derived from ./manifests
----
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -349,7 +347,7 @@ metadata:
 spec:
   selector:
     app: alertmanager
-  type: NodePort
+  type: LoadBalancer
   ports:
   - name: alertmanager
     protocol: TCP
@@ -2342,7 +2340,7 @@ metadata:
     app: grafana
     component: core
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 3000
   selector:
@@ -2718,7 +2716,7 @@ metadata:
   annotations:
     prometheus.io/scrape: 'true'
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
     - port: 9090
       protocol: TCP

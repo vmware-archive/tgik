@@ -7,8 +7,6 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/kubicorn/kubicorn/pkg/logger"
-	"time"
-	"math/rand"
 )
 
 var metricsAddr = flag.String("metrics-address", ":1313", "The address to listen on for metrics requests.")
