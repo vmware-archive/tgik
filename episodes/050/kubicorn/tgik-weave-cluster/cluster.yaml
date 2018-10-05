@@ -1,0 +1,90 @@
+clusterAPI:
+  metadata:
+    creationTimestamp: null
+    name: tgik-weave-cluster
+  spec:
+    clusterNetwork:
+      dnsDomain: ""
+      pods:
+        cidrBlocks: null
+      services:
+        cidrBlocks: null
+    providerConfig: '{"cloud":"amazon","location":"us-west-2","SSH":{"metadata":{"creationTimestamp":null},"name":"tgik-weave-cluster","user":"ubuntu","identifier":"tgik-weave-cluster","publicKeyPath":"~/.ssh/id_rsa.pub","publicKeyData":"c3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFCQVFDMzRRR0plMStNa2NpbW1RbWlSZ1ppWlg1eTdrL3o3WTRXMkgwV1RuaC9XaEtrVXZqUmdXY2QzQTBrVWI1TUlXOXpiUnpCRklKQkVCcm04SFJsRjRlblhSQUNyK3RWYkhVcUk1Sk8zeElFSEtXa0pIR2YwQmc0MytWVzhYLzdmdFA3UVBlNWltZXQ1VEwrQXFzQzYyV3EyYVVUWk1IYWcxUjZ4djRBR0hIUE54L2RiYlJuMjZNdHJjOEpoNFdKWHRZZmszQ0RVNDZ6SEhVVytWSW51RE1GbXRXNHlrZXlQcUJhS1F2cmpyK1hRbTE1dmZzcnRvYUJHNEp3ZUtPRC9MSkxzK3RpS3RzVk1mNTVzV1p4ZFBkSEx0TzEvUnNiK1orMXdTZVQ4bU0xdEJhbmlnU2h4bUplQzBnWjhIUU9PMk92ZUYwallVak1LNHdQd0dyeVBaa2Yga3Jpc0BLcmlzcy1NYWNCb29rLVByby5sb2NhbAo=","publicKeyFingerprint":"19:3e:90:6f:46:9d:43:b8:4e:c9:35:31:f7:1d:a8:5d","port":"22"},"network":{"metadata":{"name":"tgik-weave-cluster","creationTimestamp":null},"cidr":"10.0.0.0/16","identifier":"vpc-008436bd8bccf31e3","type":"public","internetgw":{"metadata":{"creationTimestamp":null},"identifier":"igw-0705adcced3a4b234"}},"values":{"metadata":{"creationTimestamp":null},"itemMap":{"INJECTEDMASTER":"10.0.0.177:443","INJECTEDPORT":"443","INJECTEDTOKEN":"a56466.0647327fbe0998d1"}},"kubernetesAPI":{"metadata":{"creationTimestamp":null},"endpoint":"34.220.149.11","port":"443"}}'
+  status:
+    apiEndpoints: null
+    errorMessage: ""
+    errorReason: ""
+    providerStatus: ""
+controlPlane:
+  metadata:
+    creationTimestamp: null
+  spec:
+    selector: {}
+    template:
+      metadata:
+        creationTimestamp: null
+      spec:
+        metadata:
+          creationTimestamp: null
+        providerConfig: ""
+        versions:
+          containerRuntime:
+            name: ""
+            version: ""
+          kubelet: ""
+  status:
+    replicas: 0
+machineSets:
+- metadata:
+    creationTimestamp: null
+    name: tgik-weave-cluster.master
+  spec:
+    selector: {}
+    template:
+      metadata:
+        creationTimestamp: null
+      spec:
+        metadata:
+          creationTimestamp: null
+        providerConfig: '{"serverPool":{"metadata":{"creationTimestamp":null},"identifier":"tgik-weave-cluster.master","type":"master","name":"tgik-weave-cluster.master","image":"ami-79873901","size":"t2.xlarge","instanceProfile":{"metadata":{"creationTimestamp":null},"name":"tgik-weave-cluster-KubicornMasterInstanceProfile","role":{"metadata":{"creationTimestamp":null},"name":"tgik-weave-cluster-KubicornMasterRole","policies":[{"name":"MasterPolicy","document":"{\n\t\t\t\t\t\t\t\t  \"Version\":
+          \"2012-10-17\",\n\t\t\t\t\t\t\t\t  \"Statement\": [\n\t\t\t\t\t\t\t\t\t
+          {\n\t\t\t\t\t\t\t\t\t\t\"Effect\": \"Allow\",\n\t\t\t\t\t\t\t\t\t\t\"Action\":
+          [\n\t\t\t\t\t\t\t\t\t\t   \"ec2:*\",\n\t\t\t\t\t\t\t\t\t\t   \"elasticloadbalancing:*\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetAuthorizationToken\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:BatchCheckLayerAvailability\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetDownloadUrlForLayer\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetRepositoryPolicy\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:DescribeRepositories\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:ListImages\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:BatchGetImage\",\n\t\t\t\t\t\t\t\t\t\t   \"autoscaling:DescribeAutoScalingGroups\",\n\t\t\t\t\t\t\t\t\t\t   \"autoscaling:UpdateAutoScalingGroup\"\n\t\t\t\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t\t\t\t\"Resource\":
+          \"*\"\n\t\t\t\t\t\t\t\t\t }\n\t\t\t\t\t\t\t\t  ]\n\t\t\t\t\t\t\t\t}"}]}},"bootstrapScripts":["kubicorn/amazon_k8s_ubuntu_16.04_master.sh"],"subnets":[{"metadata":{"creationTimestamp":null},"identifier":"subnet-0bc8297b94c94213d","cidr":"10.0.0.0/24","zone":"us-west-2a","name":"tgik-weave-cluster.master"}],"firewalls":[{"metadata":{"creationTimestamp":null},"identifier":"sg-0b64c374ce90bc1ea","ingressRules":[{"metadata":{"creationTimestamp":null},"ingressFromPort":"22","ingressToPort":"22","ingressSource":"0.0.0.0/0","ingressProtocol":"tcp"},{"metadata":{"creationTimestamp":null},"ingressFromPort":"443","ingressToPort":"443","ingressSource":"0.0.0.0/0","ingressProtocol":"tcp"},{"metadata":{"creationTimestamp":null},"ingressFromPort":"0","ingressToPort":"65535","ingressSource":"10.0.100.0/24","ingressProtocol":"-1"}],"name":"tgik-weave-cluster.master-external-5b915150-f587-2b69-b4f3-b818c53d3935"}],"awsconfiguration":{}}}'
+        roles:
+        - Master
+        versions:
+          containerRuntime:
+            name: ""
+            version: ""
+          kubelet: ""
+  status:
+    replicas: 0
+- metadata:
+    creationTimestamp: null
+    name: tgik-weave-cluster.node
+  spec:
+    selector: {}
+    template:
+      metadata:
+        creationTimestamp: null
+      spec:
+        metadata:
+          creationTimestamp: null
+        providerConfig: '{"serverPool":{"metadata":{"creationTimestamp":null},"identifier":"tgik-weave-cluster.node","type":"node","name":"tgik-weave-cluster.node","image":"ami-79873901","size":"t2.medium","instanceProfile":{"metadata":{"creationTimestamp":null},"name":"tgik-weave-cluster-KubicornNodeInstanceProfile","role":{"metadata":{"creationTimestamp":null},"name":"tgik-weave-cluster-KubicornNodeRole","policies":[{"name":"NodePolicy","document":"{\n\t\t\t\t\t\t\t\t  \"Version\":
+          \"2012-10-17\",\n\t\t\t\t\t\t\t\t  \"Statement\": [\n\t\t\t\t\t\t\t\t\t
+          {\n\t\t\t\t\t\t\t\t\t\t\"Effect\": \"Allow\",\n\t\t\t\t\t\t\t\t\t\t\"Action\":
+          [\n\t\t\t\t\t\t\t\t\t\t   \"ec2:Describe*\",\n\t\t\t\t\t\t\t\t\t\t   \"ec2:AttachVolume\",\n\t\t\t\t\t\t\t\t\t\t   \"ec2:DetachVolume\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetAuthorizationToken\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:BatchCheckLayerAvailability\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetDownloadUrlForLayer\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:GetRepositoryPolicy\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:DescribeRepositories\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:ListImages\",\n\t\t\t\t\t\t\t\t\t\t   \"ecr:BatchGetImage\",\n\t\t\t\t\t\t\t\t\t\t   \"autoscaling:DescribeAutoScalingGroups\",\n\t\t\t\t\t\t\t\t\t\t   \"autoscaling:UpdateAutoScalingGroup\"\n\t\t\t\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t\t\t\t\"Resource\":
+          \"*\"\n\t\t\t\t\t\t\t\t\t }\n\t\t\t\t\t\t\t\t  ]\n\t\t\t\t\t\t\t\t}"}]}},"bootstrapScripts":["bootstrap/amazon_k8s_ubuntu_16.04_node.sh"],"subnets":[{"metadata":{"creationTimestamp":null},"identifier":"subnet-0ea4a3bf2c4bf2222","cidr":"10.0.100.0/24","zone":"us-west-2b","name":"tgik-weave-cluster.node"}],"firewalls":[{"metadata":{"creationTimestamp":null},"identifier":"sg-0e1c2a715985fb702","ingressRules":[{"metadata":{"creationTimestamp":null},"ingressFromPort":"22","ingressToPort":"22","ingressSource":"0.0.0.0/0","ingressProtocol":"tcp"},{"metadata":{"creationTimestamp":null},"ingressFromPort":"0","ingressToPort":"65535","ingressSource":"10.0.0.0/24","ingressProtocol":"-1"}],"name":"tgik-weave-cluster.node-external-5b915150-bb7e-5784-603e-37e0daa8e0eb"}],"awsconfiguration":{}}}'
+        roles:
+        - Node
+        versions:
+          containerRuntime:
+            name: ""
+            version: ""
+          kubelet: ""
+  status:
+    replicas: 0
+metadata:
+  creationTimestamp: null
+name: tgik-weave-cluster
