@@ -2,7 +2,7 @@
 
 - Hosted by @kris-nova
 - Recording date: 20181012
-- Live notes: https://hackmd.io/-RWjXaktT_SaNbe3X5gzKw#
+- Live notes: https://hackmd.io/yrLz1UgVSF2xqvELw5eZaQ
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 
