@@ -1,6 +1,9 @@
 # TGIK Playlist Index
 
-- [future-01: Contour v0.6](episodes/future-01/README.md)
+- [056: Contour and IngressRoute](episodes/056/README.md)
+- [055: Creating container images with Kaniko](episodes/055/README.md)
+- [054: Building containers and images for Kubernetes with Buildah](episodes/054/README.md)
+- [053: Cluster API for AWS](episodes/053/README.md)
 - [052: Instrumenting with Prometheus](episodes/052/README.md)
 - [051: Linkerd 2.0](episodes/051/README.md)
 - [050: Weave (CNI)](episodes/050/README.md)
