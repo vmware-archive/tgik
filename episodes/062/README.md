@@ -1,6 +1,6 @@
 # Episode 062 : Exploring Jenkins X
 
-- Hosted by @jbeda / @kris-nova
+- Hosted by @kris-nova
 - Recording date
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
@@ -30,7 +30,7 @@
 
 Add your questions here:
 
-- 
+-
 
 ## Reference Links
 
