@@ -1,5 +1,12 @@
 # TGIK Playlist Index
 
+- [063: Local Development with Tilt](episodes/063/README.md)
+- [062: Continuous Delivery with Jenkins X](episodes/062/README.md)
+- [061: Falco with Dynamic Auditing in Kubernetes](episodes/061/README.md)
+- [060: Kubernetes in Docker + etcd](episodes/060/README.md)
+- [059: Exploring CNAB with Kubernetes](episodes/059/README.md)
+- [058: Firecracker](episodes/058/README.md)
+- [057: Vault on Kubernetes](episodes/057/README.md)
 - [056: Contour and IngressRoute](episodes/056/README.md)
 - [055: Creating container images with Kaniko](episodes/055/README.md)
 - [054: Building containers and images for Kubernetes with Buildah](episodes/054/README.md)
