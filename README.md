@@ -1,9 +1,6 @@
 <p align="center"><img src="tgik-repo.png" width="750"></p>
 
 
-# [Watch Live Now!](https://j.hept.io/tgik-live)
-
-
 Official repository for Heptio TGIK!
 
 Heptio TGIK is a weekly live video stream that we broadcast live from the Heptio headquarters in Seattle, Washington all about Kubernetes.
