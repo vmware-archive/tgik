@@ -97,19 +97,11 @@ Include the image created above
 
 ### Schedule reminder tweets from the Heptio twitter account
 
-Log into Hubspot
+For now, use Tweetdeck to schedule tweets.
+Create 2 tweets using similar verbiage as the tweet created above but in 3rd person.
+Do these for Wed/Thurs and Friday.
+Schedule them for around 9-11am Pacific.
+Use the j.hept.io link and attach the image.
 
-From the top menu bar:
-
-Social -> Publishing
-
-[Create social post]
-
-Create 2 tweets using similar verbage as the tweet created above but in 3rd person.
-
-(Wed or Thurs) reminder tweet
-Fri reminder tweet
-
-Schedule them for around 9-11am Pacific time
 
 
