@@ -3,7 +3,9 @@
 
 Official repository for Heptio TGIK!
 
-Heptio TGIK is a weekly live video stream that we broadcast live from the Heptio headquarters in Seattle, Washington all about Kubernetes.
+(Heptio is now part of VMware. We'll figure out branding for TGIK over the coming months. But rest assured that we'll keep creating episodes!)
+
+Heptio TGIK is a weekly live video stream that we broadcast live from the Heptio headquarters (usually) in Seattle, Washington all about Kubernetes.
 
 The [index](playlist.md) contains a list of all episodes.
 
@@ -16,4 +18,3 @@ There is a community driven list of episodes that can be found [here](https://gi
 If you have an idea for TGIK please [open an issue in the TGIK issue tracker](https://github.com/heptio/tgik/issues/new).
 We pick the episodes as we see fit with what's happening in the community.
 If we select your suggestion we will link back to your original work here!
-
