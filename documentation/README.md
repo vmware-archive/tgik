@@ -1,32 +1,54 @@
-# TGIK Documentation 
+# TGIK Documentation
 
-This will mostly be internal, but sharing broadly as a resource. 
+This will mostly be internal, but sharing broadly as a resource.
 
+## Checklists
 
-# Scheduling a new episode
+Start by copying the following into the issue for the episode.  Check things off as you do them.
 
-### Creating the graphic 
+```markdown
+The process for producing an episode is [here](https://github.com/heptio/tgik/blob/master/documentation/README.md).  All the detail for the steps below is there.
 
-In the internal team Marketing drive find the TGIK directory.
-Duplicate the most recent .ai file and rename to the next number. 
+Monday or Tuesday:
+* [ ] Pick a topic and create/use an issue in the repo
+* [ ] Create the graphic.
+* [ ] Schedule on Youtube.
+* [ ] Add scheduled episode to TGIK playlist on YT
+* [ ] Create short link in rebrandly
+* [ ] Tweet about it from both personal and company accounts
+* [ ] Schedule future tweets
+* [ ] Post tweets on internal #tgik slack channel so that others know.
 
-*Example:*
+Before episode:
+* [ ] Create HackMD page for live notes.  Start with README template. (TODO: @castrojo -- put details here?)
+* [ ] Get everything tested well before episode so you can debug.
+* [ ] Use internal slack channel to ensure that AV setup is good
 
+After show (ideally right away but can wait until Monday):
+* Create/submit PR for this repo
+  * [ ] Episode directory and README from hackmd
+  * [ ] Any other files from the episode that might be useful
+  * [ ] Update playlist.md with episode
+  * Feel free to self merge
+* [ ] Edit YT description to point to episode directory here
 ```
-Duplicate tgik042.ai
-Rename to tgik043.ai
-```
 
-Find an image to use that is fun, and subtly hints at the topic for the episode. 
+## Scheduling a new episode
+
+### Creating the graphic
+
+Find an image to use that is fun, and subtly hints at the topic for the episode.
 For example [episode 38](https://github.com/heptio/tgik/tree/master/episodes/038) was on Kata containers, and the [supporting image was of containers in a shipyard](https://github.com/heptio/tgik/blob/master/episodes/038/038.png).
-Use the eyedropper tool while holding shift in Adobe Illustrator to change the accent color to a contrasting color from the image.
-Save as a .png
 
-*Example:*
-
-```
-tgik043.ai ---> 043.png
-```
+General process:
+* Copy a previous episode into a new file and renumber it
+* Pick out an image (often we use unsplash.com). Make sure we have rights to use the image.
+* Open the file in Adobe Illustrator
+* Delete the old image and use the "File | Place" to insert the new image. Move that to the back with "Object | Arrange | Send to Back"
+* Select the semi-transparent background on the text and the logo box and use the eye dropper tool to pick a light color out of the image.
+* Export to PNG in the same folder using "File | Export | Export for screens"
+  * Before saving make sure you change the name of the artboard (which determines the filename) by double clicking it on that dialog.
+  * Export as PNG at 1x
 
 ### Scheduling on YouTube
 
