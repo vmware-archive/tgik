@@ -1,0 +1,5 @@
+config:
+  gcp:project: tgik8s
+  gcp:zone: us-west1-a
+  gke-hello-world:nodeCount: "2"
+  gke-hello-world:nodeMachineType: n1-standard-1
