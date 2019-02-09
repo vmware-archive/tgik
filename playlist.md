@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [064: Kubernetes config with Pulumi](episodes/064/README.md)
 - [063: Local Development with Tilt](episodes/063/README.md)
 - [062: Continuous Delivery with Jenkins X](episodes/062/README.md)
 - [061: Falco with Dynamic Auditing in Kubernetes](episodes/061/README.md)
