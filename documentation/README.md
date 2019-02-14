@@ -11,18 +11,22 @@ The process for producing an episode is [here](https://github.com/heptio/tgik/bl
 
 Monday or Tuesday:
 * [ ] Pick a topic and create/use an issue in the repo
-* [ ] Create the graphic.
-* [ ] Schedule on Youtube.
+* [ ] If applicable coordinate with an upstream project if they're interested in attending the show
+* [ ] Create the graphic
+* [ ] Schedule on Youtube
 * [ ] Add scheduled episode to TGIK playlist on YT
 * [ ] Create short link in rebrandly
-* [ ] Tweet about it from both personal and company accounts
-* [ ] Schedule future tweets
-* [ ] Post tweets on internal #tgik slack channel so that others know.
+* [ ] Tweet about it from your personal account
+  * [ ] Post tweets on internal #tgik slack channel and cc @castrojo and @jrosland
+  * [ ] Get confirmation from @jrosland that he's seen the tweet and is scheduling it
 
 Before episode:
-* [ ] Create HackMD page for live notes.  Start with README template. (TODO: @castrojo -- put details here?)
-* [ ] Get everything tested well before episode so you can debug.
+* [ ] Create HackMD page for live notes.  Start with README template in this repo
+* [ ] Paste HackMD URL on internal #tgik channel and cc @castrojo or other assistant
+  * [ ] Assistant adds ~5-10 news items from around the web as possible "News of the Week"
+* [ ] Get everything tested well before episode so you can debug
 * [ ] Use internal slack channel to ensure that AV setup is good
+
 
 After show (ideally right away but can wait until Monday):
 * Create/submit PR for this repo
@@ -31,6 +35,7 @@ After show (ideally right away but can wait until Monday):
   * [ ] Update playlist.md with episode
   * Feel free to self merge
 * [ ] Edit YT description to point to episode directory here
+* [ ] OBS/OS Upgrade if applicable (Never on the day of a show)
 ```
 
 ## Scheduling a new episode
