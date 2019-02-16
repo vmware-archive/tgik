@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [065: Keep it a Secret](episodes/065/README.md)
 - [064: Kubernetes config with Pulumi](episodes/064/README.md)
 - [063: Local Development with Tilt](episodes/063/README.md)
 - [062: Continuous Delivery with Jenkins X](episodes/062/README.md)
