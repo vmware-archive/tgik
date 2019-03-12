@@ -17,8 +17,8 @@ Monday or Tuesday:
 * [ ] Add scheduled episode to TGIK playlist on YT
 * [ ] Create short link in rebrandly
 * [ ] Tweet about it from your personal account
-  * [ ] Post tweets on internal #tgik slack channel and cc @castrojo and @jrosland
-  * [ ] Get confirmation from @jrosland that he's seen the tweet and is scheduling it
+  * [ ] Post tweets on internal #tgik slack channel and cc @castrojo and @boschem
+  * [ ] Get confirmation from @boschem that he's seen the tweet and is scheduling it
 
 Before episode:
 * [ ] Create HackMD page for live notes.  Start with README template in this repo
