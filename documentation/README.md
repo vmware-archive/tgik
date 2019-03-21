@@ -61,9 +61,15 @@ Go to the [YouTube creator studio](https://www.youtube.com/my_live_events)
 
 Create a [new Live event](https://www.youtube.com/my_live_events?action_create_live_event=1)
 
+###### Title
 ```
-title: TGI Kubernetes 001: A great name for my episode
-description: Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!
+TGI Kubernetes 001: A great name for my episode
+```
+
+###### Description
+
+```
+Come hang out with Kris Nova as she does a bit of hands on hacking of Kubernetes and related topics. Some of this will be Kris talking about the things she knows. Some of this will be Kris exploring something new with the audience. Come join the fun, ask questions, comment, and participate in the live chat!
 ```
 
 Create the event (Click save)
