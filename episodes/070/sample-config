@@ -1,0 +1,13 @@
+# This goes in ~/.aws/config
+
+[profile kiam]
+role_arn = arn:aws:iam::950054838892:role/kiam-server
+credential_source = Ec2InstanceMetadata
+
+[profile tgik-ctf-read]
+role_arn = arn:aws:iam::950054838892:role/tgik-ctf-read
+source_profile = kiam
+
+[profile tgik-ctf-write]
+role_arn = arn:aws:iam::950054838892:role/tgik-ctf-write
+source_profile = kiam
