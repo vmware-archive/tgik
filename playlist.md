@@ -1,5 +1,10 @@
 # TGIK Playlist Index
 
+- [070: Assuming AWS roles with kube2iam/kiam](episodes/070/README.md)
+- [069: Hybrid Ingress with Gloo on Kubernetes](episodes/069/README.md)
+- [068: MicroK8s on Linux](episodes/068/README.md)
+- [067: Spring Boot on Kubernetes](episodes/067/README.md)
+- [066: Even More Secret!](episodes/066/README.md)
 - [065: Keep it a Secret](episodes/065/README.md)
 - [064: Kubernetes config with Pulumi](episodes/064/README.md)
 - [063: Local Development with Tilt](episodes/063/README.md)
