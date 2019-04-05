@@ -104,10 +104,12 @@ body, yt-live-chat-renderer, #content-pages, #chat-messages {
 yt-live-chat-pinned-message-renderer,
 yt-live-chat-ticker-renderer,
 yt-live-chat-ticker-paid-message-item-renderer,
+yt-live-chat-message-input-renderer,
 #action-panel,
 yt-live-chat-header-renderer,
 #author-photo,
 #show-more,
+[is-deleted],
 yt-live-chat-text-message-renderer #menu {
   display:none !important;
 }
@@ -142,4 +144,8 @@ yt-live-chat-text-message-renderer #menu {
   color:#ff0000;
   background:none;
   padding:0;
+}
+
+#card.yt-live-chat-viewer-engagement-message-renderer {
+ display: none;
 }
