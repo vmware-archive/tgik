@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [071: Open Policy Agent](episodes/071/README.md)
 - [070: Assuming AWS roles with kube2iam/kiam](episodes/070/README.md)
 - [069: Hybrid Ingress with Gloo on Kubernetes](episodes/069/README.md)
 - [068: MicroK8s on Linux](episodes/068/README.md)
