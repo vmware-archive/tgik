@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [072: Kustomize and friends](episodes/072/README.md)
 - [071: Open Policy Agent](episodes/071/README.md)
 - [070: Assuming AWS roles with kube2iam/kiam](episodes/070/README.md)
 - [069: Hybrid Ingress with Gloo on Kubernetes](episodes/069/README.md)

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: static-cm
+data:
+  kuard.config: |-
+    This won't cause a re-deploy. Really.

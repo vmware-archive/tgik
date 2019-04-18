@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: kuard
+  name: kuard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kuard
+  template:
+    metadata:
+      labels:
+        app: kuard
+    spec:
+      containers:
+      - image: gcr.io/kuar-demo/kuard-amd64:blue
+        name: kuard-amd64
+        volumeMounts:
+        - name: config-volume
+          mountPath: /kaurd-cm
+        - name: static-config
+          mountPath: /static-cm
+      volumes:
+      - name: config-volume
+        configMap:
+          name: kuard-cm
+      - name: static-config
+        configMap:
+          name: static-cm
