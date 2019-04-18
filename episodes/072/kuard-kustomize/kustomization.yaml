@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- deployment.yaml
+- service.yaml
+- ingress.yaml
+- static-cm.yaml
+
+configMapGenerator:
+- name: kuard-cm
+  files:
+  - kuard.config
+
+images:
+  - name: invalidimage
+    newName: gcr.io/kuar-demo/kuard-amd64
+    newTag: green
