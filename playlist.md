@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [073: Exploring Garden with Kubernetes](episodes/073/README.md)
 - [072: Kustomize and friends](episodes/072/README.md)
 - [071: Open Policy Agent](episodes/071/README.md)
 - [070: Assuming AWS roles with kube2iam/kiam](episodes/070/README.md)
