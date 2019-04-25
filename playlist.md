@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [074: Exploring KubeVirt](episodes/074/README.md)
 - [073: Exploring Garden with Kubernetes](episodes/073/README.md)
 - [072: Kustomize and friends](episodes/072/README.md)
 - [071: Open Policy Agent](episodes/071/README.md)
