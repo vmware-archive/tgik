@@ -1,0 +1,12 @@
+kind: Cluster
+apiVersion: kind.sigs.k8s.io/v1alpha3
+networking:
+  podSubnet: "10.244.0.0/16"
+  disableDefaultCNI: True
+nodes:
+- role: control-plane
+- role: control-plane
+- role: control-plane
+- role: worker
+- role: worker
+- role: worker
