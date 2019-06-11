@@ -21,7 +21,7 @@
             "streamTimerSeconds": 30
         }
     },
-    "name": "TGIK",
+    "name": "TGIK - MacOS",
     "preview_locked": false,
     "quick_transitions": [
         {
@@ -201,7 +201,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -229,7 +229,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -257,7 +257,7 @@
                             "x": 0.3125,
                             "y": 0.3125
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -285,7 +285,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     }
                 ]
@@ -310,7 +310,7 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "file": "/Volumes/GoogleDrive/Team Drives/Marketing/Design/TGIKubernetes/025.png"
+              "file": "TGIK_EPISODE.png"
             },
             "sync": 0,
             "volume": 1.0
@@ -363,7 +363,7 @@
                             "x": 1.5,
                             "y": 1.5
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "lanczos",
                         "visible": true
                     }
                 ]
@@ -479,7 +479,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -507,7 +507,7 @@
                             "x": 0.2083333283662796,
                             "y": 0.2083333283662796
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -535,7 +535,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -563,7 +563,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     }
                 ]
@@ -650,7 +650,7 @@
                             "x": 0.2083333283662796,
                             "y": 0.2083333283662796
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -678,7 +678,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -706,7 +706,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     },
                     {
@@ -734,7 +734,7 @@
                             "x": 1.0,
                             "y": 1.0
                         },
-                        "scale_filter": "disable",
+                        "scale_filter": "bicubic",
                         "visible": true
                     }
                 ]
