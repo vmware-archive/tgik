@@ -1,5 +1,8 @@
 # TGIK Playlist Index
 
+- [079: ytt and kapp](episodes/079/README.md)
+- [077: All your certificates have expired!](episodes/077/README.md)
+- [075: Troubleshooting Container Networking](episodes/075/README.md)
 - [074: Exploring KubeVirt](episodes/074/README.md)
 - [073: Exploring Garden with Kubernetes](episodes/073/README.md)
 - [072: Kustomize and friends](episodes/072/README.md)
