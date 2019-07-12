@@ -85,7 +85,7 @@ Log into Rebrandly and create a new link pointing to the YouTube live stream.
 *Example:*
 
 ```
-j.hept.io/tgik001 ---> youtube.com/watch?v=ixs1-UnWiGU
+tgik.io/001 ---> youtube.com/watch?v=ixs1-UnWiGU
 ```
 
 Update the pointer pointer for the broad "Watch Live Now!" link. (This allows us to hard code the link in various without having to push a code change).
@@ -93,7 +93,7 @@ Update the pointer pointer for the broad "Watch Live Now!" link. (This allows us
 *Example:*
 
 ```
-j.hept.io/tgik-live ---> j.hept.io/tgik001 ---> youtube.com/watch?v=ixs1-UnWiGU
+tgik.io/live ---> tgik.io/tgik001 ---> youtube.com/watch?v=ixs1-UnWiGU
 ```
 
 ### Tweet!
