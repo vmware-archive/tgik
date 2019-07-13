@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [082: Weaveworks Ignite](episodes/082/README.md)
 - [080: Velero 1.0](episodes/080/README.md)
 - [079: ytt and kapp](episodes/079/README.md)
 - [077: All your certificates have expired!](episodes/077/README.md)
