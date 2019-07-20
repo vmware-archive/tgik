@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [083: Minecraft Controller with Kubebuilder](episodes/083/README.md)
 - [082: Weaveworks Ignite](episodes/082/README.md)
 - [080: Velero 1.0](episodes/080/README.md)
 - [079: ytt and kapp](episodes/079/README.md)
