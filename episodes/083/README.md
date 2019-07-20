@@ -46,6 +46,8 @@
 
 
 ## Show Notes
+Code for the project is checked in to https://github.com/jbeda/kinecraft.  You can find a snapshot as things were at the end of this episode at https://github.com/jbeda/kinecraft/commit/4120c3eb3738b91d4ccf860e95847f322c4d1258.
+
 - [crd structural schema changes](https://kubernetes.io/blog/2019/06/20/crd-structural-schema/)
 - [Programming Kubernetes](https://learning.oreilly.com/library/view/programming-kubernetes/9781492047094/)
 - [Kubebuilder Docs](https://book.kubebuilder.io/quick-start.html)
