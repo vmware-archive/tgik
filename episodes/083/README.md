@@ -1,4 +1,4 @@
-# Episode 084 : Minecraft Controller with Kubebuilder
+# Episode 083 : Minecraft Controller with Kubebuilder
 
 - Hosted by @jbeda
 - 2019-07-19
