@@ -1,0 +1,29 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tb
+  namespace: team-b
+  labels:
+    app: tb
+    run: nginx
+spec:
+  containers:
+    - name: nginx
+      imagePullPolicy: IfNotPresent
+      image: joshrosso/nginx-curl:v2
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tb
+  namespace: team-b
+spec:
+  ports:
+  - port: 80
+    name: http
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: tb

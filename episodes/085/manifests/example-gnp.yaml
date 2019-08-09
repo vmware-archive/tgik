@@ -1,0 +1,42 @@
+---
+# This GlobalNetworkPolicy uses Calico's CRD 
+# (https://docs.projectcalico.org/v3.5/reference/calicoctl/resources/globalnetworkpolicy)
+apiVersion: projectcalico.org/v3
+kind: GlobalNetworkPolicy
+metadata:
+  name: global-deny-all
+spec:
+  # order controls the precedence. Calico applies the policy with the lowest value first.
+  # Kubernetes NetworkPolicy does not support order. They are automatically converted to an order 
+  # value of 1000 by Calico. Setting this value to 2000, provides flexibility for 999 additional
+  # GlobalNetworkPolicies to be added and ensures Kubernetes namespace-scoped policies always take
+  # precedence.
+  order: 2000
+  types:
+  - Ingress
+  - Egress
+
+  # egress network rules
+  egress:
+  # Allow all egress traffic from kube-system.
+  - action: Allow
+    destination: {}
+    source:
+      namespaceSelector: name == 'kube-system'
+
+  # Allow egress DNS traffic to any destination.
+  - action: Allow
+    protocol: UDP
+    destination:
+      nets:
+        - 0.0.0.0/0
+      ports:
+        - 53
+
+  # ingress network rules
+  ingress:
+  # Allow all ingress traffic for the kube-system namespace.
+  - action: Allow
+    destination:
+      namespaceSelector: name == 'kube-system'
+    source: {}

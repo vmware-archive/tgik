@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [085: Network Policy](episodes/085/README.md)
 - [083: Minecraft Controller with Kubebuilder](episodes/083/README.md)
 - [082: Weaveworks Ignite](episodes/082/README.md)
 - [080: Velero 1.0](episodes/080/README.md)
