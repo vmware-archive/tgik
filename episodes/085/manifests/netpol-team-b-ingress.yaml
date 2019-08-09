@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: team-b-ingress
+  namespace: team-b
+spec:
+  # pod(s) this policy "applies" to
+  podSelector:
+    matchLabels:
+      app: tb
+  policyTypes:
+  - Ingress
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          name: team-a
+      podSelector:
+        matchLabels:
+          app: ta
