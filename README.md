@@ -9,7 +9,7 @@ Heptio TGIK is a weekly live video stream that we broadcast live from the Heptio
 
 The [index](playlist.md) contains a list of all episodes.
 
-The [official YouTube channel can be found here](https://j.hept.io/tgik).
+The [official YouTube channel can be found here](https://www.youtube.com/playlist?list=PL7bmigfV0EqQzxcNpmcdTJ9eFRPBe-iZa).
 
 There is a community driven list of episodes that can be found [here](https://github.com/recollir/tgik-playlist) (Thanks to [recollir](https://github.com/recollir)!)
 
