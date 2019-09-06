@@ -1,10 +1,17 @@
 # TGIK Playlist Index
 
+- [089: Tekton Pipelines](episodes/089/README.md)
+- [088: Falco with Kris!](episodes/088/README.md)
+- [087: Octant](episodes/087/README.md)
+- [086: Grokking Kubernetes : kubelet](episodes/086/README.md)
 - [085: Network Policy](episodes/085/README.md)
+- [084: Kubernetes API Removal and You](episodes/084/README.md)
 - [083: Minecraft Controller with Kubebuilder](episodes/083/README.md)
 - [082: Weaveworks Ignite](episodes/082/README.md)
+- [081: Grafana Loki](episodes/081/README.md)
 - [080: Velero 1.0](episodes/080/README.md)
 - [079: ytt and kapp](episodes/079/README.md)
+- [078: Pod Security Policies](episodes/078/README.md)
 - [077: All your certificates have expired!](episodes/077/README.md)
 - [075: Troubleshooting Container Networking](episodes/075/README.md)
 - [074: Exploring KubeVirt](episodes/074/README.md)
