@@ -3,7 +3,7 @@
 
 Official repository for TGIK!
 
-TGIK is a weekly live video stream that we broadcast live from the VMWare Cloud Native headquarters (usually) in Bellevue, Washington all about Kubernetes.
+TGIK is a weekly live video stream that we broadcast live from the VMware Cloud Native headquarters (usually) in Bellevue, Washington all about Kubernetes.
 
 The [index](playlist.md) contains a list of all episodes.
 
