@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [090: Grokking Kubernetes : kube-proxy](episodes/090/README.md)
 - [089: Tekton Pipelines](episodes/089/README.md)
 - [088: Falco with Kris!](episodes/088/README.md)
 - [087: Octant](episodes/087/README.md)
