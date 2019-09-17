@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    name: rabbitmq
+  name: rabbitmq
+  namespace: sock-shop
+spec:
+  ports:
+  - name: rabbitmq
+    port: 5672
+    protocol: TCP
+    targetPort: 5672
+  - name: exporter
+    port: 9090
+    protocol: TCP
+    targetPort: exporter
+  selector:
+    name: rabbitmq
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

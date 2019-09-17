@@ -1,0 +1,21 @@
+kind: Cluster
+apiVersion: kind.sigs.k8s.io/v1alpha3
+networking:
+  disableDefaultCNI: True
+nodes:
+- role: control-plane
+- role: worker
+- role: worker
+- role: worker
+kubeadmConfigPatches:
+- |
+  apiVersion: kubeadm.k8s.io/v1beta2
+  kind: ClusterConfiguration
+  metadata:
+    name: config
+  apiServer:
+    extraArgs:
+      runtime-config: "apps/v1beta1=false,apps/v1beta2=false,extensions/v1beta1/daemonsets=false,extensions/v1beta1/deployments=false,extensions/v1beta1/replicasets=false,extensions/v1beta1/networkpolicies=false,extensions/v1beta1/podsecuritypolicies=false"
+  networking:
+    serviceSubnet: "10.96.0.1/12"
+    podSubnet: "10.244.0.0/16"
