@@ -1,12 +1,11 @@
 # Episode NN : $title
 
-- Hosted by @jbeda / @kris-nova
+- Hosted by @jbeda / @mauilion
 - Recording date
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 
-<a href="https://www.youtube.com/watch?v=ivZIf34zYuQ
-" target="_blank"><img src="http://img.youtube.com/vi/ivZIf34zYuQ/hqdefault.jpg" width="480" height="360" border="10" /></a>
+<a href="https://www.youtube.com/watch?v=4zkRX9PSJ5k" target="_blank"><img src="https://i.ytimg.com/vi/4zkRX9PSJ5k/maxresdefault.jpg" border="10" /></a>
 
 ## Table of Contents
 
