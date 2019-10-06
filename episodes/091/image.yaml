@@ -1,0 +1,15 @@
+apiVersion: build.pivotal.io/v1alpha1
+kind: Image
+metadata:
+  name: tutorial-image
+spec:
+  tag: gcr.io/tgik8s/kpack-demo
+  serviceAccount: tutorial-service-account
+  builder:
+    name: default-builder
+    kind: ClusterBuilder
+  cacheSize: "1.5Gi"
+  source:
+    git:
+      url: https://github.com/jbeda/sample-java-app
+      revision: master
