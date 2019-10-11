@@ -7,7 +7,7 @@ This will mostly be internal, but sharing broadly as a resource.
 Start by copying the following into the issue for the episode.  Check things off as you do them.
 
 ```markdown
-The process for producing an episode is [here](https://github.com/heptio/tgik/blob/master/documentation/README.md).  All the detail for the steps below is there.
+The process for producing an episode is [here](https://github.com/vmware-tanzu/tgik/blob/master/documentation/README.md).  All the detail for the steps below is there.
 
 Monday or Tuesday:
 * [ ] Pick a topic and create/use an issue in the repo
@@ -43,7 +43,7 @@ After show (ideally right away but can wait until Monday):
 ### Creating the graphic
 
 Find an image to use that is fun, and subtly hints at the topic for the episode.
-For example [episode 38](https://github.com/heptio/tgik/tree/master/episodes/038) was on Kata containers, and the [supporting image was of containers in a shipyard](https://github.com/heptio/tgik/blob/master/episodes/038/038.png).
+For example [episode 38](https://github.com/vmware-tanzu/tgik/tree/master/episodes/038) was on Kata containers, and the [supporting image was of containers in a shipyard](https://github.com/vmware-tanzu/tgik/blob/master/episodes/038/038.png).
 
 General process:
 * Copy a previous episode into a new file and renumber it
@@ -104,7 +104,7 @@ Include the image created above
 
 *Example:*
 
-<p align="center"><img src="https://github.com/heptio/tgik/blob/master/example-tweet.png" width="360"></p>
+<p align="center"><img src="https://github.com/vmware-tanzu/tgik/blob/master/example-tweet.png" width="360"></p>
 
 ### Schedule reminder tweets from the Heptio twitter account
 

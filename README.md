@@ -13,6 +13,6 @@ There is a community driven list of episodes that can be found [here](https://gi
 
 ## Suggest an episode
 
-If you have an idea for TGIK please [open an issue in the TGIK issue tracker](https://github.com/heptio/tgik/issues/new).
+If you have an idea for TGIK please [open an issue in the TGIK issue tracker](https://github.com/vmware-tanzu/tgik/issues/new).
 We pick the episodes as we see fit with what's happening in the community.
 If we select your suggestion we will link back to your original work here!
