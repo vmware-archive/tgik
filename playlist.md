@@ -1,5 +1,6 @@
 # TGIK Playlist Index
-
+- [095: K-rail](episodes/095/README.md)
+- [094: Spiffe and Spire](episodes/094/README.md)
 - [093: Grokking Kubernetes : kube-controller-manager](episodes/093/README.md)
 - [092: Continuing Minecraft Controller](episodes/092/README.md)
 - [091: Building buildpacks with kpack](episodes/091/README.md)

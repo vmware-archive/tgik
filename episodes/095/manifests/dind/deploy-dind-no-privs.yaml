@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: dind
+  name: dind
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: dind
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: dind
+    spec:
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 132
+        fsGroup: 1000
+      containers:
+      - image: quay.io/mauilion/dind:master
+        name: dind
+        resources: {}
+        volumeMounts:
+        - mountPath: /var/run/docker.sock
+          name: docker-socket
+          readOnly: true
+        securityContext:
+          allowPrivilegeEscalation: false
+          capabilities:
+           drop:
+           - all
+      volumes:
+      - hostPath:
+          path: /var/run/docker.sock
+        name: docker-socket
+status: {}
