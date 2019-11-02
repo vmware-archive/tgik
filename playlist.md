@@ -1,4 +1,5 @@
 # TGIK Playlist Index
+- [096: Grokking Kubernetes: kube-scheduler](episodes/096/README.md)
 - [095: K-rail](episodes/095/README.md)
 - [094: Spiffe and Spire](episodes/094/README.md)
 - [093: Grokking Kubernetes : kube-controller-manager](episodes/093/README.md)
