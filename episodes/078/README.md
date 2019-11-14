@@ -27,3 +27,7 @@
 
 ## Reference Links
 - [Kube PodSecurityPolicy Advisor](https://github.com/sysdiglabs/kube-psp-advisor)
+
+## Resources
+
+- [manifests for the episode](https://github.com/octetz/setting-up-psps)
