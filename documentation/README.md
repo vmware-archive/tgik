@@ -17,7 +17,7 @@ Monday or Tuesday:
 * [ ] Add scheduled episode to TGIK playlist on YT
 * [ ] Create short link in rebrandly
 * [ ] Tweet about it from your personal account
-  * [ ] Post tweets on internal #tgik slack channel and cc @castrojo and boschem
+  * [ ] Post tweets on internal #tgik slack channel and cc @castrojo and agrey
   * [ ] Get confirmation from boschem that she's seen the tweet and is scheduling it
 
 Before episode:
