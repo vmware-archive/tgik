@@ -1,4 +1,7 @@
 # TGIK Playlist Index
+- [099: Grokking Kubernetes: kube-apiserver: Part 1/2](episodes/099/README.md)
+- [098: ]
+- [097: ]
 - [096: Grokking Kubernetes: kube-scheduler](episodes/096/README.md)
 - [095: K-rail](episodes/095/README.md)
 - [094: Spiffe and Spire](episodes/094/README.md)
