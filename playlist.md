@@ -1,7 +1,10 @@
 # TGIK Playlist Index
+- [102: Configula and Ko](episodes/102/README.md)
+- [101: Grokking Kubernetes : kube-apiserver](episodes/101/README.md)
+- [100: Our 100th Episode!](episodes/100/README.md)
 - [099: Grokking Kubernetes: kube-apiserver: Part 1/2](episodes/099/README.md)
-- [098: ]
-- [097: ]
+- [098: CUE templating language](episodes/098/README.md)
+- [097: Cluster Autoscaler](episodes/097/README.md)
 - [096: Grokking Kubernetes: kube-scheduler](episodes/096/README.md)
 - [095: K-rail](episodes/095/README.md)
 - [094: Spiffe and Spire](episodes/094/README.md)
