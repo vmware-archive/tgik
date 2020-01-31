@@ -1,0 +1,37 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: org-2
+  labels:
+    name: org-2
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: team-b
+  namespace: org-2
+  labels:
+    run: nginx
+    app: team-b
+spec:
+  containers:
+    - image: joshrosso/nginx-curl:v2
+      imagePullPolicy: IfNotPresent
+      name: nginx
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+ name: team-b
+ namespace: org-2
+spec:
+ ports:
+ - port: 80
+   name: http
+   protocol: TCP
+   targetPort: 80
+ selector:
+   app: team-b

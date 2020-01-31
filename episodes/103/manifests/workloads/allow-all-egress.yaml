@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-all-egress-team-a
+  namespace: org-1
+spec:
+  podSelector:
+    matchLabels:
+      app: team-a
+  policyTypes:
+    - Egress
+  egress:
+    - {}

@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: team-netpol
+  namespace: org-1
+spec:
+  podSelector:
+    matchLabels:
+      app: team-a
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  # allow all inbound traffic on port 80
+  - from:
+    ports:
+    - protocol: TCP
+      port: 80
+  egress:
+  # allow DNS traffic
+  - to:
+    ports:
+    - protocol: UDP
+      port: 53
+  - to:
+    - namespaceSelector:
+        matchLabels:
+          name: org-2
+    - podSelector:
+        matchLabels:
+          app: team-b
+    ports:
+    - protocol: TCP
+      port: 80
