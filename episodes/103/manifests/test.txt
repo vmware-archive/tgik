@@ -1,0 +1,13 @@
+Chain cali-tw-cali112abdb382b (1 references)
+target     prot opt source               destination
+ACCEPT     all  --  anywhere             anywhere             /* cali:P4KrJD6qGp0E53KT */ ctstate RELATED,ESTABLISHED
+DROP       all  --  anywhere             anywhere             /* cali:yjtekWtEeYYG75RG */ ctstate INVALID
+MARK       all  --  anywhere             anywhere             /* cali:-vIPCwH0vF-fBa7W */ MARK and 0xfffeffff
+cali-pri-kns.org-2  all  --  anywhere             anywhere             /* cali:zKbDl8GqeRqPONtg */
+RETURN     all  --  anywhere             anywhere             /* cali:NQ0t5QtFQy_YDeV_ */ /* Return if profile accepted */ mark match 0x10000/0x10000
+cali-pri-ksa.org-2.default  all  --  anywhere             anywhere             /* cali:TgEFGuc_Q-ddOA0R */
+RETURN     all  --  anywhere             anywhere             /* cali:uDLHe-KTUZI4et5l */ /* Return if profile accepted */ mark match 0x10000/0x10000
+DROP       all  --  anywhere             anywhere             /* cali:9yUKF2m_ihinYElU */ /* Drop if no profiles matched */
+
+
+

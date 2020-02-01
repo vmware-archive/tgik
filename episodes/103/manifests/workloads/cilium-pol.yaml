@@ -1,0 +1,19 @@
+apiVersion: cilium.io/v2
+kind: CiliumNetworkPolicy
+metadata:
+  name: http-visibility
+spec:
+  endpointSelector:
+    matchLabels: {}
+  ingress:
+  - fromEntities:
+    - all
+    toPorts:
+    - ports:
+      - port: "80"
+        protocol: TCP
+      rules:
+        http:
+        - {}
+  - fromEntities:
+    - all

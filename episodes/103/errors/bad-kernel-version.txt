@@ -1,0 +1,187 @@
+level=info msg="Skipped reading configuration file" reason="Config File \"ciliumd\" Not Found in \"[/root]\"" subsys=daemon
+level=info msg="  --access-log=''" subsys=daemon
+level=info msg="  --agent-labels=''" subsys=daemon
+level=info msg="  --allow-localhost='auto'" subsys=daemon
+level=info msg="  --annotate-k8s-node='true'" subsys=daemon
+level=info msg="  --auto-create-cilium-node-resource='true'" subsys=daemon
+level=info msg="  --auto-direct-node-routes='false'" subsys=daemon
+level=info msg="  --blacklist-conflicting-routes='true'" subsys=daemon
+level=info msg="  --bpf-compile-debug='false'" subsys=daemon
+level=info msg="  --bpf-ct-global-any-max='262144'" subsys=daemon
+level=info msg="  --bpf-ct-global-tcp-max='524288'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-regular-any='1m0s'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-regular-tcp='6h0m0s'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-regular-tcp-fin='10s'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-regular-tcp-syn='1m0s'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-service-any='1m0s'" subsys=daemon
+level=info msg="  --bpf-ct-timeout-service-tcp='6h0m0s'" subsys=daemon
+level=info msg="  --bpf-nat-global-max='841429'" subsys=daemon
+level=info msg="  --bpf-policy-map-max='16384'" subsys=daemon
+level=info msg="  --bpf-root=''" subsys=daemon
+level=info msg="  --cgroup-root=''" subsys=daemon
+level=info msg="  --cluster-id='0'" subsys=daemon
+level=info msg="  --cluster-name='default'" subsys=daemon
+level=info msg="  --clustermesh-config='/var/lib/cilium/clustermesh/'" subsys=daemon
+level=info msg="  --cmdref=''" subsys=daemon
+level=info msg="  --config=''" subsys=daemon
+level=info msg="  --config-dir='/tmp/cilium/config-map'" subsys=daemon
+level=info msg="  --conntrack-garbage-collector-interval='0'" subsys=daemon
+level=info msg="  --conntrack-gc-interval='0s'" subsys=daemon
+level=info msg="  --container-runtime='none'" subsys=daemon
+level=info msg="  --container-runtime-endpoint='map[]'" subsys=daemon
+level=info msg="  --datapath-mode='veth'" subsys=daemon
+level=info msg="  --debug='false'" subsys=daemon
+level=info msg="  --debug-verbose=''" subsys=daemon
+level=info msg="  --device='undefined'" subsys=daemon
+level=info msg="  --disable-cnp-status-updates='false'" subsys=daemon
+level=info msg="  --disable-conntrack='false'" subsys=daemon
+level=info msg="  --disable-endpoint-crd='false'" subsys=daemon
+level=info msg="  --disable-envoy-version-check='false'" subsys=daemon
+level=info msg="  --disable-ipv4='false'" subsys=daemon
+level=info msg="  --disable-k8s-services='false'" subsys=daemon
+level=info msg="  --docker='unix:///var/run/docker.sock'" subsys=daemon
+level=info msg="  --egress-masquerade-interfaces=''" subsys=daemon
+level=info msg="  --enable-endpoint-health-checking='true'" subsys=daemon
+level=info msg="  --enable-endpoint-routes='false'" subsys=daemon
+level=info msg="  --enable-health-checking='true'" subsys=daemon
+level=info msg="  --enable-host-reachable-services='false'" subsys=daemon
+level=info msg="  --enable-ipsec='false'" subsys=daemon
+level=info msg="  --enable-ipv4='true'" subsys=daemon
+level=info msg="  --enable-ipv6='false'" subsys=daemon
+level=info msg="  --enable-k8s-event-handover='false'" subsys=daemon
+level=info msg="  --enable-l7-proxy='true'" subsys=daemon
+level=info msg="  --enable-legacy-services='false'" subsys=daemon
+level=info msg="  --enable-node-port='true'" subsys=daemon
+level=info msg="  --enable-policy='default'" subsys=daemon
+level=info msg="  --enable-selective-regeneration='true'" subsys=daemon
+level=info msg="  --enable-tracing='false'" subsys=daemon
+level=info msg="  --encrypt-interface=''" subsys=daemon
+level=info msg="  --encrypt-node='false'" subsys=daemon
+level=info msg="  --endpoint-interface-name-prefix='lxc+'" subsys=daemon
+level=info msg="  --endpoint-queue-size='25'" subsys=daemon
+level=info msg="  --envoy-log=''" subsys=daemon
+level=info msg="  --exclude-local-address=''" subsys=daemon
+level=info msg="  --fixed-identity-mapping='map[]'" subsys=daemon
+level=info msg="  --flannel-manage-existing-containers='false'" subsys=daemon
+level=info msg="  --flannel-master-device=''" subsys=daemon
+level=info msg="  --flannel-uninstall-on-exit='false'" subsys=daemon
+level=info msg="  --force-local-policy-eval-at-source='true'" subsys=daemon
+level=info msg="  --host-reachable-services-protos=''" subsys=daemon
+level=info msg="  --http-403-msg=''" subsys=daemon
+level=info msg="  --http-idle-timeout='0'" subsys=daemon
+level=info msg="  --http-max-grpc-timeout='0'" subsys=daemon
+level=info msg="  --http-request-timeout='3600'" subsys=daemon
+level=info msg="  --http-retry-count='3'" subsys=daemon
+level=info msg="  --http-retry-timeout='0'" subsys=daemon
+level=info msg="  --identity-allocation-mode='crd'" subsys=daemon
+level=info msg="  --identity-change-grace-period='5s'" subsys=daemon
+level=info msg="  --install-iptables-rules='true'" subsys=daemon
+level=info msg="  --ip-allocation-timeout='2m0s'" subsys=daemon
+level=info msg="  --ipam=''" subsys=daemon
+level=info msg="  --ipsec-key-file=''" subsys=daemon
+level=info msg="  --ipv4-cluster-cidr-mask-size='8'" subsys=daemon
+level=info msg="  --ipv4-node='auto'" subsys=daemon
+level=info msg="  --ipv4-pod-subnets=''" subsys=daemon
+level=info msg="  --ipv4-range='auto'" subsys=daemon
+level=info msg="  --ipv4-service-loopback-address='169.254.42.1'" subsys=daemon
+level=info msg="  --ipv4-service-range='auto'" subsys=daemon
+level=info msg="  --ipv6-cluster-alloc-cidr='f00d::/64'" subsys=daemon
+level=info msg="  --ipv6-node='auto'" subsys=daemon
+level=info msg="  --ipv6-pod-subnets=''" subsys=daemon
+level=info msg="  --ipv6-range='auto'" subsys=daemon
+level=info msg="  --ipv6-service-range='auto'" subsys=daemon
+level=info msg="  --ipvlan-master-device='undefined'" subsys=daemon
+level=info msg="  --k8s-api-server=''" subsys=daemon
+level=info msg="  --k8s-force-json-patch='false'" subsys=daemon
+level=info msg="  --k8s-kubeconfig-path=''" subsys=daemon
+level=info msg="  --k8s-namespace='kube-system'" subsys=daemon
+level=info msg="  --k8s-require-ipv4-pod-cidr='false'" subsys=daemon
+level=info msg="  --k8s-require-ipv6-pod-cidr='false'" subsys=daemon
+level=info msg="  --k8s-service-cache-size='128'" subsys=daemon
+level=info msg="  --k8s-watcher-endpoint-selector='metadata.name!=kube-scheduler,metadata.name!=kube-controller-manager,metadata.name!=etcd-operator,metadata.name!=gcp-controller-manager'" subsys=daemon
+level=info msg="  --k8s-watcher-queue-size='1024'" subsys=daemon
+level=info msg="  --keep-bpf-templates='false'" subsys=daemon
+level=info msg="  --keep-config='false'" subsys=daemon
+level=info msg="  --kvstore=''" subsys=daemon
+level=info msg="  --kvstore-connectivity-timeout='2m0s'" subsys=daemon
+level=info msg="  --kvstore-lease-ttl='15m0s'" subsys=daemon
+level=info msg="  --kvstore-opt='map[]'" subsys=daemon
+level=info msg="  --kvstore-periodic-sync='5m0s'" subsys=daemon
+level=info msg="  --label-prefix-file=''" subsys=daemon
+level=info msg="  --labels=''" subsys=daemon
+level=info msg="  --lb=''" subsys=daemon
+level=info msg="  --lib-dir='/var/lib/cilium'" subsys=daemon
+level=info msg="  --log-driver=''" subsys=daemon
+level=info msg="  --log-opt='map[]'" subsys=daemon
+level=info msg="  --log-system-load='false'" subsys=daemon
+level=info msg="  --masquerade='true'" subsys=daemon
+level=info msg="  --max-controller-interval='0'" subsys=daemon
+level=info msg="  --metrics=''" subsys=daemon
+level=info msg="  --monitor-aggregation='medium'" subsys=daemon
+level=info msg="  --monitor-queue-size='0'" subsys=daemon
+level=info msg="  --mtu='0'" subsys=daemon
+level=info msg="  --nat46-range='0:0:0:0:0:FFFF::/96'" subsys=daemon
+level=info msg="  --node-port-range=''" subsys=daemon
+level=info msg="  --policy-queue-size='100'" subsys=daemon
+level=info msg="  --policy-trigger-interval='1s'" subsys=daemon
+level=info msg="  --pprof='false'" subsys=daemon
+level=info msg="  --preallocate-bpf-maps='false'" subsys=daemon
+level=info msg="  --prefilter-device='undefined'" subsys=daemon
+level=info msg="  --prefilter-mode='native'" subsys=daemon
+level=info msg="  --prepend-iptables-chains='true'" subsys=daemon
+level=info msg="  --prometheus-serve-addr=''" subsys=daemon
+level=info msg="  --proxy-connect-timeout='1'" subsys=daemon
+level=info msg="  --read-cni-conf=''" subsys=daemon
+level=info msg="  --restore='true'" subsys=daemon
+level=info msg="  --sidecar-http-proxy='false'" subsys=daemon
+level=info msg="  --sidecar-istio-proxy-image='cilium/istio_proxy'" subsys=daemon
+level=info msg="  --single-cluster-route='false'" subsys=daemon
+level=info msg="  --skip-crd-creation='false'" subsys=daemon
+level=info msg="  --socket-path='/var/run/cilium/cilium.sock'" subsys=daemon
+level=info msg="  --sockops-enable='false'" subsys=daemon
+level=info msg="  --state-dir='/var/run/cilium'" subsys=daemon
+level=info msg="  --tofqdns-dns-reject-response-code='refused'" subsys=daemon
+level=info msg="  --tofqdns-enable-poller='false'" subsys=daemon
+level=info msg="  --tofqdns-enable-poller-events='true'" subsys=daemon
+level=info msg="  --tofqdns-endpoint-max-ip-per-hostname='50'" subsys=daemon
+level=info msg="  --tofqdns-min-ttl='0'" subsys=daemon
+level=info msg="  --tofqdns-pre-cache=''" subsys=daemon
+level=info msg="  --tofqdns-proxy-port='0'" subsys=daemon
+level=info msg="  --tofqdns-proxy-response-max-delay='50ms'" subsys=daemon
+level=info msg="  --trace-payloadlen='128'" subsys=daemon
+level=info msg="  --tunnel='vxlan'" subsys=daemon
+level=info msg="  --version='false'" subsys=daemon
+level=info msg="  --write-cni-conf-when-ready=''" subsys=daemon
+level=info msg="     _ _ _" subsys=daemon
+level=info msg=" ___|_| |_|_ _ _____" subsys=daemon
+level=info msg="|  _| | | | | |     |" subsys=daemon
+level=info msg="|___|_|_|_|___|_|_|_|" subsys=daemon
+level=info msg="Cilium 1.6.5 88642ed70 2019-12-16T07:21:37-08:00 go version go1.12.14 linux/amd64" subsys=daemon
+level=info msg="cilium-envoy  version: 9e8d7bb5e02d6038d6cf0ec3f28bf4019f3c7d79/1.12.2/Modified/RELEASE/BoringSSL" subsys=daemon
+level=info msg="clang (7.0.0) and kernel (4.15.0) versions: OK!" subsys=daemon
+level=info msg="linking environment: OK!" subsys=daemon
+level=info msg="bpf_requirements check: OK!" subsys=daemon
+level=warning msg="BPF filesystem is going to be mounted automatically in /run/cilium/bpffs. However, it probably means that Cilium is running inside container and BPFFS is not mounted on the host. for more information, see: https://cilium.link/err-bpf-mount" subsys=bpf
+level=warning msg="================================= WARNING ==========================================" subsys=bpf
+level=warning msg="BPF filesystem is not mounted. This will lead to network disruption when Cilium pods" subsys=bpf
+level=warning msg="are restarted. Ensure that the BPF filesystem is mounted in the host." subsys=bpf
+level=warning msg="https://docs.cilium.io/en/stable/kubernetes/requirements/#mounted-bpf-filesystem" subsys=bpf
+level=warning msg="====================================================================================" subsys=bpf
+level=info msg="Mounting BPF filesystem at /run/cilium/bpffs" subsys=bpf
+level=info msg="Detected mounted BPF filesystem at /run/cilium/bpffs" subsys=bpf
+level=info msg="Valid label prefix configuration:" subsys=labels-filter
+level=info msg=" - :io.kubernetes.pod.namespace" subsys=labels-filter
+level=info msg=" - :io.cilium.k8s.namespace.labels" subsys=labels-filter
+level=info msg=" - :app.kubernetes.io" subsys=labels-filter
+level=info msg=" - !:io.kubernetes" subsys=labels-filter
+level=info msg=" - !:kubernetes.io" subsys=labels-filter
+level=info msg=" - !:.*beta.kubernetes.io" subsys=labels-filter
+level=info msg=" - !:k8s.io" subsys=labels-filter
+level=info msg=" - !:pod-template-generation" subsys=labels-filter
+level=info msg=" - !:pod-template-hash" subsys=labels-filter
+level=info msg=" - !:controller-revision-hash" subsys=labels-filter
+level=info msg=" - !:annotation.*" subsys=labels-filter
+level=info msg=" - !:etcd_node" subsys=labels-filter
+level=info msg="Auto-enabling host reachable services for UDP and TCP as required by BPF NodePort." subsys=daemon
+level=info msg="Using auto-derived device for BPF node port" interface=ens160 subsys=daemon
+level=fatal msg="BPF host reachable services for TCP needs kernel 4.17.0 or newer." subsys=daemon
