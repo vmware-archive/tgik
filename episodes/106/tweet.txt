@@ -1,0 +1,3 @@
+Flagger by @Weaveworks promises to provide advanced delivery strategies for applications atop Kubernetes. Sounds like an excellent TGIK topic, don't you think!? Join me this week for #TGIK and we'll install, configure, and test Flagger as a mechanism for deploying applications. tgik.io/106
+
+Friday 1PM PST.
