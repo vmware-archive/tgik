@@ -1,5 +1,8 @@
 # TGIK Playlist Index
-- [104: Kyverno ](episodes/104/README.md)
+
+- [106: Flagger - Advanced Application Rollout](episodes/106/README.md)
+- [105: Dapr - Distributed Application Runtime](episodes/105/README.md)
+- [104: Kyverno](episodes/104/README.md)
 - [103: Cilium: A Second Look](episodes/103/README.md)
 - [102: Configula and Ko](episodes/102/README.md)
 - [101: Grokking Kubernetes : kube-apiserver](episodes/101/README.md)
