@@ -1,0 +1,310 @@
+---
+# Source: fluent-bit/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  labels:
+    app: fluent-bit
+    chart: fluent-bit-2.8.11
+    heritage: Helm
+    release: logging
+  name: logging-fluent-bit
+---
+# Source: fluent-bit/templates/secret.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: "logging-fluent-bit-es-tls-secret"
+  labels:
+    app: fluent-bit
+    chart: fluent-bit-2.8.11
+    heritage: Helm
+    release: logging
+type: Opaque
+data:
+  es-tls-ca.crt: ""
+---
+# Source: fluent-bit/templates/config.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logging-fluent-bit-config
+  labels:
+    app: fluent-bit
+    chart: fluent-bit-2.8.11
+    heritage: Helm
+    release: logging
+data:
+  fluent-bit-service.conf: |
+    [SERVICE]
+        Flush        1
+        Daemon       Off
+        Log_Level    info
+        Parsers_File parsers.conf
+
+  fluent-bit-input.conf: |
+    [INPUT]
+        Name             tail
+        Path             /var/log/containers/*.log
+        Parser           cri
+        Tag              kube.*
+        Refresh_Interval 5
+        Mem_Buf_Limit    5MB
+        Skip_Long_Lines  On
+    [INPUT]
+        Name            systemd
+        Tag             host.*
+        Systemd_Filter  _SYSTEMD_UNIT=containerd.service
+        Systemd_Filter  _SYSTEMD_UNIT=kubelet.service
+        Max_Entries     1000
+        Read_From_Tail  true
+        Strip_Underscores  false
+        
+    [INPUT]
+        Name              tail
+        Path              /var/log/kube-apiserver-audit.log
+        Parser            docker
+        DB                /var/log/audit.db
+        Tag               audit.*
+        Refresh_Interval  5
+        Mem_Buf_Limit     35MB
+        Buffer_Chunk_Size 2MB
+        Buffer_Max_Size   10MB
+        Skip_Long_Lines   true
+        Key               kubernetes-audit
+        
+
+  fluent-bit-filter.conf: |
+    [FILTER]
+        Name                kubernetes
+        Match               kube.*
+        Kube_Tag_Prefix     kube.var.log.containers.
+        Kube_URL            https://kubernetes.default.svc:443
+        Kube_CA_File        /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+        Kube_Token_File     /var/run/secrets/kubernetes.io/serviceaccount/token
+        Merge_Log           On
+        K8S-Logging.Parser  On
+        K8S-Logging.Exclude On
+        
+
+  fluent-bit-output.conf: |
+
+    [OUTPUT]
+        Name  es
+        Match *
+        Host  elasticsearch-logging.kube-system.svc.cluster.local
+        Port  9200
+        Logstash_Format On
+        Retry_Limit False
+        Type  flb_type
+        Time_Key @timestamp
+        Replace_Dots On
+        Logstash_Prefix kubernetes_cluster
+
+
+
+        
+
+
+  fluent-bit.conf: |
+    @INCLUDE fluent-bit-service.conf
+    @INCLUDE fluent-bit-input.conf
+    @INCLUDE fluent-bit-filter.conf
+    @INCLUDE fluent-bit-output.conf
+
+  parsers.conf: |
+---
+# Source: fluent-bit/templates/tests/test-configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: logging-fluent-bit-test
+  labels:
+    app: logging-fluent-bit
+    chart: "fluent-bit-2.8.11"
+    heritage: "Helm"
+    release: "logging"
+data:
+  run.sh: |-
+    @test "Test Elasticssearch Indices" {
+      url="http://elasticsearch-logging.kube-system.svc.cluster.local:9200/_cat/indices?format=json"
+      body=$(curl $url)
+
+      result=$(echo $body | jq -cr '.[] | select(.index | contains("kubernetes_cluster"))')
+      [ "$result" != "" ]
+
+      result=$(echo $body | jq -cr '.[] | select((.index | contains("kubernetes_cluster")) and (.health != "green"))')
+      [ "$result" == "" ]
+    }
+
+  fluentd.conf: |-
+    <source>
+      @type forward
+      bind 0.0.0.0
+      port 24284
+      shared_key 
+    </source>
+
+    <match **>
+      @type stdout
+    </match>
+---
+# Source: fluent-bit/templates/cluster-role.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app: fluent-bit
+    chart: fluent-bit-2.8.11
+    heritage: Helm
+    release: logging
+  name: logging-fluent-bit
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - pods
+    verbs:
+      - get
+---
+# Source: fluent-bit/templates/cluster-rolebinding.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  labels:
+    app: fluent-bit
+    chart: fluent-bit-2.8.11
+    heritage: Helm
+    release: logging
+  name: logging-fluent-bit
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: logging-fluent-bit
+subjects:
+  - kind: ServiceAccount
+    name: logging-fluent-bit
+    namespace: default
+---
+# Source: fluent-bit/templates/daemonset.yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: logging-fluent-bit
+  labels:
+    app: fluent-bit
+    chart: fluent-bit-2.8.11
+    heritage: Helm
+    release: logging
+spec:
+  selector:
+    matchLabels:
+      app: fluent-bit
+      release: logging
+  updateStrategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: fluent-bit
+        release: logging
+      annotations:
+        checksum/config: 702bd4d4f1c1399f4a924b2c38f5eca75fd790261ee90ca29e565f6e02cb1421
+    spec:
+      hostNetwork: false
+      dnsPolicy: ClusterFirst
+      serviceAccountName: logging-fluent-bit
+      containers:
+      - name: fluent-bit
+        image: "fluent/fluent-bit:1.3.9"
+        imagePullPolicy: "Always"
+        env:
+          []
+        resources:
+          {}
+        volumeMounts:
+        - name: varlog
+          mountPath: /var/log
+        - name: varlibdockercontainers
+          mountPath: /var/lib/docker/containers
+          readOnly: true
+        - name: etcmachineid
+          mountPath: /etc/machine-id
+          readOnly: true
+        - name: config
+          mountPath: /fluent-bit/etc/fluent-bit.conf
+          subPath: fluent-bit.conf
+        - name: config
+          mountPath: /fluent-bit/etc/fluent-bit-service.conf
+          subPath: fluent-bit-service.conf
+        - name: config
+          mountPath: /fluent-bit/etc/fluent-bit-input.conf
+          subPath: fluent-bit-input.conf
+        - name: config
+          mountPath: /fluent-bit/etc/fluent-bit-filter.conf
+          subPath: fluent-bit-filter.conf
+        - name: config
+          mountPath: /fluent-bit/etc/fluent-bit-output.conf
+          subPath: fluent-bit-output.conf
+
+      terminationGracePeriodSeconds: 10
+      tolerations:
+         - operator: Exists 
+      volumes:
+      - name: varlog
+        hostPath:
+          path: /var/log
+      - name: varlibdockercontainers
+        hostPath:
+          path: /var/lib/docker/containers
+      - name: etcmachineid
+        hostPath:
+          path: /etc/machine-id
+          type: File
+      - name: config
+        configMap:
+          name: logging-fluent-bit-config
+---
+# Source: fluent-bit/templates/tests/test.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: logging-fluent-bit-test
+  labels:
+    app: logging-fluent-bit
+    chart: "fluent-bit-2.8.11"
+    heritage: "Helm"
+    release: "logging"
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  initContainers:
+    - name: test-framework
+      image: "dduportal/bats:0.4.0"
+      command:
+      - "bash"
+      - "-c"
+      - |
+        set -ex
+        # copy bats to tools dir
+        cp -R /usr/local/libexec/ /tools/bats/
+      volumeMounts:
+      - mountPath: /tools
+        name: tools
+  containers:
+    - name: logging-test
+      image: "dwdraju/alpine-curl-jq"
+      command: ["/tools/bats/bats", "-t", "/tests/run.sh"]
+      volumeMounts:
+        - mountPath: /tests
+          name: tests
+          readOnly: true
+        - mountPath: /tools
+          name: tools
+  volumes:
+  - name: tests
+    configMap:
+      name: logging-fluent-bit-test
+  - name: tools
+    emptyDir: {}
+  restartPolicy: Never

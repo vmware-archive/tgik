@@ -1,0 +1,5 @@
+grep -ir image: *.yaml | awk -F: {print :} | xargs -I {} kind load docker-image {}
+
+ kubectl get --raw /api/v1/namespaces/kube-system/services/elasticsearch-logging/proxy/_cat/indices
+helm template logging   . --set=input.systemd.enabled=true --set=input.systemd.filters.systemdUnit[0]=containerd.service --set=input.systemd.filters.systemdUnit[1]=kubelet.service --set=input.tail.parser=cri  --set=backend.type=es --set=backend.es.host=elasticsearch-logging.kube-system.svc.cluster.local --set=audit.enable=true --set=image.fluent_bit.tag=1.3.9 | kubectl apply -n logging -f-
+kind get nodes | xargs -n1 -I {} docker exec {} bash -c "mkdir -p /var/log/journal && systemd-tmpfiles --create --prefix /var/log/journal && killall5 10  systemd-journald
