@@ -1,0 +1,33 @@
+kind: Cluster
+apiVersion: kind.sigs.k8s.io/v1alpha3
+nodes:
+- role: control-plane
+  extraMounts:
+  - containerPath: /etc/kubernetes/policies/adv-audit.yaml
+    hostPath: /tmp/adv-audit.yaml
+    readOnly: true
+- role: worker
+- role: worker
+- role: worker
+kubeadmConfigPatches:
+- |
+  apiVersion: kubeadm.k8s.io/v1beta2
+  kind: ClusterConfiguration
+  metadata:
+    name: config
+  apiServer:
+    extraArgs:
+      audit-policy-file: "/etc/kubernetes/policies/adv-audit.yaml"
+      audit-log-path: "/var/log/kube-apiserver-audit.log"
+      audit-log-format: "json"
+    extraVolumes:
+    - name: "audit-policies"
+      hostPath: "/etc/kubernetes/policies"
+      mountPath: "/etc/kubernetes/policies"
+      readOnly: true
+      pathType: DirectoryOrCreate
+    - name: "audit-logs"
+      hostPath: "/var/log"
+      mountPath: "/var/log"
+      readOnly: false
+      pathType: DirectoryOrCreate
