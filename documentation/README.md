@@ -106,13 +106,5 @@ Include the image created above
 
 <p align="center"><img src="https://github.com/vmware-tanzu/tgik/blob/master/example-tweet.png" width="360"></p>
 
-### Schedule reminder tweets from the Heptio twitter account
-
-For now, use Tweetdeck to schedule tweets.
-Create 2 tweets using similar verbiage as the tweet created above but in 3rd person.
-Do these for Wed/Thurs and Friday.
-Schedule them for around 9-11am Pacific.
-Use the j.hept.io link and attach the image.
-
 
 
