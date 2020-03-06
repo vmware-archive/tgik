@@ -1,0 +1,47 @@
+---
+apiVersion: cluster.x-k8s.io/v1alpha2
+kind: Machine
+metadata:
+  name: cp1
+  namespace: c1
+  labels:
+    cluster.x-k8s.io/control-plane: "true"
+    cluster.x-k8s.io/cluster-name: "c1"
+spec:
+  version: v1.15.3
+  bootstrap:
+    configRef:
+      apiVersion: bootstrap.cluster.x-k8s.io/v1alpha2
+      kind: KubeadmConfig
+      name: cp1
+  infrastructureRef:
+    kind: DockerMachine
+    apiVersion: infrastructure.cluster.x-k8s.io/v1alpha2
+    name: cp1
+---
+apiVersion: infrastructure.cluster.x-k8s.io/v1alpha2
+kind: DockerMachine
+metadata:
+  name: cp1
+  namespace: c1
+---
+apiVersion: bootstrap.cluster.x-k8s.io/v1alpha2
+kind: KubeadmConfig
+metadata:
+  name: cp1
+  namespace: c1
+spec:
+  initConfiguration:
+    nodeRegistration:
+      kubeletExtraArgs:
+        # Default thresholds are higher to provide a buffer before resources
+        # are completely depleted, at the cost of requiring more total
+        # resources. These low thresholds allow running with fewer resources.
+        # Appropriate for testing or development only.
+        eviction-hard: nodefs.available<0%,nodefs.inodesFree<0%,imagefs.available<0%
+  clusterConfiguration:
+    controllerManager:
+      extraArgs:
+        # Enables dynamic storage provisioning without a cloud provider.
+        # Appropriate for testing or development only.
+        enable-hostpath-provisioner: "true"
