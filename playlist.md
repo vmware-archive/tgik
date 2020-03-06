@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [108: cluster-api for Docker](episodes/108/README.md)
 - [107: pod logging and fluentbit](episodes/107/README.md)
 - [106: Flagger - Advanced Application Rollout](episodes/106/README.md)
 - [105: Dapr - Distributed Application Runtime](episodes/105/README.md)

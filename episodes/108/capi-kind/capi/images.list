@@ -1,0 +1,5 @@
+gcr.io/kubebuilder/kube-rbac-proxy:v0.4.0
+us.gcr.io/k8s-artifacts-prod/capi-kubeadm/cluster-api-kubeadm-controller:v0.1.5
+gcr.io/kubebuilder/kube-rbac-proxy:v0.4.0
+us.gcr.io/k8s-artifacts-prod/capi-docker/capd-manager:v0.2.1
+us.gcr.io/k8s-artifacts-prod/cluster-api/cluster-api-controller:v0.2.9
