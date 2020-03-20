@@ -1,0 +1,11 @@
+docker.io/mauilion/capd-manager-amd64:dev
+gcr.io/kubebuilder/kube-rbac-proxy:v0.4.0
+gcr.io/kubebuilder/kube-rbac-proxy:v0.4.1
+quay.io/jetstack/cert-manager-cainjector:v0.11.0
+quay.io/jetstack/cert-manager-controller:v0.11.0
+quay.io/jetstack/cert-manager-webhook:v0.11.0
+rancher/local-path-provisioner:v0.0.11
+us.gcr.io/k8s-artifacts-prod/cluster-api/cluster-api-controller:v0.3.2
+us.gcr.io/k8s-artifacts-prod/cluster-api/kubeadm-bootstrap-controller:v0.3.2
+us.gcr.io/k8s-artifacts-prod/cluster-api/kubeadm-control-plane-controller:v0.3.2
+mauilion/capd-manager-amd64:dev

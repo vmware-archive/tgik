@@ -1,0 +1,10 @@
+providers:
+  - name: docker
+    url: /home/dcooley/git/tgik/episodes/110/capd-v3/infrastructure-docker/v0.3.2/infrastructure-components.yaml
+    type: InfrastructureProvider
+
+CF_NAME: FOO
+POD_CIDR: 10.244.0.0/16
+SERVICE_CIDR: 10.96.0.0/16
+KUBERNETES_VERSION: v1.17.0
+
