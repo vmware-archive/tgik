@@ -1,0 +1,42 @@
+---
+apiVersion: infrastructure.cluster.x-k8s.io/v1alpha3
+kind: DockerMachine
+metadata:
+  name: cp2
+  namespace: basens
+---
+apiVersion: cluster.x-k8s.io/v1alpha3
+kind: Machine
+metadata:
+  labels:
+    cluster.x-k8s.io/cluster-name: base
+    cluster.x-k8s.io/control-plane: "true"
+  name: cp2
+  namespace: basens
+spec:
+  bootstrap:
+    configRef:
+      apiVersion: bootstrap.cluster.x-k8s.io/v1alpha3
+      kind: KubeadmConfig
+      name: cp2-config
+  clusterName: base
+  infrastructureRef:
+    apiVersion: infrastructure.cluster.x-k8s.io/v1alpha3
+    kind: DockerMachine
+    name: cp2
+  version: v1.16.4
+---
+apiVersion: bootstrap.cluster.x-k8s.io/v1alpha3
+kind: KubeadmConfig
+metadata:
+  name: cp2-config
+  namespace: basens
+spec:
+  clusterConfiguration:
+    controllerManager:
+      extraArgs:
+        enable-hostpath-provisioner: "true"
+  initConfiguration:
+    nodeRegistration:
+      kubeletExtraArgs:
+        eviction-hard: nodefs.available<0%,nodefs.inodesFree<0%,imagefs.available<0%

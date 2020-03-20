@@ -1,0 +1,61 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../base/
+namespace: c1
+patches:
+- target:
+    kind: Namespace
+    name: basens
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: c1
+- target:
+    kind: Cluster
+    name: base
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: c1
+    - op: replace
+      path: /spec/infrastructureRef/name
+      value: c1
+- target:
+    kind: Machine
+    name: .*
+  patch: |-
+    apiVersion: cluster.x-k8s.io/v1alpha3
+    kind: Machine
+    metadata:
+      name: .*
+      labels:
+        cluster.x-k8s.io/cluster-name: c1
+    spec:
+      clusterName: c1
+- target:
+    kind: MachineDeployment
+    name: worker
+  patch: |-
+    apiVersion: cluster.x-k8s.io/v1alpha3
+    kind: MachineDeployment
+    metadata:
+      name: .*
+      labels:
+        cluster.x-k8s.io/cluster-name: c1
+    spec:
+      selector:
+        matchLabels:
+          cluster.x-k8s.io/cluster-name: c1
+      clusterName: c1
+      template:
+        metadata:
+          labels:
+            cluster.x-k8s.io/cluster-name: c1
+- target:
+    kind: DockerCluster
+    name: base
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: c1
