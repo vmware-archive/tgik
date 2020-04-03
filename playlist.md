@@ -1,5 +1,7 @@
 # TGIK Playlist Index
 
+- [112: Deep dive into admission controllers](episodes/112/README.md)
+- [111: CloudEvents and Argo Events](episodes/111/README.md)
 - [110: Cluster-api version 1 Alpha 3](episodes/110/README.md)
 - [109: Kubernetes Dev Setup](episodes/109/README.md)
 - [108: Cluster-API for Docker](episodes/108/README.md)
