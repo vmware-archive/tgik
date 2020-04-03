@@ -1,7 +1,9 @@
 # TGIK Playlist Index
 
-- [108: cluster-api for Docker](episodes/108/README.md)
-- [107: pod logging and fluentbit](episodes/107/README.md)
+- [110: Cluster-api version 1 Alpha 3](episodes/110/README.md)
+- [109: Kubernetes Dev Setup](episodes/109/README.md)
+- [108: Cluster-API for Docker](episodes/108/README.md)
+- [107: Pod logging and fluentbit](episodes/107/README.md)
 - [106: Flagger - Advanced Application Rollout](episodes/106/README.md)
 - [105: Dapr - Distributed Application Runtime](episodes/105/README.md)
 - [104: Kyverno](episodes/104/README.md)
