@@ -1,0 +1,60 @@
+# Define the system:public-info-viewer role if needed (autocreated in v1.14+)
+# From https://github.com/kubernetes/kubernetes/blob/release-1.16/plugin/pkg/auth/authorizer/rbac/bootstrappolicy/testdata/cluster-roles.yaml#L1177-L1194
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  annotations:
+    rbac.authorization.kubernetes.io/autoupdate: "true"
+  labels:
+    kubernetes.io/bootstrapping: rbac-defaults
+  name: system:public-info-viewer
+rules:
+- nonResourceURLs:
+  - /healthz
+  - /livez
+  - /readyz
+  - /version
+  - /version/
+  verbs:
+  - get
+---
+# Define the system:public-info-viewer rolebinding if needed (autocreated in v1.14+)
+# From https://github.com/kubernetes/kubernetes/blob/release-1.16/plugin/pkg/auth/authorizer/rbac/bootstrappolicy/testdata/cluster-role-bindings.yaml#L135-L154
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  annotations:
+    rbac.authorization.kubernetes.io/autoupdate: "true"
+  labels:
+    kubernetes.io/bootstrapping: rbac-defaults
+  name: system:public-info-viewer
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: system:public-info-viewer
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: system:authenticated
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: system:unauthenticated
+---
+# Limit system:basic-user to authenticated users (matches default binding in v1.14+, with autoupdate changed to "false")
+# From https://github.com/kubernetes/kubernetes/blob/release-1.16/plugin/pkg/auth/authorizer/rbac/bootstrappolicy/testdata/cluster-role-bindings.yaml#L20-L36
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  annotations:
+    rbac.authorization.kubernetes.io/autoupdate: "false"
+  labels:
+    kubernetes.io/bootstrapping: rbac-defaults
+  name: system:basic-user
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: system:basic-user
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: system:authenticated
