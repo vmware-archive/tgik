@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      run: nginx
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: nginx
+    spec:
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: zone
+          whenUnsatisfiable: DoNotSchedule
+          labelSelector:
+            matchLabels:
+              foo: bar
+      containers:
+      - image: nginx
+        name: nginx
+        resources: {}
+status: {}
