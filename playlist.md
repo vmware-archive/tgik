@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [115: Deploying an App Part 1](episodes/115/README.md)
 - [114: Grokking Kubernetes: Scheduler Part 2](episodes/114/README.md)
 - [113: Kubernetes Secrets: Take 3](episodes/113/README.md)
 - [112: Deep dive into admission controllers](episodes/112/README.md)
