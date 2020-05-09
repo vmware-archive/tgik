@@ -1,0 +1,29 @@
+kind: Cluster
+apiVersion: kind.sigs.k8s.io/v1alpha3
+kubeadmConfigPatches:
+- |
+  apiVersion: kubeadm.k8s.io/v1beta2
+  kind: ClusterConfiguration
+  etcd:
+    external:
+      endpoints:
+      - https://member0:2379
+      - https://member1:2379
+      - https://member2:2379
+      caFile: /etc/kubernetes/pki/etcd/ca.crt
+      certFile: /etc/kubernetes/pki/etcd/apiserver-etcd-client.crt
+      keyFile: /etc/kubernetes/pki/etcd/apiserver-etcd-client.key  
+
+nodes:
+- role: control-plane
+  extraMounts:
+  - containerPath: /etc/kubernetes/pki/etcd/
+    hostPath: /tmp/etcd-lab/shared
+- role: control-plane
+  extraMounts: 
+  - containerPath: /etc/kubernetes/pki/etcd/
+    hostPath: /tmp/etcd-lab/shared
+- role: control-plane
+  extraMounts: 
+  - containerPath: /etc/kubernetes/pki/etcd/
+    hostPath: /tmp/etcd-lab/shared

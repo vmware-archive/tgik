@@ -1,0 +1,15 @@
+---
+- name: common
+  hosts: all
+  roles:
+    - common
+
+- name: haproxy
+  hosts: lb
+  roles:
+    - haproxy
+
+- name: etcd
+  hosts: etcd
+  roles:
+    - etcd

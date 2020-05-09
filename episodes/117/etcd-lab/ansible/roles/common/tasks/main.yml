@@ -1,0 +1,4 @@
+---
+- name: gather service facts
+  service_facts:
+  tags: always
