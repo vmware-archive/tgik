@@ -1,5 +1,7 @@
 # TGIK Playlist Index
 
+- [117: Grokking Kubernetes: ETCD ](episodes/117/README.md)
+- [116: Deploying an App Part 2](episodes/116/README.md)
 - [115: Deploying an App Part 1](episodes/115/README.md)
 - [114: Grokking Kubernetes: Scheduler Part 2](episodes/114/README.md)
 - [113: Kubernetes Secrets: Take 3](episodes/113/README.md)

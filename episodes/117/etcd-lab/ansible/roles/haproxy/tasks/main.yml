@@ -1,0 +1,32 @@
+---
+- name: fix gai.conf
+  template:
+    src:    lb/gai.conf.j2
+    dest:   /etc/gai.conf
+    owner:  root
+    group:  root
+    mode:   0644
+  tags: haproxy
+
+- name: install haproxy
+  apt:
+    update_cache: yes
+    name: haproxy
+    state: latest
+  tags: haproxy
+
+- name: configure haproxy
+  template:
+    src:    lb/haproxy.cfg.j2
+    dest:   /etc/haproxy/haproxy.cfg
+    owner:  root
+    group:  root
+    mode:   0644
+  tags: haproxy
+
+- name: Start haproxy
+  service:
+    name: haproxy
+    state: started
+  tags: haproxy
+

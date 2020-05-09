@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+tar -xvzf /shared/ca.tgz 
+/shared/etcdadm join https://etcd-lb0:2379 --server-cert-extra-sans etcd-lb0

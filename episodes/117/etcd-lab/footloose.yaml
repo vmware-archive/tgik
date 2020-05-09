@@ -1,0 +1,55 @@
+cluster:
+  name: etcd
+  privateKey: cluster-key
+machines:
+- count: 3
+  spec:
+    backend: docker
+    image: quay.io/footloose/ubuntu18.04
+    name: member%d
+    networks:
+    - kind
+    volumes:
+    - name: cache
+      type: bind
+      source: /tmp/etcd-lab/etcd-cache
+      destination: /var/cache/etcdadm/etcd
+      ReadOnly: false
+    - name: shared
+      type: bind
+      source: /tmp/etcd-lab/shared
+      destination: /shared
+      ReadOnly: false
+    portMappings:
+    - containerPort: 22
+- count: 1
+  spec:
+    backend: docker
+    name: lb%d
+    image: quay.io/footloose/ubuntu18.04
+    networks:
+    - kind
+    portMappings:
+    - containerPort: 22
+- count: 1
+  spec:
+    backend: docker
+    name: proxy%d
+    image: quay.io/footloose/ubuntu18.04
+    networks:
+    - kind
+    volumes:
+    - name: cache
+      type: bind
+      source: /tmp/etcd-lab/etcd-cache
+      destination: /var/cache/etcdadm/etcd
+      ReadOnly: false
+    - name: shared
+      type: bind
+      source: /tmp/etcd-lab/shared
+      destination: /shared
+      ReadOnly: false
+    portMappings:
+    - containerPort: 22
+
+

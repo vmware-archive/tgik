@@ -1,0 +1,11 @@
+[all]
+etcd-member0 ansible_connection=docker
+etcd-member1 ansible_connection=docker
+etcd-member2 ansible_connection=docker
+etcd-lb0
+[lb]
+etcd-lb0 ansible_connection=docker
+[etcd]
+etcd-member0 ansible_connection=docker
+etcd-member1 ansible_connection=docker
+etcd-member2 ansible_connection=docker

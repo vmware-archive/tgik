@@ -1,0 +1,79 @@
+---
+- name: place etcdadm in /shared
+  copy:
+    src: files/etcdadm
+    dest: /shared/etcdadm
+    owner: root
+    group: root
+    mode: '0755'
+  delegate_to: "{{ groups['etcd'][0] }}"
+  run_once: yes
+  tags: etcd
+
+- name: populate join.sh and init.sh
+  template:
+    src: etcd/{{item}}.j2
+    dest: /shared/{{item}}
+    owner: root
+    group: root
+    mode: '0755'
+  with_items:
+    - join.sh
+    - init.sh
+  delegate_to: "{{ groups['etcd'][0] }}"
+  run_once: yes
+  tags: etcd
+
+- name: etcd init member0
+  shell: "/shared/init.sh"
+  delegate_to: "{{ groups['etcd'][0] }}"
+  run_once: yes
+  when: "'etcd.service' not in services"
+  tags: etcd
+
+- name: copy apiserver certs to /shared
+  copy:
+    src: /etc/etcd/pki/{{item}}
+    dest: /shared/{{item}}
+    remote_src: yes
+    mode: preserve
+  with_items:
+    - ca.crt
+    - ca.key
+    - apiserver-etcd-client.crt
+    - apiserver-etcd-client.key
+  delegate_to: "{{ groups['etcd'][0] }}"
+  run_once: yes
+  tags: etcd
+
+- name: create dir /etc/etcd/pki if not exist
+  file:
+    path: /etc/etcd/pki
+    state: directory
+    mode: '0755'
+    owner: root
+    group: root
+  tags: ['etcd', 'join']
+
+- name: populate ca.crts on other members
+  copy:
+    src: /shared/{{item}}
+    dest: /etc/etcd/pki/{{item}}
+    remote_src: yes
+    force: yes
+  with_items:
+    - ca.crt
+    - ca.key
+  when: "inventory_hostname != groups['etcd']|first"
+  tags: ['etcd', 'join']
+
+- name: etcd join the other members
+  shell: "/shared/join.sh"
+  when: "inventory_hostname != groups['etcd']|first and 'etcd.service' not in services"
+  tags: ['etcd', 'join']
+
+- name: etcdadm reset
+  shell: "/shared/etcdadm reset"
+  when: "'etcd.service' in services"
+  tags: ['never', 'reset']
+
