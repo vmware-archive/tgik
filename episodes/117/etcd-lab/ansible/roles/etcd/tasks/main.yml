@@ -36,7 +36,9 @@
     src: /etc/etcd/pki/{{item}}
     dest: /shared/{{item}}
     remote_src: yes
-    mode: preserve
+    owner: root
+    group: root
+    mode: '0755'
   with_items:
     - ca.crt
     - ca.key
