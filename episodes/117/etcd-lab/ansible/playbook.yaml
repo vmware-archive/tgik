@@ -1,15 +1,21 @@
 ---
 - name: common
   hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
   roles:
     - common
 
 - name: haproxy
   hosts: lb
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
   roles:
     - haproxy
 
 - name: etcd
   hosts: etcd
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
   roles:
     - etcd
