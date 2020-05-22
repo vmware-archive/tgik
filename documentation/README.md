@@ -178,8 +178,12 @@ tgik.io/live -> tgik.io/tgik001
 ```
 
 **Update Hackmd Pointer**
+
+Make sure to use the `?view` parameter so that folks come to the presented notes
+by default
+
 ```
-tgik.io/notes -> https://hackmd.io/pAPM_qtlTIaCpYZQNF8Y6A
+tgik.io/notes -> https://hackmd.io/pAPM_qtlTIaCpYZQNF8Y6A?view
 ```
 
 ## Tweeting the Episode
