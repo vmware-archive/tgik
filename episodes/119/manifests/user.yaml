@@ -40,10 +40,15 @@ spec:
         violation[{"msg": msg}] {
           rule := input.parameters.runAsUser.rule
           input_containers[input_container]
-          input_container.securityContext.runAsNonRoot == true
           not run_as_user(input_container.securityContext, input.review)
           rule != "RunAsAny"
           msg := sprintf("Container %v is attempting to run without a required securityContext/runAsUser", [input_container.name])
+        }
+
+        violation[{"msg": msg}] {
+          input_containers[input_container]
+          not has_key(input_container, "securityContext")
+          msg := sprintf("Container %v doesn't have a securityContext", [input_container.name])
         }
 
         accept_users("RunAsAny", provided_user) {true}
@@ -58,6 +63,10 @@ spec:
 
         input_containers[c] {
           c := input.review.object.spec.containers[_]
+        }
+
+        has_key(x, k) {
+          _ = x[k]
         }
 
         input_containers[c] {
