@@ -1,5 +1,8 @@
 # TGIK Playlist Index
 
+- [120: CSI and Secrets! ](episodes/120/README.md)
+- [119: Gatekeeper and OPA ](episodes/119/README.md)
+- [118: kubectl plugins and krew ](episodes/118/README.md)
 - [117: Grokking Kubernetes: ETCD ](episodes/117/README.md)
 - [116: Deploying an App Part 2](episodes/116/README.md)
 - [115: Deploying an App Part 1](episodes/115/README.md)
