@@ -1,5 +1,7 @@
 # TGIK Playlist Index
 
+- [122: Grokking Kubernetes: DNS Part 1](episodes/122/README.md)
+- [121: Starboard ](episodes/121/README.md)
 - [120: CSI and Secrets! ](episodes/120/README.md)
 - [119: Gatekeeper and OPA ](episodes/119/README.md)
 - [118: kubectl plugins and krew ](episodes/118/README.md)
