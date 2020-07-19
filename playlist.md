@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [124: Delcarative operators with KUDO](episodes/124/README.md)
 - [122: Grokking Kubernetes: DNS Part 1](episodes/122/README.md)
 - [121: Starboard ](episodes/121/README.md)
 - [120: CSI and Secrets! ](episodes/120/README.md)
