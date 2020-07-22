@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [125: OpenTelemetry](episodes/125/README.md)
 - [124: Delcarative operators with KUDO](episodes/124/README.md)
 - [122: Grokking Kubernetes: DNS Part 1](episodes/122/README.md)
 - [121: Starboard ](episodes/121/README.md)
