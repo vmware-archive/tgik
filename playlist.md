@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [126: Vertical Pod Autoscaling](episodes/126/README.md)
 - [125: OpenTelemetry](episodes/125/README.md)
 - [124: Delcarative operators with KUDO](episodes/124/README.md)
 - [122: Grokking Kubernetes: DNS Part 1](episodes/122/README.md)
