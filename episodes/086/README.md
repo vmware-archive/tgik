@@ -1,7 +1,7 @@
 # Episode 086 : Grokking Kubernetes : kubelet
 
 - Hosted by @mauilion
-- 08/09/2019
+- Recording date: 2019-08-09
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

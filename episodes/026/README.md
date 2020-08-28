@@ -1,5 +1,6 @@
 # Helm Yeah!
 
+- Hosted by @krisnova
 - Recording date: 2018-02-16
 - Video: https://www.youtube.com/watch?v=t3kmscqbFHg
 

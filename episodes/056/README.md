@@ -1,7 +1,7 @@
 # Episode 056 : Heptio Contour and IngressRoute
 
 - Hosted by @jbeda
-- Recording date: 20181102
+- Recording date: 2018-11-02
 
 Heptio Contour is an "ingress controller" that uses Kubernetes objects to configure Envoy.
 With Contour v0.6 and v0.7, it has introduced a new CRD called the "IngressRoute".

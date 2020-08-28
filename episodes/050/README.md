@@ -1,7 +1,7 @@
 # Episode 050 : Weave (CNI)
 
-- Hosted by @kris-nova
-- Recording date
+- Hosted by @krisnova
+- Recording date: 2018-09-07
 - HackMD: https://hackmd.io/Vd_cF06PRvSovEoMvn2Riw?both
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url

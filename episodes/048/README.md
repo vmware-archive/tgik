@@ -1,6 +1,7 @@
 # Episode 048 : Exploring the Harbor
 
 - Hosted by @mauilion
+- Recording date: 2018-08-24
 http://v.ht/tgik48
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=OA0fWPXxXYs

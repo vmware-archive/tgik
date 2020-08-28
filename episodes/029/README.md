@@ -1,5 +1,6 @@
 # Developing Apps with Ksync
 
+- Hosted by @jbeda
 - Recording date: 2018-03-23
 - Video: https://www.youtube.com/watch?v=QW85Y0Ug3KY
 

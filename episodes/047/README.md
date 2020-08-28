@@ -1,7 +1,7 @@
 # Episode 047 : Networking with Cilium (CNI)
 
-- Hosted by @kris-nova
-- Recording date 2018-08-17
+- Hosted by @krisnova
+- Recording date: 2018-08-17
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url. --->
 

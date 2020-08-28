@@ -1,7 +1,7 @@
 # Episode 098 : CUE templating language
 
 - Hosted by @jbeda
-- 2019-12-06
+- Recording date: 2019-12-06
 
 <a href="https://www.youtube.com/watch?v=pyfU_ne-kOc" target="_blank"><img src="https://i.ytimg.com/vi/pyfU_ne-kOc/maxresdefault.jpg" border="10" /></a>
 

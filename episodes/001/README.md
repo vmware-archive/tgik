@@ -1,5 +1,6 @@
 # A Quick Tour
 
+- Hosted by @jbeda
 - Recording date: 2017-06-30
 - Video: [https://www.youtube.com/watch?v=9YYeE-bMWv8](https://www.youtube.com/watch?v=9YYeE-bMWv8)
 

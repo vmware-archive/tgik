@@ -1,7 +1,7 @@
 # Episode 091 : Kpack
 
 - Hosted by @jbeda
-- 09/20/19
+- Recording date: 2019-09-20
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url 4zkRX9PSJ5k--->
 

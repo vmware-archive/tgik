@@ -1,7 +1,7 @@
 # Episode 087 : Octant
 
 - Hosted by @bryanl
-- 08/16/2019
+- Recording date: 2019-08-16
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

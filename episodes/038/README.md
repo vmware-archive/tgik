@@ -1,6 +1,8 @@
 # Kata containers
 ( formely known as Intel Clear Containers)
 
+- Hosted by @krisnova
+- Recording date: 2018-06-08
 
 ### Misc
 

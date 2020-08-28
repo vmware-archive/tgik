@@ -1,5 +1,6 @@
 # RBAC
 
+- Hosted by @jbeda
 - Recording date: 2017-07-21
 - Video: [https://www.youtube.com/watch?v=slUMVwRXlRo](https://www.youtube.com/watch?v=slUMVwRXlRo)
 

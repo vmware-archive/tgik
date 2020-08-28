@@ -1,7 +1,7 @@
 # Episode 079 : ytt and kapp
 
 - Hosted by @jbeda
-- 2019-06-14
+- Recording date: 2019-06-14
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

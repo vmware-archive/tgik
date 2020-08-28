@@ -1,5 +1,6 @@
 # Kubernetes Job objects
 
+- Hosted by @jbeda
 - Recording date: 2018-02-02
 - Video: https://www.youtube.com/watch?v=-gLMTm85R3M
 

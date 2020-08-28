@@ -1,7 +1,7 @@
 # Episode 120 : CSI and Secrets!
 
 - Hosted by @mauilion
-- 05/29/2020
+- Recording date: 2020-05-29
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

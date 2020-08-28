@@ -1,7 +1,7 @@
 # Episode 121 : Starboard
 
 - Hosted by @mauilion
-- 6/19/2020
+- Recording date: 2020-06-19
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

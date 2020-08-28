@@ -1,5 +1,6 @@
 # Serverless with Fission
 
+- Hosted by @jbeda
 - Recording date: 2017-10-20
 - Video: [https://www.youtube.com/watch?v=3XgBB4mATNM](https://www.youtube.com/watch?v=3XgBB4mATNM)
 

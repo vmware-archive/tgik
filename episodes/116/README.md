@@ -1,7 +1,7 @@
 # Episode 116 : Deploying an app take 2
 
 - Hosted by @bryanl
-- 05/01/2020
+- Recording date: 2020-05-01
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

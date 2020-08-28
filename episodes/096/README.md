@@ -1,7 +1,7 @@
 # Episode 096 : Grokking Kubernetes : kube-scheduler
 
 - Hosted by @mauilion
-- 11/1/2019
+- Recording date: 2019-11-01
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

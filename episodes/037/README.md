@@ -1,5 +1,7 @@
 # Operator Framework
 
+- Hosted by @krisnova
+- Recording date: 2018-05-25
 https://j.hept.io/tgik037
 
 

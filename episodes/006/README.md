@@ -1,5 +1,6 @@
 # kubeadm
 
+- Hosted by @jbeda
 - Recording date: 2017-08-04
 - Video: [https://www.youtube.com/watch?v=2Yyc2R8yDRo](https://www.youtube.com/watch?v=2Yyc2R8yDRo)
 

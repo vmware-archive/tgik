@@ -1,5 +1,6 @@
 # Connecting with Telepresence
 
+- Hosted by @jbeda
 - Recording date: 2018-04-06
 - Video: https://www.youtube.com/watch?v=zezeBAJ_3w8
 

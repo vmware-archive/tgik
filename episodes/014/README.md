@@ -1,5 +1,6 @@
 # Serverless with OpenFaaS
 
+- Hosted by @jbeda
 - Recording date: 2017-10-27
 - Video: [https://www.youtube.com/watch?v=iMzf_oWsRi0](https://www.youtube.com/watch?v=iMzf_oWsRi0)
 

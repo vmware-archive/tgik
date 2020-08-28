@@ -1,5 +1,6 @@
 # Ingress with TLS
 
+- Hosted by @jbeda
 - Recording date: 2017-09-29
 - Video: [https://www.youtube.com/watch?v=9uU2QMAiZrI](https://www.youtube.com/watch?v=9uU2QMAiZrI)
 

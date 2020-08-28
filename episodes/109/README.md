@@ -1,7 +1,7 @@
 # Episode 109 : Kubernetes Dev Setup
 
 - Hosted by @mauilion
-- 03/13/2020
+- Recording date: 2020-03-13
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

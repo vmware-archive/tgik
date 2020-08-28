@@ -1,7 +1,8 @@
 # Episode069 : Exploring Gloo on Kubernetes
 
-- Hosted by @jbeda / @kris-nova
-- Recording date
+- Hosted by @jbeda
+- Hosted by @krisnova
+- Recording date: 2019-03-22
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

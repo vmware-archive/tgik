@@ -1,7 +1,7 @@
 # Episode 045 : Calico (CNI)
 
-- Hosted by @kris-nova
-- Recording date
+- Hosted by @krisnova
+- Recording date: 2018-08-03
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url
 Note the 0.jpg for the thumbnail --->

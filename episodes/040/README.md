@@ -1,6 +1,6 @@
 # Episode 40 : Kubebuilder
 
-- Hosted by @kris-nova
+- Hosted by @krisnova
 - Recording date: 2018-06-22
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url
@@ -57,7 +57,7 @@ Do not use `go get`, grab the tarball for your system.
 
 - There's a [book](http://book.kubebuilder.io) with getting started documentation. We're following the quickstart section. 
 - You'll end up with it in `/usr/local/kubebuilder/bin`
-- Using GOOS and GOARCH (@kris-nova mentions a video from Rob Pike on this, anyone have a link?)
+- Using GOOS and GOARCH (@krisnova mentions a video from Rob Pike on this, anyone have a link?)
 
 ## Reference Links
 

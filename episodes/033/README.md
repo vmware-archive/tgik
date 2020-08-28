@@ -1,5 +1,6 @@
 # Developing with Draft
 
+- Hosted by @jbeda
 - Recording date: 2018-04-20
 - Video: https://www.youtube.com/watch?v=8B1D7cTMPgA
 

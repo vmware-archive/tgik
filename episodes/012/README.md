@@ -1,5 +1,6 @@
 # Exploring serverless with Kubeless
 
+- Hosted by @jbeda
 - Recording date: 2017-10-13
 - Video: [https://www.youtube.com/watch?v=WotK415iOQM](https://www.youtube.com/watch?v=WotK415iOQM)
 

@@ -1,5 +1,6 @@
 # Elasticsearch Operator
 
+- Hosted by @jbeda
 - Recording date: 2018-04-27
 - Video: https://www.youtube.com/watch?v=8X8Rh_RKFSQ&t=3s
 

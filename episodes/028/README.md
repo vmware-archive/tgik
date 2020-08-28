@@ -1,5 +1,6 @@
 # Exploring CockroachDB on Kubernetes
 
+- Hosted by @jbeda
 - Recording date: 2018-03-02
 - Video: https://www.youtube.com/watch?v=JMCCeAb9eY4
 

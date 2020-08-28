@@ -1,7 +1,7 @@
 # Episode 75 : Troubleshooting Container Networking
 
 - Hosted by @mauilion
-- 05/03/2019
+- Recording date: 2019-05-03
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

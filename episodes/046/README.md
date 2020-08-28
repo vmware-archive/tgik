@@ -1,7 +1,7 @@
 # Episode 046 : Continue exploring Knative
 
 - Hosted by @jbeda
-- Recording date 2018-08-10
+- Recording date: 2018-08-10
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url. --->
 

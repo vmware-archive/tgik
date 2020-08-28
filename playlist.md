@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [127: GitOps with Steve Wade](episodes/127/README.md))
 - [126: Vertical Pod Autoscaling](episodes/126/README.md)
 - [125: OpenTelemetry](episodes/125/README.md)
 - [124: Delcarative operators with KUDO](episodes/124/README.md)

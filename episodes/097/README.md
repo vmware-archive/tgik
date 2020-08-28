@@ -1,7 +1,7 @@
 # Episode 097 : Cluster Autoscaler
 
 - Hosted by @joshrosso
-- 11/08/2019
+- Recording date: 2019-11-08
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

@@ -1,7 +1,7 @@
 # Episode 42 : Ballerina
 
-- Hosted by @kris-nova
-- Recording date
+- Hosted by @krisnova
+- Recording date: 2018-07-13
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url
 Note the 0.jpg for the thumbnail --->

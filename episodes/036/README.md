@@ -1,5 +1,8 @@
 # Virtual Kubelet
 
+- Hosted by @krisnova
+- Recording date: 2018-05-18
+
 [Watch now](https://www.youtube.com/watch?v=J8W_9GTmCNA)
 
 ### Links

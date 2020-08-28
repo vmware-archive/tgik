@@ -1,7 +1,7 @@
 # Episode 102 : Configula and Ko
 
 - Hosted by @jbeda
-- Recording 01.24.2020
+- Recording date: 2020-01-04
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

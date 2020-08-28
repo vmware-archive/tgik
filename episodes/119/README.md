@@ -1,7 +1,7 @@
 # Episode 119 : Gatekeeper and OPA
 
 - Hosted by @joshrosso
-- 05/22/2020
+- Recording date: 2020-05-22
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

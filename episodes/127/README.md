@@ -1,8 +1,8 @@
 # Episode 127 : GitOps with Steve Wade
 
-- Hosted by @mauilion and @swade1987
-
-- 08/07/2020
+- Hosted by @mauilion
+- Hosted by @swade1987
+- Recording date: 2020-08-07
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

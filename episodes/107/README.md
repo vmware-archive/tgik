@@ -1,7 +1,7 @@
 # Episode 107 : pod logging and fluent-bit
 
 - Hosted by @mauilion
-- Recording 02/28/2020
+- Recording date: 2020-02-28
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

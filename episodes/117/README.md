@@ -1,6 +1,7 @@
 # Episode 117 : Grokking Kubernetes : ETCD
+
 - Hosted by @mauilion 
-- 05/08/2020
+- Recording date: 2020-05-08
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

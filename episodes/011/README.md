@@ -1,5 +1,6 @@
 # Upgrading to 1.8 with kubeadm
 
+- Hosted by @jbeda
 - Recording date: 2017-10-06
 - Video: [https://www.youtube.com/watch?v=x9doB5eJWgQ](https://www.youtube.com/watch?v=x9doB5eJWgQ)
 

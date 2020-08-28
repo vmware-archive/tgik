@@ -1,7 +1,7 @@
 # Episode 105 : Dapr - Distributed Application Runtime
 
 - Hosted by @jbeda
-- Recording 2/14/2020
+- Recording date: 2020-02-14
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

@@ -1,7 +1,7 @@
 # Episode 106: Flagger - Advanced Application Rollout
 
-- Hosted by [@joshrosso](https://twitter.com/joshrosso)
-- Recording 02.21.2020
+- Hosted by @joshrosso
+- Recording date: 2020-02-21
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

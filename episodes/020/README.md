@@ -1,5 +1,6 @@
 # Argo workflow system
 
+- Hosted by @jbeda
 - Recording date: 2018-01-05
 - Video: https://www.youtube.com/watch?v=M_rxPPLG8pU
 

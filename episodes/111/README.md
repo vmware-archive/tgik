@@ -1,7 +1,7 @@
 # Episode 111 : CloudEvents and Argo Events
 
 - Hosted by @jbeda
-- 03/27/2020
+- Recording date: 2020-03-27
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

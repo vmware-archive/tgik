@@ -1,7 +1,7 @@
 # Episode 049 : Flannel (CNI)
 
-- Hosted by @kris-nova
-- Recording date
+- Hosted by @krisnova
+- Recording date: 2018-08-31
 - HackMD: https://hackmd.io/Vd_cF06PRvSovEoMvn2Riw?both
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url

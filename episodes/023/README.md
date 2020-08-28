@@ -1,5 +1,6 @@
 # Using private registries
 
+- Hosted by @jbeda
 - Recording date: 2018-01-26
 - Video: https://www.youtube.com/watch?v=-JN8NSUnVgM
 

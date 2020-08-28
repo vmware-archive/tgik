@@ -1,7 +1,7 @@
 # Episode 083 : Minecraft Controller with Kubebuilder
 
 - Hosted by @jbeda
-- 2019-07-19
+- Recording date: 2019-07-19
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

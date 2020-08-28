@@ -1,7 +1,7 @@
 # Episode 122 : Grokking Kubernetes : DNS
 
 - Hosted by @mauilion 
-- 06/26/2020
+- Recording date: 2020-06-26
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

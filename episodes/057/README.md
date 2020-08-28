@@ -1,7 +1,7 @@
 # Episode 057 : Vault and Kubernetes
 
-- Hosted by @kris-nova
-- Recording date: 20181117
+- Hosted by @krisnova
+- Recording date: 2018-11-17
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

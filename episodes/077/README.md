@@ -1,7 +1,7 @@
 # Episode 77 : All your certificates have expired!
 
 - Hosted by @mauilion
-- 05/31/2019
+- Recording date: 2019-05-31
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

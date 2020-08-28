@@ -1,15 +1,13 @@
 # Episode 100 : Our 100th Episode!
 
-- Hosted by 
-  * @jbeda 
-  * @castrojo 
-  * @mauilion 
-  * @bryanl 
-  * @joshrosso 
-  * @cdickmann 
-  * @krisnova
-
-- 01-10-2020
+- Hosted by @jbeda
+- Hosted by @castrojo
+- Hosted by @mauilion
+- Hosted by @bryanl
+- Hosted by @joshrosso
+- Hosted by @cdickmann
+- Hosted by @krisnova
+- Recording date: 2020-01-10
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 
