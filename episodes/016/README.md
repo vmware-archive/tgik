@@ -1,5 +1,6 @@
 # Heptio Contour ingress controller
 
+- Hosted by @jbeda
 - Recording date: 2017-11-11
 - Video: [https://www.youtube.com/watch?v=-Hvfl6zOLGE](https://www.youtube.com/watch?v=-Hvfl6zOLGE)
 

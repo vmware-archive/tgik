@@ -1,5 +1,6 @@
 # WeaveWorks Flux and GitOps
 
+- Hosted by @jbeda
 - Recording date: 2018-05-11
 - Video: https://www.youtube.com/watch?v=aQz3H9bIH8Y
 

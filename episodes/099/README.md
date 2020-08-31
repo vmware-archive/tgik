@@ -1,7 +1,7 @@
 # Episode 099 : Grokking Kubernetes : kube-apiserver
 
 - Hosted by @mauilion
-- 12/13/2019
+- Recording date: 2019-12-13
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

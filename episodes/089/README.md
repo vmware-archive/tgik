@@ -1,7 +1,7 @@
 # Episode 089 : Tekton Pipelines
 
 - Hosted by @jbeda
-- 2019-09-06
+- Recording date: 2019-09-06
 
 <a href="https://www.youtube.com/watch?v=CGywE84CCx8
 " target="_blank"><img src="http://img.youtube.com/vi/CGywE84CCx8/hqdefault.jpg" width="480" height="360" border="10" /></a>

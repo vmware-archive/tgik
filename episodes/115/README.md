@@ -1,7 +1,7 @@
 # Episode 115 : Deploying an app
 
 - Hosted by @bryanl
-- 04/24/2020
+- Recording date: 2020-04-24
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

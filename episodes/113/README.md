@@ -1,7 +1,7 @@
 # Episode 113 : Kubernetes Secrets Take 3
 
 - Hosted by @joshrosso
-- 4/10/2020
+- Recording date: 2020-04-10
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

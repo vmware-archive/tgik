@@ -1,6 +1,6 @@
 # Episode 061 : Falco with Kubernetes Dynamic Auditing
 
-- Hosted by @kris-nova
+- Hosted by @krisnova
 - Recording date: 2018-01-11
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->

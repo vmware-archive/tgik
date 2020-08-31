@@ -1,7 +1,7 @@
 # Episode 126 : Vertical Pod Autoscaling
 
 - Hosted by @jbeda
-- 07/31/2020
+- Recording date: 2020-07-31
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

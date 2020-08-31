@@ -1,5 +1,6 @@
 # Prometheus as a noob
 
+- Hosted by @jbeda
 - Recording date: 2017-12-22
 - Video: https://www.youtube.com/watch?v=pDb2psNcvKU
 

@@ -1,7 +1,7 @@
 # Episode 104 : Kyverno
 
 - Hosted by @mauilion
-- 02/07/2020
+- Recording date: 2020-02-07
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

@@ -1,5 +1,6 @@
 # Using (Linux) K8s from Windows
 
+- Hosted by @jbeda
 - Recording date: 2018-02-09
 - Video: https://www.youtube.com/watch?v=F47RwU8AzYI
 

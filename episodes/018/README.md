@@ -1,5 +1,6 @@
 # kube-metacontroller
 
+- Hosted by @jbeda
 - Recording date: 2017-12-15
 - Video: https://www.youtube.com/watch?v=xdCTC4scjDg
 

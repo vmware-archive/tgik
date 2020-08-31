@@ -1,7 +1,7 @@
 # Episode 108 : Cluster-API for Docker!
 
 - Hosted by @mauilion
-- 03/06/2020
+- Recording date: 2020-03-06
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

@@ -1,7 +1,8 @@
 # Episode 060 : Kubernetes in Docker + etcd
 
-- Hosted by @jbeda / @kris-nova
-- Recording date
+- Hosted by @jbeda
+- Hosted by @krisnova
+- Recording date: 2018-12-21
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

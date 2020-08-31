@@ -1,7 +1,7 @@
 # Episode 072 : Kustomize and friends
 
 - Hosted by @jbeda
-- April 12, 2019
+- Recording date: 2019-04-12
 - Live notes: https://hackmd.io/dn0KfrC3R3awmHpEgFMQSw
 
 Episode issue: https://github.com/heptio/tgik/issues/111

@@ -1,7 +1,7 @@
 # Episode 81 : Grafana Loki
 
 - Hosted by @cdickmann
-- 06/28/2019
+- Recording date: 2019-06-28
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

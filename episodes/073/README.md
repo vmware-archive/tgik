@@ -1,7 +1,7 @@
 # Episode 073 : Exploring Garden with Kubernetes
 
 - Hosted by @krisnova
-- April 19, 2019
+- Recording date: 2019-04-19
 
 Episode issue: 
 <!--- Thumbnailed embed of the video, NFnpUlt0IuM is the video id from the youtube url --->

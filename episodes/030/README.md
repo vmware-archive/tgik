@@ -1,5 +1,6 @@
 # Exploring Skaffold
 
+- Hosted by @jbeda
 - Recording date: 2018-03-30
 - Video: https://www.youtube.com/watch?v=McwwWhCXMxc
 

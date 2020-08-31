@@ -1,5 +1,6 @@
 # Finishing the Controller
 
+- Hosted by @jbeda
 - Recording date: 2017-09-15
 - Video: [https://www.youtube.com/watch?v=wqhKCiGsf1Y](https://www.youtube.com/watch?v=wqhKCiGsf1Y)
 

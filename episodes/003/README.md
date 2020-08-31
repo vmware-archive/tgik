@@ -1,5 +1,6 @@
 # Istio
 
+- Hosted by @jbeda
 - Recording date: 2017-07-14
 - Video: [https://www.youtube.com/watch?v=WnDG-5cvEew](https://www.youtube.com/watch?v=WnDG-5cvEew)
 

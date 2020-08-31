@@ -1,7 +1,7 @@
 # Episode 095 : K-Rail
 
 - Hosted by @mauilion
-- 10/25/19
+- Recording date: 2019-10-25
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

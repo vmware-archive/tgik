@@ -1,7 +1,7 @@
 # Episode 112 : Deep dive into admission controllers
 
 - Hosted by @jbeda
-- Recording 4/3/2020
+- Recording date: 2020-04-03
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

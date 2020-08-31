@@ -1,7 +1,7 @@
 # Episode 78 : Pod Security Policies
 
 - Hosted by @joshrosso
-- 06/07/2019
+- Recording date: 2019-06-07
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

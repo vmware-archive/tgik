@@ -1,5 +1,6 @@
 # Resource limits and quota
 
+- Hosted by @jbeda
 - Recording date: 2017-11-17
 - Video: https://www.youtube.com/watch?v=xtl2KV1JW9s
 

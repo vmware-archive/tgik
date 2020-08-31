@@ -1,7 +1,7 @@
 # Episode 085 : Network Policies
 
 - Hosted by @joshrosso
-- 08/01/2019
+- Recording date: 2019-08-01
 
 <a href="https://www.youtube.com/watch?v=gzzq7TGBsL8
 " target="_blank"><img src="http://img.youtube.com/vi/gzzq7TGBsL8/hqdefault.jpg" width="480" height="360" border="10" /></a>

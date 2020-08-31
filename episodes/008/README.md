@@ -1,5 +1,6 @@
 # Continuing the Controller
 
+- Hosted by @jbeda
 - Recording date: 2017-09-08
 - Video: [https://www.youtube.com/watch?v=fWkK-zsFtlU](https://www.youtube.com/watch?v=fWkK-zsFtlU)
 

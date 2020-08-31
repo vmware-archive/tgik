@@ -1,5 +1,6 @@
 # kube-deploy
 
+- Hosted by @jbeda
 - Recording date: 2018-01-12
 - Video: https://www.youtube.com/watch?v=f_ANRYIXFgI
 

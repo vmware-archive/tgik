@@ -1,7 +1,7 @@
 # Episode #44 : Knative
 
 - Hosted by @jbeda 
-- Recording Date: 20180727
+- Recording date: 2018-07-27
 - [Live Notes](https://hackmd.io/bzjUvaJRTjGUnLsB0oCo5w#) - Final version of notes will be pushed to this repo after the brodcast.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/n_zqedVM0oM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

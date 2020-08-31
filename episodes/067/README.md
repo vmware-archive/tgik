@@ -1,6 +1,6 @@
 # Episode 67 : 
 
-- Hosted by @kris-nova
+- Hosted by @krisnova
 - Recording date: 2019-03-08
 - Live notes: https://hackmd.io/QaB9TVeHRJOqQZjmJZn4aQ#
 

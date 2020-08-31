@@ -1,7 +1,7 @@
 # Episode NN : $title
 
-- Hosted by @jbeda / @mauilion
-- Recording date
+- Hosted by @jbeda
+- Recording date: YYYY-MM-DD 
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

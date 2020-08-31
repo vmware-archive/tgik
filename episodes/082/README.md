@@ -1,7 +1,7 @@
 # Episode 082 : Weaveworks Ignite
 
 - Hosted by @jbeda
-- 2019-07-12
+- Recording date: 2019-07-12
 
 
 <a href="https://www.youtube.com/watch?v=aq-wlslJ5MQ

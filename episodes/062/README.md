@@ -1,7 +1,7 @@
 # Episode 062 : Exploring Jenkins X
 
-- Hosted by @kris-nova
-- Recording date
+- Hosted by @krisnova
+- Recording date: 2019-01-25
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

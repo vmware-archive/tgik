@@ -1,7 +1,7 @@
 # Episode 084 : Kubernetes API Removal and You
 
 - Hosted by @mauilion
-- 07/26/2019
+- Recording date: 2019-07-26
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

@@ -1,7 +1,7 @@
 # Episode 103 : Cilium: A Second Look
 
 - Hosted by @joshrosso
-- Recording 01.31.2020
+- Recording date: 2020-01-31
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

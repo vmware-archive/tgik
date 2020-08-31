@@ -1,7 +1,7 @@
 # Episode 054 : Building containers and images for Kubernetes with Buildah
 
-- Hosted by @kris-nova
-- Recording date
+- Hosted by @krisnova
+- Recording date: 2018-10-19
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

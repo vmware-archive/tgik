@@ -1,7 +1,7 @@
 # Episode 71 : Exploring the Open Policy Agent (OPA)
 
 - Hosted by @jbeda
-- 04/05/2019
+- Recording date: 2019-04-05
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

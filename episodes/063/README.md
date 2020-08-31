@@ -1,7 +1,7 @@
 # Episode 063 : Local Development with Tilt
 
 - Hosted by @jbeda
-- Recording date: 20190201
+- Recording date: 2019-02-01
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

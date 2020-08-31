@@ -1,5 +1,6 @@
 # Pod Params and Probes
 
+- Hosted by @jbeda
 - Recording date: 2017-07-28
 - Video: [https://www.youtube.com/watch?v=xEdBSVaUtp4](https://www.youtube.com/watch?v=xEdBSVaUtp4)
 

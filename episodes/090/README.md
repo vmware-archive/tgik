@@ -1,7 +1,7 @@
 # Episode 090 : Grokking Kubernetes : kube-proxy
 
 - Hosted by @mauilion
-- 09/13/2019
+- Recording date: 2019-09-13
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

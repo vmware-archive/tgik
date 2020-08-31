@@ -1,7 +1,7 @@
 # Episode 101 : Grokking Kubernetes : kube-apiserver
 
 - Hosted by @mauilion
-- 1/17/2020
+- Recording date: 2020-01-17
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

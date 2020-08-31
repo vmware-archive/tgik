@@ -1,7 +1,7 @@
 # Episode 094 : SPIFFE and SPIRE
 
 - Hosted by @jbeda
-- 10/18/2019
+- Recording date: 2019-10-18
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

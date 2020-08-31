@@ -1,5 +1,8 @@
 # TGIK Episode #39
 
+- Hosted by @jbeda
+- Recording date: 2018-06-15
+
 Note: Timestamps are [hh:mm] into the stream according to the local time, this might not match the final YouTube video timestamp exactly, but should get you close to the subject
 
 ## News and Announcements

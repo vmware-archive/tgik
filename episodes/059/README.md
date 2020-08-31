@@ -1,6 +1,6 @@
 # Episode 059 : CNAB
 
-- Hosted by  @kris-nova
+- Hosted by @krisnova
 - Recording date: 2018-12-07
 - Roll Call: [http://j.hept.io/tgik-roll-call](https://hello.heptio.com/tgik-roll-call/) - Listen in during the show for the secret codeword to enter our raffle. 7 winners chosen per episode, and it helps us support the [Girls Who Code](https://hello.heptio.com/tgik-roll-call/clkn/http/www.blackgirlscode.com/) Foundation.
 

@@ -1,7 +1,7 @@
 # Episode 093 : Grokking Kubernetes : kube-controller-manager
 
 - Hosted by @mauilion
-- 10/11/2019
+- Recording date: 2019-10-11
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

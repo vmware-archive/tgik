@@ -1,5 +1,6 @@
 # Exploring Brigade from Microsoft
 
+- Hosted by @jbeda
 - Recording date: 2017-11-04
 - Video: [https://www.youtube.com/watch?v=hreCyC7XnOw](https://www.youtube.com/watch?v=hreCyC7XnOw)
 

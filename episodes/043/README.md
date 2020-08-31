@@ -1,7 +1,7 @@
 # Episode 043 : Kops revisited
 
-- Hosted by @kris-nova
-- July 20, 2018
+- Hosted by @krisnova
+- Recording date: 2018-07-20
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url
 Note the 0.jpg for the thumbnail --->

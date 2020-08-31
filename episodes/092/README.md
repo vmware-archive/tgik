@@ -1,7 +1,7 @@
 # Episode 92 : Continuing Minecraft Controller
 
 - Hosted by @jbeda
-- 10/04/2019
+- Recording date: 2019-10-04
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

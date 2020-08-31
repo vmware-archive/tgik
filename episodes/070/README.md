@@ -1,7 +1,7 @@
 # Episode 70 : Assuming AWS roles with kube2iam/kiam
 
-## - Hosted by @jbeda
-- Recording date:  20190329
+- Hosted by @jbeda
+- Recording date: 2019-03-29
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

@@ -1,5 +1,6 @@
 # kubicorn and the cluster-api
 
+- Hosted by @krisnova
 - Recording date: 2018-04-13
 - Video: https://www.youtube.com/watch?v=oLGaWktrB60&t=3272s
 

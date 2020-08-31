@@ -1,7 +1,7 @@
 # Episode 52 : Instrumenting with Prometheus
 
-- Hosted by @kris-nova
-- Recording date: 20181005
+- Hosted by @krisnova
+- Recording date: 2018-10-05
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

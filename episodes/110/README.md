@@ -1,7 +1,7 @@
 # Episode 110 : cluster-api version 1 Alpha 3
 
 - Hosted by @mauilion
-- 03/20/2020
+- Recording date: 2020-03-20
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

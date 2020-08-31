@@ -1,7 +1,7 @@
 # Episode 58 : Firecracker
 
 - Hosted by @jbeda 
-- Recording date: 20181130
+- Recording date: 2018-11-30
 
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->

@@ -1,5 +1,6 @@
 # Nuclio serverless system
 
+- Hosted by @jbeda
 - Recording date: 2018-01-19
 - Video: https://www.youtube.com/watch?v=wmXHqQLdM2I
 

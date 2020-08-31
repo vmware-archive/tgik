@@ -1,7 +1,7 @@
 # Episode 080 : Velero 1.0
 
 - Hosted by @jbeda
-- 2019-06-21
+- Recording date: 2019-06-21
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

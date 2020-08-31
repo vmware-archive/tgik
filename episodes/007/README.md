@@ -1,5 +1,6 @@
 # Building a Controller
 
+- Hosted by @jbeda
 - Recording date: 2017-08-11
 - Video: [https://www.youtube.com/watch?v=8Xo_ghCIOSY](https://www.youtube.com/watch?v=8Xo_ghCIOSY)
 

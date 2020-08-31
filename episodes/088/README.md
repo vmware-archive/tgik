@@ -1,7 +1,8 @@
 # Episode 088 : Falco with Kris!
 
-- Hosted by @mauilion and @krisnova
-- 08/23/2019
+- Hosted by @mauilion
+- Hosted by @krisnova
+- Recording date: 2019-08-23
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

@@ -1,7 +1,7 @@
 # Episode 51 : Linkerd 2.0
 
 - Hosted by @jbeda
-- Recording date: 20180920
+- Recording date: 2018-09-20
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url --->
 

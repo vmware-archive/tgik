@@ -1,5 +1,6 @@
 # Securing the k8s dashboard and beyond!
 
+- Hosted by @jbeda
 - Recording date: 2018-02-23
 - Video: https://www.youtube.com/watch?v=od8TnIvuADg
 
