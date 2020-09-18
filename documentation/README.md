@@ -18,7 +18,6 @@ Monday or Tuesday:
 * [ ] Create short link in rebrandly
 * [ ] Tweet about it from your personal account
   * [ ] Post tweets on internal #tgik slack channel and cc @castrojo and Vykky
-  * [ ] Get confirmation from boschem that she's seen the tweet and is scheduling it
 
 Before episode:
 * [ ] Create HackMD page for live notes.  Start with README template in this repo
