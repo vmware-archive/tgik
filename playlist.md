@@ -1,6 +1,7 @@
 # TGIK Playlist Index
 
 - [132: Sealed Secrets](episodes/132/README.md)
+- [131: No mo' yolo with Validating Admission Controllers](episodes/131/README.md)
 - [130: Behind the scenes of TGIK](episodes/130/README.md)
 - [129: Honking and Hacking with Ian Coldwater!](episodes/129/README.md)
 - [128: RBAC tooling!](episodes/128/README.md)
