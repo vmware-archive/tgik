@@ -12,7 +12,10 @@
 ## Table of Contents
 
 - 00:00:00 - Welcome to TGIK!
-- 00:00:00 - Week in Review
+- 00:04:27 - Week in Review
+- 00:19:50 - What are Admission Controllers?
+- 00:30:57 - Validating Admission Controller webhook
+- 01:14:29 - Mutating Admission Controller webhook
 
 ## Week in Review
 
