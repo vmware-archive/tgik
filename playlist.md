@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [132: Hierarchical Namespaces](episodes/133/README.md)
 - [132: Sealed Secrets](episodes/132/README.md)
 - [130: Behind the scenes of TGIK](episodes/130/README.md)
 - [129: Honking and Hacking with Ian Coldwater!](episodes/129/README.md)
