@@ -1,0 +1,733 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    control-plane: controller-manager
+  name: hnc-system
+---
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.2.5
+  creationTimestamp: null
+  name: hierarchyconfigurations.hnc.x-k8s.io
+spec:
+  group: hnc.x-k8s.io
+  names:
+    kind: HierarchyConfiguration
+    listKind: HierarchyConfigurationList
+    plural: hierarchyconfigurations
+    singular: hierarchyconfiguration
+  scope: Namespaced
+  validation:
+    openAPIV3Schema:
+      description: Hierarchy is the Schema for the hierarchies API
+      properties:
+        apiVersion:
+          description: 'APIVersion defines the versioned schema of this representation
+            of an object. Servers should convert recognized schemas to the latest
+            internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+          type: string
+        kind:
+          description: 'Kind is a string value representing the REST resource this
+            object represents. Servers may infer this from the endpoint the client
+            submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+          type: string
+        metadata:
+          type: object
+        spec:
+          description: HierarchySpec defines the desired state of Hierarchy
+          properties:
+            allowCascadingDelete:
+              description: AllowCascadingDelete indicates if the subnamespaces of
+                this namespace are allowed to cascading delete.
+              type: boolean
+            parent:
+              description: Parent indicates the parent of this namespace, if any.
+              type: string
+          type: object
+        status:
+          description: HierarchyStatus defines the observed state of Hierarchy
+          properties:
+            children:
+              description: Children indicates the direct children of this namespace,
+                if any.
+              items:
+                type: string
+              type: array
+            conditions:
+              description: Conditions describes the errors and the affected objects,
+                if any.
+              items:
+                description: Condition specifies the condition and the affected objects.
+                properties:
+                  affects:
+                    description: Affects is a list of group-version-kind-namespace-name
+                      that uniquely identifies the object(s) affected by the condition.
+                    items:
+                      description: AffectedObject defines uniquely identifiable objects.
+                      properties:
+                        group:
+                          type: string
+                        kind:
+                          type: string
+                        name:
+                          type: string
+                        namespace:
+                          type: string
+                        version:
+                          type: string
+                      type: object
+                    type: array
+                  code:
+                    description: "Describes the condition in a machine-readable string
+                      value. The currently valid values are shown below, but new values
+                      may be added over time. This field is always present in a condition.
+                      \n All codes that begin with the prefix `Crit` indicate that
+                      all HNC activities (e.g. propagating objects, updating labels)
+                      have been paused in this namespaces. HNC will resume updating
+                      the namespace once the condition has been resolved. Non-critical
+                      conditions typically indicate some kind of error that HNC itself
+                      can ignore, but likely indicates that the hierarchical structure
+                      is out-of-sync with the users' expectations. \n If the validation
+                      webhooks are working properly, there should typically not be
+                      any conditions on any namespaces, although some may appear transiently
+                      when the HNC controller is restarted. These should quickly resolve
+                      themselves (<30s). However, validation webhooks are not perfect,
+                      especially if multiple users are modifying the same namespace
+                      trees quickly, so it's important to monitor for critical conditions
+                      and resolve them if they arise. See the user guide for more
+                      information. \n Currently, the supported values are: \n - \"CritParentMissing\":
+                      the specified parent is missing and the namespace is an orphan.
+                      \n - \"CritCycle\": the namespace is a member of a cycle. For
+                      example, if namespace B says that its parent is namespace A,
+                      but namespace A says that its parent is namespace B, then A
+                      and B are in a cycle with each other and both of them will have
+                      the CritCycle condition. \n - \"CritDeletingCRD\": The HierarchyConfiguration
+                      CRD is being deleted. No more objects will be propagated into
+                      or out of this namespace. It is expected that the HNC controller
+                      will be stopped soon after the CRDs are fully deleted. \n -
+                      \"CritAncestor\": a critical error exists in an ancestor namespace,
+                      so this namespace is no longer being updated either. \n - \"SubnamespaceAnchorMissing\":
+                      this namespace is a subnamespace, but the anchor referenced
+                      in its `subnamespaceOf` annotation does not exist in the parent.
+                      \n - \"CannotPropagateObject\": this namespace contains an object
+                      that couldn't be propagated *out* of this namespace, to one
+                      or more of this namespace's descendants. If the object couldn't
+                      be propagated to *any* descendants - for example, because it
+                      has a finalizer on it (HNC can't propagate objects with finalizers),
+                      the `Affects` field will point to the object in this namespace.
+                      Otherwise, if it couldn't be propagated to *some* descendants,
+                      `Affects` will contain a list of the objects in those descendants
+                      that couldn't be created or updated. \n - \"CannotUpdateObject\":
+                      this namespace has an object that couldn't be propagated *into*
+                      this namespace - that is, it couldn't be created in the first
+                      place, or it couldn't be updated. The `Affects` field will point
+                      to the source object, which will always be in a namespace that's
+                      an ancestor of this namespace."
+                    type: string
+                  msg:
+                    description: A human-readable description of the condition, if
+                      the `code` and `affects` fields are not sufficiently clear on
+                      their own.
+                    type: string
+                required:
+                - code
+                type: object
+              type: array
+          type: object
+      type: object
+  version: v1alpha1
+  versions:
+  - name: v1alpha1
+    served: true
+    storage: true
+status:
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: []
+  storedVersions: []
+---
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.2.5
+  creationTimestamp: null
+  name: hncconfigurations.hnc.x-k8s.io
+spec:
+  group: hnc.x-k8s.io
+  names:
+    kind: HNCConfiguration
+    listKind: HNCConfigurationList
+    plural: hncconfigurations
+    singular: hncconfiguration
+  scope: Cluster
+  validation:
+    openAPIV3Schema:
+      description: HNCConfiguration is a cluster-wide configuration for HNC as a whole.
+        See details in http://bit.ly/hnc-type-configuration
+      properties:
+        apiVersion:
+          description: 'APIVersion defines the versioned schema of this representation
+            of an object. Servers should convert recognized schemas to the latest
+            internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+          type: string
+        kind:
+          description: 'Kind is a string value representing the REST resource this
+            object represents. Servers may infer this from the endpoint the client
+            submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+          type: string
+        metadata:
+          type: object
+        spec:
+          description: HNCConfigurationSpec defines the desired state of HNC configuration.
+          properties:
+            types:
+              description: Types indicates the desired synchronization states of kinds,
+                if any.
+              items:
+                description: TypeSynchronizationSpec defines the desired synchronization
+                  state of a specific kind.
+                properties:
+                  apiVersion:
+                    description: API version of the kind defined below. This is used
+                      to unambiguously identifies the kind.
+                    type: string
+                  kind:
+                    description: Kind to be configured.
+                    type: string
+                  mode:
+                    description: Synchronization mode of the kind. If the field is
+                      empty, it will be treated as "propagate". An unsupported mode
+                      will be treated as "ignore".
+                    type: string
+                required:
+                - apiVersion
+                - kind
+                type: object
+              type: array
+          type: object
+        status:
+          description: HNCConfigurationStatus defines the observed state of HNC configuration.
+          properties:
+            conditions:
+              description: Conditions describes the errors, if any.
+              items:
+                description: HNCConfigurationCondition specifies the code and the
+                  description of an error condition.
+                properties:
+                  code:
+                    description: "Describes the condition in a machine-readable string
+                      value. The currently valid values are shown below, but new values
+                      may be added over time. This field is always present in a condition.
+                      \n All codes that begin with the prefix `crit` indicate that
+                      reconciliation has been paused for this configuration. Future
+                      changes of the configuration will be ignored by HNC until the
+                      condition has been resolved. Non-critical conditions typically
+                      indicate some kinds of error that HNC itself can ignore. However,
+                      the behaviors of some types might be out-of-sync with the users'
+                      expectations. \n Currently, the supported values are: \n - \"critSingletonNameInvalid\":
+                      the specified singleton name is invalid. The name should be
+                      the same as HNCConfigSingleton. \n - \"objectReconcilerCreationFailed\":
+                      an error exists when creating the object reconciler for the
+                      type specified in Msg. \n - \"multipleConfigurationsForOneType\":
+                      Multiple configurations exist for the type specified in the
+                      Msg. One type should only have one configuration."
+                    type: string
+                  msg:
+                    description: A human-readable description of the condition, if
+                      the `code` field is not sufficiently clear on their own. If
+                      the condition is only for specific types, Msg will include information
+                      about the types (e.g., GVK).
+                    type: string
+                required:
+                - code
+                type: object
+              type: array
+            namespaceConditions:
+              description: NamespaceConditions is a map of namespace condition codes
+                to the namespaces affected by those codes. If HNC is operating normally,
+                no conditions will be present; if there are any conditions beginning
+                with the "Crit" (critical) prefix, this means that HNC cannot function
+                in the affected namespaces. The HierarchyConfiguration object in each
+                of the affected namespaces will have more information. To learn more
+                about conditions, see https://github.com/kubernetes-sigs/multi-tenancy/blob/master/incubator/hnc/docs/user-guide/concepts.md#admin-conditions.
+              items:
+                properties:
+                  code:
+                    description: Code is a namespace condition code
+                    type: string
+                  namespaces:
+                    description: Namespaces is the list of namespaces affected by
+                      this code
+                    items:
+                      type: string
+                    type: array
+                required:
+                - code
+                - namespaces
+                type: object
+              type: array
+            types:
+              description: Types indicates the observed synchronization states of
+                kinds, if any.
+              items:
+                description: TypeSynchronizationStatus defines the observed synchronization
+                  state of a specific kind.
+                properties:
+                  apiVersion:
+                    description: API version of the kind defined below. This is used
+                      to unambiguously identifies the kind.
+                    type: string
+                  kind:
+                    description: Kind to be configured.
+                    type: string
+                  mode:
+                    description: Mode describes the synchronization mode of the kind.
+                      Typically, it will be the same as the mode in the spec, except
+                      when the reconciler has fallen behind or when the mode is omitted
+                      from the spec and the default is chosen.
+                    type: string
+                  numPropagatedObjects:
+                    description: Tracks the number of objects that are being propagated
+                      to descendant namespaces. The propagated objects are created
+                      by HNC.
+                    minimum: 0
+                    type: integer
+                  numSourceObjects:
+                    description: Tracks the number of objects that are created by
+                      users.
+                    minimum: 0
+                    type: integer
+                required:
+                - apiVersion
+                - kind
+                type: object
+              type: array
+          type: object
+      type: object
+  version: v1alpha1
+  versions:
+  - name: v1alpha1
+    served: true
+    storage: true
+status:
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: []
+  storedVersions: []
+---
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.2.5
+  creationTimestamp: null
+  name: subnamespaceanchors.hnc.x-k8s.io
+spec:
+  group: hnc.x-k8s.io
+  names:
+    kind: SubnamespaceAnchor
+    listKind: SubnamespaceAnchorList
+    plural: subnamespaceanchors
+    shortNames:
+    - subns
+    singular: subnamespaceanchor
+  scope: Namespaced
+  validation:
+    openAPIV3Schema:
+      description: SubnamespaceAnchor is the Schema for the subnamespace API. See
+        details at http://bit.ly/hnc-self-serve-ux.
+      properties:
+        apiVersion:
+          description: 'APIVersion defines the versioned schema of this representation
+            of an object. Servers should convert recognized schemas to the latest
+            internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
+          type: string
+        kind:
+          description: 'Kind is a string value representing the REST resource this
+            object represents. Servers may infer this from the endpoint the client
+            submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
+          type: string
+        metadata:
+          type: object
+        status:
+          description: SubnamespaceAnchorStatus defines the observed state of SubnamespaceAnchor.
+          properties:
+            status:
+              description: "Describes the state of the subnamespace anchor. \n Currently,
+                the supported values are: \n - \"missing\": the subnamespace has not
+                been created yet. This should be the default state when the anchor
+                is just created. \n - \"ok\": the subnamespace exists. \n - \"conflict\":
+                a namespace of the same name already exists. The admission controller
+                will attempt to prevent this. \n - \"forbidden\": the anchor was created
+                in a namespace that doesn't allow children, such as kube-system or
+                hnc-system. The admission controller will attempt to prevent this."
+              type: string
+          type: object
+      type: object
+  version: v1alpha1
+  versions:
+  - name: v1alpha1
+    served: true
+    storage: true
+status:
+  acceptedNames:
+    kind: ""
+    plural: ""
+  conditions: []
+  storedVersions: []
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: hnc-leader-election-role
+  namespace: hnc-system
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - configmaps
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
+- apiGroups:
+  - ""
+  resources:
+  - configmaps/status
+  verbs:
+  - get
+  - update
+  - patch
+- apiGroups:
+  - ""
+  resources:
+  - events
+  verbs:
+  - create
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: hnc-manager-role
+rules:
+- apiGroups:
+  - '*'
+  resources:
+  - '*'
+  verbs:
+  - create
+  - delete
+  - deletecollection
+  - get
+  - impersonate
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - namespaces
+  verbs:
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - hnc.x-k8s.io
+  resources:
+  - hierarchies
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - hnc.x-k8s.io
+  resources:
+  - hierarchies/status
+  verbs:
+  - get
+  - patch
+  - update
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: hnc-proxy-role
+rules:
+- apiGroups:
+  - authentication.k8s.io
+  resources:
+  - tokenreviews
+  verbs:
+  - create
+- apiGroups:
+  - authorization.k8s.io
+  resources:
+  - subjectaccessreviews
+  verbs:
+  - create
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: hnc-leader-election-rolebinding
+  namespace: hnc-system
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: hnc-leader-election-role
+subjects:
+- kind: ServiceAccount
+  name: default
+  namespace: hnc-system
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: hnc-manager-rolebinding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: hnc-manager-role
+subjects:
+- kind: ServiceAccount
+  name: default
+  namespace: hnc-system
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: hnc-proxy-rolebinding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: hnc-proxy-role
+subjects:
+- kind: ServiceAccount
+  name: default
+  namespace: hnc-system
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: hnc-webhook-server-cert
+  namespace: hnc-system
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    prometheus.io/port: "8443"
+    prometheus.io/scheme: https
+    prometheus.io/scrape: "true"
+  labels:
+    control-plane: controller-manager
+  name: hnc-controller-manager-metrics-service
+  namespace: hnc-system
+spec:
+  ports:
+  - name: https
+    port: 8443
+    targetPort: https
+  selector:
+    control-plane: controller-manager
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hnc-webhook-service
+  namespace: hnc-system
+spec:
+  ports:
+  - port: 443
+    targetPort: 9443
+  selector:
+    control-plane: controller-manager
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    control-plane: controller-manager
+  name: hnc-controller-manager
+  namespace: hnc-system
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      control-plane: controller-manager
+  template:
+    metadata:
+      labels:
+        control-plane: controller-manager
+    spec:
+      containers:
+      - args:
+        - --webhook-server-port=9443
+        - --metrics-addr=127.0.0.1:8080
+        - --max-reconciles=10
+        - --apiserver-qps-throttle=50
+        - --enable-internal-cert-management
+        - --cert-restart-on-secret-refresh
+        command:
+        - /manager
+        image: gcr.io/k8s-staging-multitenancy/hnc/controller:v0.5.2
+        name: manager
+        ports:
+        - containerPort: 9443
+          name: webhook-server
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 100m
+            memory: 100Mi
+          requests:
+            cpu: 100m
+            memory: 50Mi
+        volumeMounts:
+        - mountPath: /tmp/k8s-webhook-server/serving-certs
+          name: cert
+          readOnly: true
+      - args:
+        - --upstream=http://127.0.0.1:8080/
+        - --secure-listen-address=0.0.0.0:8443
+        - --logtostderr=true
+        - --v=10
+        image: gcr.io/kubebuilder/kube-rbac-proxy:v0.4.0
+        name: kube-rbac-proxy
+        ports:
+        - containerPort: 8443
+          name: https
+      securityContext:
+        fsGroup: 2000
+        runAsNonRoot: true
+        runAsUser: 1000
+      terminationGracePeriodSeconds: 10
+      volumes:
+      - name: cert
+        secret:
+          defaultMode: 420
+          secretName: hnc-webhook-server-cert
+---
+apiVersion: admissionregistration.k8s.io/v1beta1
+kind: ValidatingWebhookConfiguration
+metadata:
+  creationTimestamp: null
+  name: hnc-validating-webhook-configuration
+webhooks:
+- clientConfig:
+    caBundle: Cg==
+    service:
+      name: hnc-webhook-service
+      namespace: hnc-system
+      path: /validate-objects
+  failurePolicy: Ignore
+  name: objects.hnc.x-k8s.io
+  rules:
+  - apiGroups:
+    - '*'
+    apiVersions:
+    - '*'
+    operations:
+    - CREATE
+    - UPDATE
+    - DELETE
+    resources:
+    - '*'
+  sideEffects: None
+  timeoutSeconds: 2
+- clientConfig:
+    caBundle: Cg==
+    service:
+      name: hnc-webhook-service
+      namespace: hnc-system
+      path: /validate-hnc-x-k8s-io-v1alpha1-subnamespaceanchors
+  failurePolicy: Fail
+  name: subnamespaceanchors.hnc.x-k8s.io
+  rules:
+  - apiGroups:
+    - hnc.x-k8s.io
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - DELETE
+    resources:
+    - subnamespaceanchors
+  sideEffects: None
+- clientConfig:
+    caBundle: Cg==
+    service:
+      name: hnc-webhook-service
+      namespace: hnc-system
+      path: /validate-hnc-x-k8s-io-v1alpha1-hierarchyconfigurations
+  failurePolicy: Fail
+  name: hierarchyconfigurations.hnc.x-k8s.io
+  rules:
+  - apiGroups:
+    - hnc.x-k8s.io
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    resources:
+    - hierarchyconfigurations
+  sideEffects: None
+- clientConfig:
+    caBundle: Cg==
+    service:
+      name: hnc-webhook-service
+      namespace: hnc-system
+      path: /validate-hnc-x-k8s-io-v1alpha1-hncconfigurations
+  failurePolicy: Fail
+  name: hncconfigurations.hnc.x-k8s.io
+  rules:
+  - apiGroups:
+    - hnc.x-k8s.io
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    - DELETE
+    resources:
+    - hncconfigurations
+  sideEffects: None
+- clientConfig:
+    caBundle: Cg==
+    service:
+      name: hnc-webhook-service
+      namespace: hnc-system
+      path: /validate-v1-namespace
+  failurePolicy: Fail
+  name: namespaces.hnc.x-k8s.io
+  rules:
+  - apiGroups:
+    - ""
+    apiVersions:
+    - v1
+    operations:
+    - DELETE
+    - CREATE
+    - UPDATE
+    resources:
+    - namespaces
+  sideEffects: None
