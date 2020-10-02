@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      volumes:
+        - name: slow-disk
+          persistentVolumeClaim:
+            claimName: pvc0
+      containers:
+        - name: webserver
+          image: nginx
+          volumeMounts:
+            - mountPath: "/var/lib/db"
+              name: slow-disk

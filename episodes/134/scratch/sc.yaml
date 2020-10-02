@@ -1,0 +1,21 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: default-block
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "true"
+provisioner: ebs.csi.aws.com
+allowVolumeExpansion: true
+volumeBindingMode: WaitForFirstConsumer
+parameters:
+  type: st1
+---
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: performance-block
+provisioner: ebs.csi.aws.com
+allowVolumeExpansion: true
+parameters:
+  type: io1
+  iopsPerGB: "20"
