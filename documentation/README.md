@@ -21,11 +21,15 @@ Monday or Tuesday:
 
 Before episode:
 * [ ] Create HackMD page for live notes.  Start with README template in this repo
-* [ ] Paste HackMD URL on internal #tgik channel and cc @castrojo or other assistant
+* Show Coordination with Assistant 
+  * [ ] Paste HackMD URL on internal #tgik channel and cc @castrojo or other assistant
   * [ ] Assistant adds ~5-10 news items from around the web as possible "News of the Week"
+  * [ ] Confirm show time and AV check 
+  * [ ] Last minute retweets or topic updates
+  * [ ] Sync with external guest one last time if necessary
+  * [ ] 
 * [ ] Get everything tested well before episode so you can debug
-* [ ] Use internal slack channel to ensure that AV setup is good
-
+* [ ] Use internal slack channel to ensure that AV se tup is good
 
 After show (ideally right away but can wait until Monday):
 * Create/submit PR for this repo
