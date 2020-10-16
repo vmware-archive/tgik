@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openservicemesh.io/sidecar-injection: enabled
+  creationTimestamp: "2020-10-16T20:52:50Z"
+  labels:
+    openservicemesh.io/monitored-by: osm
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:phase: {}
+    manager: kubectl
+    operation: Update
+    time: "2020-10-16T20:52:50Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:annotations:
+          .: {}
+          f:openservicemesh.io/sidecar-injection: {}
+        f:labels:
+          .: {}
+          f:openservicemesh.io/monitored-by: {}
+    manager: osm
+    operation: Update
+    time: "2020-10-16T20:54:13Z"
+  name: bookstore
+  resourceVersion: "76704"
+  selfLink: /api/v1/namespaces/bookstore
+  uid: 55a15e2a-759d-47ff-b7ae-b7afe3a8b760
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
