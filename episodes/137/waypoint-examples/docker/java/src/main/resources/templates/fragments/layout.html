@@ -1,0 +1,13 @@
+<!doctype html>
+<html th:fragment="layout (template, menu)">
+<head>
+    <title>Waypoint Java Example</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+</head>
+
+<body>
+    <div th:replace="${template}"/>
+
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/jquery-ui/jquery-ui.min.js}"></script>
+</body>

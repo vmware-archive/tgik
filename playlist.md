@@ -1,5 +1,7 @@
 # TGIK Playlist Index
 
+- [137: Waypoint](episodes/137/README.md)
+- [136: Open Service Mesh](episodes/136/README.md)
 - [135: Antrea CNI](episodes/135/README.md)
 - [134: CSI](episodes/134/README.md)
 - [133: Hierarchical Namespaces](episodes/133/README.md)

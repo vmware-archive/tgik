@@ -1,0 +1,29 @@
+<%= form_for(@widget) do |f| %>
+  <% if @widget.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@widget.errors.count, "error") %> prohibited this widget from being saved:</h2>
+
+      <ul>
+      <% @widget.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :stock %><br>
+    <%= f.number_field :stock %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

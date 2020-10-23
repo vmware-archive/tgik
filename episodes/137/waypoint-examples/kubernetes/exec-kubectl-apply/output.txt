@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-nodejs
+spec:
+  selector:
+    matchLabels:
+      app: example-nodejs
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: example-nodejs
+    spec:
+      containers:
+      - name: example-nodejs
+        image: nodejs-example:1
+        ports:
+        - containerPort: 5000
+      - env:
+        - name: WAYPOINT_CEB_INVITE_TOKEN
+          value: "4RmBPBvZ1DkcuTAxAonjfk9VPncyHpKC4p76iD1BZZKKQ8n7FeeFvWnkN9sWkmHf9SNKBShwi9XTEFz4uSpKapkhs6sCM5Z4qyUBF4SFbcf6CrKYxVwLnmQxonBDY787gqGzebFKJR8YbKXubEM6"
+        - name: WAYPOINT_DEPLOYMENT_ID
+          value: "01EMFZMHNBGWF66A7D4MFGENSR"
+        - name: WAYPOINT_SERVER_ADDR
+          value: "waypoint:9701"
+        - name: WAYPOINT_SERVER_TLS
+          value: "1"
+        - name: WAYPOINT_SERVER_TLS_SKIP_VERIFY
+          value: "1"

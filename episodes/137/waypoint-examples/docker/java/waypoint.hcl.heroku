@@ -1,0 +1,10 @@
+project = "example-java"
+
+app "example-java" {
+    build {
+        use "pack" {}
+    }
+    deploy {
+        use "docker" {}
+    }
+}

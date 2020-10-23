@@ -1,0 +1,76 @@
+$text: #E4E5E7;
+$background: #000;
+$brand: #04C6C2;
+$headline: #FFF;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: $text;
+  text-align: center;
+  background-image: url(asset-path('pattern-tl.svg')), url(asset-path('pattern-br.svg'));
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-color: $background;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px - 60px);
+  padding: 80px 60px 60px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 60px 0;
+}
+
+section .language-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid rgba($brand, .5);
+  background: rgba($brand, .15);
+}
+
+section h1 {
+  color: $headline;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 40px 0 8px;
+}
+
+section p {
+  padding-top: 12px;
+}
+
+section code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 14px;
+  padding: 4px 6px;
+  margin: 0 2px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, .15); 
+}
+
+section a {
+  color: $brand;
+}

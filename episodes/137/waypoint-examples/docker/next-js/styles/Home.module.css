@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px - 60px);
+  padding: 80px 60px 60px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 60px 0;
+}
+
+.content h1 {
+  color: var(--headline);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 40px 0 8px;
+}
+
+.content p {
+  padding-top: 12px;
+}
+
+.content code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 14px;
+  padding: 4px 6px;
+  margin: 0 2px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, .15); 
+}
+
+.content a {
+  color: rgb(var(--brand));
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 1px solid rgba(var(--brand), .5);
+  background: rgba(var(--brand), .15);
+}
