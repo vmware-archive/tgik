@@ -1,0 +1,32 @@
+<div class="container">
+<h1>Listing widgets</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Stock</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @widgets.each do |widget| %>
+      <tr>
+        <td><%= widget.name %></td>
+        <td><%= widget.description %></td>
+        <td><%= widget.stock %></td>
+        <td><%= link_to 'Show', widget %></td>
+        <td><%= link_to 'Edit', edit_widget_path(widget) %></td>
+        <td><%= link_to 'Destroy', widget, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Widget', new_widget_path %>
+
+</div>
