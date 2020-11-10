@@ -1,0 +1,38 @@
+harborAdminPassword: omgwtftgik
+
+nameOverride: harbor
+fullnameOverride: harbor
+
+expose:
+  type: ingress
+  tls:
+    enabled: true
+    certSource: secret
+    secret:
+      secretName: harbor-certs
+      notarySecretName: notary-certs
+  ingress:
+    hosts:
+      core: harbor.<your-domain>
+      notary: notary.<your-domain>
+    annotations:
+      ingress.kubernetes.io/force-ssl-redirect: 'true'
+      ingress.kubernetes.io/proxy-body-size: '0'
+      kubernetes.io/ingress.class: contour
+      cert-manager.io/cluster-issuer: "letsencrypt"
+      kubernetes.io/tls-acme: 'true'
+externalURL: https://harbor.<your-domain>
+
+persistence:
+  enabled: true
+  persistentVolumeClaim:
+    database:
+      size: 10Gi
+    redis:
+      size: 10Gi
+  imageChartStorage:
+    disableredirect: false
+    type: gcs
+    gcs:
+      bucket: tgik-harbor
+      encodedkey: "your google key.json"

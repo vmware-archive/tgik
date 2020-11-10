@@ -1,0 +1,6 @@
+provider: google
+
+google:
+  project: <your project>
+  serviceAccountSecret: google-credentials
+  serviceAccountSecretKey:	"key.json"
