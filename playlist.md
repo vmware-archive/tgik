@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [138: Harbor](episodes/138/README.md)
 - [137: Waypoint](episodes/137/README.md)
 - [136: Open Service Mesh](episodes/136/README.md)
 - [135: Antrea CNI](episodes/135/README.md)
