@@ -1,5 +1,5 @@
 # TGIK Playlist Index
-
+- [139: Running Telco workloads in Kubernetes](episodes/139/README.md)
 - [138: Harbor](episodes/138/README.md)
 - [137: Waypoint](episodes/137/README.md)
 - [136: Open Service Mesh](episodes/136/README.md)
