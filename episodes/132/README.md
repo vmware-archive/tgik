@@ -50,7 +50,7 @@
 ## Show Notes
 
 * [Sealed Secrets Github](https://github.com/bitnami-labs/sealed-secrets)
-* [Theory 11 cards](store.theory11.com) - I *love* the star wars cards.
+* [Theory 11 cards](https://store.theory11.com) - I *love* the star wars cards.
 
 ## Alternative Secret Management
 
