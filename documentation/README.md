@@ -17,17 +17,16 @@ Monday or Tuesday:
 * [ ] Add scheduled episode to TGIK playlist on YT
 * [ ] Create short link in rebrandly
 * [ ] Tweet about it from your personal account
-  * [ ] Post tweets on internal #tgik slack channel and cc @castrojo and Vykky
+  * [ ] Post tweets on internal #tgik slack channel and cc  Vykky
 
 Before episode:
 * [ ] Create HackMD page for live notes.  Start with README template in this repo
-* Show Coordination with Assistant 
-  * [ ] Paste HackMD URL on internal #tgik channel and cc @castrojo or other assistant
+* Show Coordination with Assistant (if you have one)
+  * [ ] Paste HackMD URL on internal #tgik channel
   * [ ] Assistant adds ~5-10 news items from around the web as possible "News of the Week"
   * [ ] Confirm show time and AV check 
   * [ ] Last minute retweets or topic updates
   * [ ] Sync with external guest one last time if necessary
-  * [ ] 
 * [ ] Get everything tested well before episode so you can debug
 * [ ] Use internal slack channel to ensure that AV se tup is good
 
