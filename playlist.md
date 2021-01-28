@@ -1,5 +1,7 @@
 # TGIK Playlist Index
-- [141: CDK8s](episodes/139/README.md)
+
+- [143: Cluster API Update](episodes/143/README.md)
+- [141: CDK8s](episodes/141/README.md)
 - [140: Kubernetes 1.20](episodes/140/README.md)
 - [139: Running Telco workloads in Kubernetes](episodes/139/README.md)
 - [138: Harbor](episodes/138/README.md)
