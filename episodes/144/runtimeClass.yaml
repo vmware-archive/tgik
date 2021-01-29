@@ -1,0 +1,15 @@
+apiVersion: node.k8s.io/v1beta1
+handler: windows
+kind: RuntimeClass
+metadata:
+  name: windows
+handler: runhcs-wcow-process
+scheduling:
+  nodeSelector:
+    kubernetes.io/arch: amd64
+    kubernetes.io/os: windows
+  tolerations:
+  - effect: NoSchedule
+    key: os
+    operator: Equal
+    value: windows
