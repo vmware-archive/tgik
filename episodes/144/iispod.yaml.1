@@ -1,0 +1,43 @@
+#
+# Example of a runtimeclass for windows, see companion file for runtimeClass.yaml that it
+# works with.
+#
+apiVersion: v1
+kind: Service
+metadata:
+  name: win-webserver
+  labels:
+    app: win-webserver
+spec:
+  ports:
+    # the port that this service should serve on
+    - port: 80
+      targetPort: 80
+  selector:
+    app: win-webserver
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: win-webserver
+  name: win-webserver
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: win-webserver
+  template:
+    metadata:
+      labels:
+        app: win-webserver
+      name: win-webserver
+    spec:
+      # Note that this runtime class must correspond to a "windows" runtimeclass,
+      # That runtimeclass must have the same value as DefaultRuntimeName, which is
+      # the containerd lower level runtime that is called (most likely, runhcs-wcow-process).
+      runtimeClassName: windows
+      containers:
+      - name: windowswebserver
+        image: mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
