@@ -1,0 +1,18 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kbld-test1
+spec:
+  selector:
+    matchLabels:
+      app: kbld-test1
+  template:
+    metadata:
+      labels:
+        app: kbld-test1
+    spec:
+      containers:
+      - name: my-app
+        image: nginx:1.14.2
+        #!      ^-- image reference in its tag form

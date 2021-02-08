@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kbld.k14s.io/images: |
+      - Metas:
+        - Tag: 1.14.2
+          Type: resolved
+          URL: nginx:1.14.2
+        URL: index.docker.io/library/nginx@sha256:f7988fb6c02e0ce69257d9bd9cf37ae20a60f1df7563c3a2a6abe24160306b8d
+  name: kbld-test1
+spec:
+  selector:
+    matchLabels:
+      app: kbld-test1
+  template:
+    metadata:
+      labels:
+        app: kbld-test1
+    spec:
+      containers:
+      - image: index.docker.io/library/nginx@sha256:f7988fb6c02e0ce69257d9bd9cf37ae20a60f1df7563c3a2a6abe24160306b8d
+        name: my-app
