@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [145: Duck Typing in Kubernetes](episodes/145/README.md)
 - [143: Cluster API Update](episodes/143/README.md)
 - [141: CDK8s](episodes/141/README.md)
 - [140: Kubernetes 1.20](episodes/140/README.md)
