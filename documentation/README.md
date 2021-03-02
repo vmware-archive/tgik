@@ -45,6 +45,8 @@ After show (ideally right away but can wait until Monday):
 Find an image to use that is fun and subtly hints at the topic for the episode.
 For example [episode 38](https://github.com/vmware-tanzu/tgik/tree/master/episodes/038) was on Kata containers, and the [supporting image was of containers in a shipyard](https://github.com/vmware-tanzu/tgik/blob/master/episodes/038/038.png).
 
+You will need the [Ubuntu Bold](https://www.fontzillion.com/fonts/dalton-maag-ltd/ubuntu) font if you don't have it already.
+
 #### [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (Mac/Windows):
 
 1. Open `graphics/title-card.ai` with Adobe Illustrator.
@@ -127,6 +129,16 @@ For example [episode 38](https://github.com/vmware-tanzu/tgik/tree/master/episod
 ## Updating the TGIK Playlist
 
 Once the event is scheduled, you should add the video to the TGIK playlist so that it shows up at [tgik.io](https://tgik.io).
+
+You can do this from the YouTube Studio UI by selecting "Edit" in the upper right:
+
+[![](imgs/yt-edit-stream.png)](imgs/yt-edit-stream.png)
+
+And then selecting `TGI Kubernetes` from the "Playlists" menu.
+
+[![](imgs/yt-settings-add-playlist.png)](imgs/yt-settings-add-playlist.png)
+
+Alternatively, you can do this via the Scheduled Videos section:
 
 1. Navigate to [scheduled live videos](https://studio.youtube.com/channel/UCdkGV51Nu0unDNT58bHt9bg/videos/live).
 1. Click the title card for your episode.
