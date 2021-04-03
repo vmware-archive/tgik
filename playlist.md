@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [150: "Production Kubernetes" Book Discussion](episodes/150/README.md)
 - [147: CoreDNS](episodes/147/README.md)
 - [146: Crossplane](episodes/146/README.md)
 - [145: Duck Typing in Kubernetes](episodes/145/README.md)
