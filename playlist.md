@@ -1,9 +1,11 @@
 # TGIK Playlist Index
 
+- [151: Kube Proxy and KPNG](episodes/151/README.md)
 - [150: "Production Kubernetes" Book Discussion](episodes/150/README.md)
 - [147: CoreDNS](episodes/147/README.md)
 - [146: Crossplane](episodes/146/README.md)
 - [145: Duck Typing in Kubernetes](episodes/145/README.md)
+- [144: Exploring the state of windows](episodes/144/README.md)
 - [143: Cluster API Update](episodes/143/README.md)
 - [141: CDK8s](episodes/141/README.md)
 - [140: Kubernetes 1.20](episodes/140/README.md)
