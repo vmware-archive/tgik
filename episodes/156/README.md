@@ -15,14 +15,23 @@ Show notes: https://hackmd.io/oC8hn8dJTLGFiU5Jz51b3w
 ## Table of Contents
 
 00:03:00 - audio check
+
 00:05:00 - Week in review
+
 00:10:00 - Intro to multi OS containers, pause image, agnhost on kubernetes
+
 00:21:00 - Dockerfile for windows
+
 00:30:00 - peri's blog post on buildx
+
 00:38:00 - speaking of manifest
+
 00:35:00 - deep dive into OCI and umoci
+
 00:45:00 - intro to OVAs on windows
+
 01:00:00 - nssm, systemctl, windows, linux
+
 
 ## Week in Review
 
