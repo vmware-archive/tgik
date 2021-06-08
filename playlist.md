@@ -1,6 +1,7 @@
 # TGIK Playlist Index
 
 - [155: Backstage](episodes/155/README.md)
+- [154: Pixie](episodes/154/README.md)
 - [151: KubeProxy and KPNG](episodes/151/README.md)
 - [150: "Production Kubernetes" Book Discussion](episodes/150/README.md)
 - [147: CoreDNS](episodes/147/README.md)
