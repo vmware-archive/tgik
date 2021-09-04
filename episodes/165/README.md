@@ -99,4 +99,4 @@ https://github.com/kubernetes/enhancements/pull/2869/
 - 1:23:00 cillium port ranges pleeease so we can graduate networkpolicy API improvements to GA !
 - 1:32:00 containers in the same pod have DIFFERENT pid namespaces normally unless you configure explicitly
 - 1:35:00 CGroupFS vs Systemd allocator 
-- 1:39 CgroupFS controller doesnt know about space allocated by others
+- 1:39:00 CgroupFS controller doesnt know about space allocated by others
