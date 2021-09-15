@@ -1,6 +1,7 @@
 # TGIK Playlist Index
 
-- [159: Kuberhealthy](episodes/159/README.me)
+- [166: lima and nerdctl](episodes/166/README.md)
+- [159: Kuberhealthy](episodes/159/README.md)
 - [155: Backstage](episodes/155/README.md)
 - [154: Pixie](episodes/154/README.md)
 - [151: KubeProxy and KPNG](episodes/151/README.md)
