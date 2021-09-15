@@ -1,4 +1,4 @@
-# Episode 164: The K8s Pod Specification ~ RuntimeClasses, Hooks, Cgroups, and whatever else we run into.
+# Episode 165: The K8s Pod Specification ~ RuntimeClasses, Hooks, Cgroups, and whatever else we run into.
 
 ```
 Jay Vyas, Duffie Coolie, and Nishad Mathur as we look at
