@@ -40,8 +40,7 @@
 ## Misc
 ### EKS-Anywhere
 - [The Steven Spielberg of cloud-native and Amazon EKS-Anywhere](https://youtu.be/SWk2TwHdo_w)
-- [Containers from thec couch: Introducing EKS Anywhere
-](https://youtu.be/n7Qh7ha5MG0)
+- [Containers from the couch: Introducing EKS Anywhere](https://youtu.be/n7Qh7ha5MG0)
 
 ### WSL2
 
