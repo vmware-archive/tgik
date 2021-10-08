@@ -1,15 +1,33 @@
 # TGIK Playlist Index
 
+- [169: Exploring CSI idempotency and leaky resources](episodes/169/README.md)
+- [168: The K8s rainbow: GKE, Minishift, Tanzu, local-up-cluster, and windows-dev-tools](episodes/168/README.md)
+- [167: NetworkPolicy++ and pod security policies.next](episodes/167/README.md)
 - [166: lima and nerdctl](episodes/166/README.md)
+- [165: Pod Accoutrements ~ Start/Stop Hooks, HostProcesses, and CGroups](episodes/165/README.md)
+- [164: Deep Dive into L7 tech for Kubernetes: Contour, Nginx, HAProxy](episodes/164/README.md)
+- 163: NAML
+- [162: CNI code surfing!](episodes/162/README.md)
+- 161: Let's Build a Buildpack
+- 160: Exploring kube-vip
 - [159: Kuberhealthy](episodes/159/README.md)
+- 158: Bare metal clusters with Cluster API Tinkerbell 
+- 157: Exploring kcp: apiserver with Kubernetes
+- [156: Exploring upstream k8s builds w/ multi-arch](episodes/156/README.md)
 - [155: Backstage](episodes/155/README.md)
 - [154: Pixie](episodes/154/README.md)
+- [153: KubeProxy and KPNG](episodes/153/README.md)
+- [152: Cluster Testing With Sonobuoy](episodes/152/README.md)
 - [151: KubeProxy and KPNG](episodes/151/README.md)
 - [150: "Production Kubernetes" Book Discussion](episodes/150/README.md)
+- 149: GitOps with Flux v2
+- 148: Gateway APIs featuring Contour
 - [147: CoreDNS](episodes/147/README.md)
 - [146: Crossplane](episodes/146/README.md)
 - [145: Duck Typing in Kubernetes](episodes/145/README.md)
+- [144: Exploring The State of K8s on Windows](episodes/144/README.md)
 - [143: Cluster API Update](episodes/143/README.md)
+- [142: Carvel](episodes/142/README.md)
 - [141: CDK8s](episodes/141/README.md)
 - [140: Kubernetes 1.20](episodes/140/README.md)
 - [139: Running Telco workloads in Kubernetes](episodes/139/README.md)
@@ -28,6 +46,7 @@
 - [126: Vertical Pod Autoscaling](episodes/126/README.md)
 - [125: OpenTelemetry](episodes/125/README.md)
 - [124: Delcarative operators with KUDO](episodes/124/README.md)
+- [123: Grokking Kubernetes: DNS Part 2](episodes/123/README.md)
 - [122: Grokking Kubernetes: DNS Part 1](episodes/122/README.md)
 - [121: Starboard ](episodes/121/README.md)
 - [120: CSI and Secrets! ](episodes/120/README.md)
@@ -74,6 +93,7 @@
 - [079: ytt and kapp](episodes/079/README.md)
 - [078: Pod Security Policies](episodes/078/README.md)
 - [077: All your certificates have expired!](episodes/077/README.md)
+- [076: Exploring KEDA with RabbitMQ and Go](episodes/076/README.md)
 - [075: Troubleshooting Container Networking](episodes/075/README.md)
 - [074: Exploring KubeVirt](episodes/074/README.md)
 - [073: Exploring Garden with Kubernetes](episodes/073/README.md)
