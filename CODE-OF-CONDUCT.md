@@ -1,4 +1,4 @@
-# Heptio TGIK Community Code of Conduct
+# TGIK Community Code of Conduct
 
 ## Contributor Code of Conduct
 
