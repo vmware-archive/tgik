@@ -230,6 +230,7 @@ Important that installing on the host requires a kubeconfig to get the secrets a
 - look at container networks `hnsdiag.exe list all`
 - look at all containers `ctr.exe --namespace=k8s.io c ls`
 - version `[System.Environment]::OSVersion.Version`
+- grep ~ `Select-String`, i.e. `Get-WinEvent -ListLog * | Out-String -Stream | Select-String SSH`
 
 # Log File locations
 
