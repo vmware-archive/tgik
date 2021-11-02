@@ -1,10 +1,9 @@
 # Episode 162 : CNI code surf !!!
 
-- Hosted by @jayunit100
+- Hosted by @jayunit100 @rikatz (vmware) and @caseydavenport (tigera) @knabben (servpro)
 - Recording date: 2021-07-30
 
 <!--- Thumbnailed embed of the video, n8Xo_ghCIOSY is the video id from the youtube url
-
 <a href=https://www.youtube.com/watch?v=l3TWbrWkVzY"></aref>
 -->
 
