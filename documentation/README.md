@@ -102,7 +102,8 @@ You will need the [Ubuntu Bold](https://www.fontzillion.com/fonts/dalton-maag-lt
 
 ## Scheduling on YouTube
 
-1. Ensure you're logged in to the correct Youtube Account.
+1. Ensure you're logged in to the correct Youtube Account (The VMware organization has a youtube account you need to join, and use, by clicking on the upper right corner of the youtube screen, and then logging in as `VMWare Cloud Native Apps`.
+
 1. [Create a new live event by clicking here](https://studio.youtube.com/channel/UCdkGV51Nu0unDNT58bHt9bg/livestreaming).
     * Alternatively: `Youtube Studio > Create Button (top right) > Go Live`.
 1. Choose a recent episode and `Reuse Settings`.
@@ -110,7 +111,7 @@ You will need the [Ubuntu Bold](https://www.fontzillion.com/fonts/dalton-maag-lt
     [![](imgs/yt-reuse-settings.png)](imgs/yt-reuse-settings.png)
     > This dialog pops up immediately when clicking the link above.
 
-1. Set the Name, Description, Time (adjust to land in 1PM PT, and Thumbnail)
+1. Set the Name, Description, Time (adjust to land in 1PM PT, and use the official TGIK Thumbnail you made earlier)
 
     [![](imgs/yt-settings.png)](imgs/yt-settings.png)
 
@@ -118,11 +119,11 @@ You will need the [Ubuntu Bold](https://www.fontzillion.com/fonts/dalton-maag-lt
 
     [![](imgs/yt-stream-key.png)](imgs/yt-stream-key.png)
 
-1. Pop out the chat.
+1. Pop out the chat (to get the video id URL, for OBS)...
 
     [![](imgs/yt-pop-chat.png)](imgs/yt-pop-chat.png)
 
-1. Store the video id for later use (in OBS for chat).
+1. ... Now *store the video id from the chat url* for later use (in OBS for chat).
  
     [![](imgs/yt-vid-id.png)](imgs/yt-vid-id.png)
 
