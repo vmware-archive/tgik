@@ -10,7 +10,7 @@ The [index](playlist.md) contains a list of all episodes. And here's a schedule 
 | Date  |  Topic | Host(s)  | Time  |
 |---|---|---|---|
 | November 19, 2021  | 1st episode: [Connaisseur](https://github.com/sse-secure-systems/connaisseur) <br><br>2nd episode: [Curiefense](https://github.com/curiefense/curiefense)  | 1st episode: Pushkar Joglekar <br> <br> 2nd episode: Ricardo Katz  | 1st episode: 9AM PST <br><br> 2nd episode: 1PM PST  |
-| November 26, 2021 | [Kubernetes Cluster API Provider Bring Your Own Host](https://github.com/vmware-tanzu/cluster-api-provider-bringyourownhost)   | Anusha Hegde and Naadir Jeewa | TBD |
+| November 26, 2021 | [Kubernetes Cluster API Provider Bring Your Own Host](https://github.com/vmware-tanzu/cluster-api-provider-bringyourownhost)   | Anusha Hegde and Naadir Jeewa | 9AM GMT / 2:30PM IST |
 | December 3, 2021  | [Tanzu Community Edition](https://tanzucommunityedition.io/)  | Josh Rosso and Timothy St. Clair  | 1PM PST  |
 | December 10, 2021   | [Cluster API](https://github.com/kubernetes-sigs/cluster-api)  | Yuvaraj Balaji Rao Kakaraparthi  | 1PM PST  |
 | December 17, 2021  | [Sigstore](https://www.sigstore.dev/), [Cosign](https://github.com/sigstore/cosign), [Fulcio](https://github.com/sigstore/fulcio), and [Rekor](https://github.com/sigstore/rekor)  | John Kjell  | 1PM PST |
