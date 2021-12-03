@@ -1,0 +1,26 @@
+apiVersion: pulumi.com/v1
+kind: Stack
+metadata:
+  name: tgik-demo-3
+spec:
+  backend: "s3://tgik-pulumi-state"
+  secretsProvider: "awskms:///arn:aws:kms:us-east-1:846120446302:key/88b2605e-1ab8-4522-92ef-46d44bbf5ad8"
+  envRefs:
+    AWS_ACCESS_KEY_ID:
+      type: Secret
+      secret:
+        name: aws-creds-secret
+        key: AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY:
+      type: Secret
+      secret:
+        name: aws-creds-secret
+        key: AWS_SECRET_ACCESS_KEY
+    AWS_DEFAULT_REGION:
+      type: Literal
+      literal:
+        value: "us-east-1"
+  stack: "s3backend-3.tgik.dev"
+  projectRepo: https://github.com/jaxxstorm/tgik-operator-demo
+  commit: 90870638e0a4d0e8733ad1b29f109fafddd85775
+  destroyOnFinalize: true
