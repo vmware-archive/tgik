@@ -1,5 +1,6 @@
 # TGIK Playlist Index
 
+- [177: Tanzu Community Edition](episodes/177/README.md)
 - [173: Pulumi Kubernetes Operator](episodes/173/README.md)
 - [169: Exploring CSI idempotency and leaky resources](episodes/169/README.md)
 - [168: The K8s rainbow: GKE, Minishift, Tanzu, local-up-cluster, and windows-dev-tools](episodes/168/README.md)
