@@ -9,7 +9,6 @@ The [index](playlist.md) contains a list of all episodes. Upcoming episodes:
 
 | Date  |  Topic | Host(s)  | Time  |
 |---|---|---|---|
-| December 3, 2021  | [Tanzu Community Edition](https://tanzucommunityedition.io/)  | Josh Rosso and Timothy St. Clair  | 1PM PST  |
 | December 10, 2021   | [Cluster API](https://github.com/kubernetes-sigs/cluster-api)  | Yuvaraj Balaji Rao Kakaraparthi  | 1PM PST  |
 | December 17, 2021  | [Sigstore](https://www.sigstore.dev/), [Cosign](https://github.com/sigstore/cosign), [Fulcio](https://github.com/sigstore/fulcio), and [Rekor](https://github.com/sigstore/rekor)  | John Kjell  | 1PM PST |
 | January 7, 2022  | Review of K8s 1.23 (both episodes) | Nabarun Pal (APAC/EMEA) </br><br> Joe Beda (Americas) | TBD<br><br>1PM PST |
