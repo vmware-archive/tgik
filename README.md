@@ -12,6 +12,12 @@ The [index](playlist.md) contains a list of all episodes. Upcoming episodes:
 | December 3, 2021  | [Tanzu Community Edition](https://tanzucommunityedition.io/)  | Josh Rosso and Timothy St. Clair  | 1PM PST  |
 | December 10, 2021   | [Cluster API](https://github.com/kubernetes-sigs/cluster-api)  | Yuvaraj Balaji Rao Kakaraparthi  | 1PM PST  |
 | December 17, 2021  | [Sigstore](https://www.sigstore.dev/), [Cosign](https://github.com/sigstore/cosign), [Fulcio](https://github.com/sigstore/fulcio), and [Rekor](https://github.com/sigstore/rekor)  | John Kjell  | 1PM PST |
+| January 7, 2022  | Review of K8s 1.23 (both episodes) | Nabarun Pal (APAC/EMEA) </br><br> Joe Beda (Americas) | TBD<br><br>1PM PST |
+| January 14, 2022  | [Karpenter](https://karpenter.sh/) | Naadir Jeewa  | 1PM PST |
+| January 21, 2022  | TBD |   | 1PM PST |
+| January 28, 2022  | [Sonobuoy](https://github.com/vmware-tanzu/sonobuoy) | John Schnake  | 1PM PST |
+| February 4, 2022  | TBD |   | 1PM PST |
+| February 11, 2022  | [Cartographer](https://github.com/vmware-tanzu/cartographer) | David Espejo  | 1PM PST |
 
 The [official YouTube channel can be found here](https://tgik.io).
 
