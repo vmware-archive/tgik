@@ -10,8 +10,8 @@ The [index](playlist.md) contains a list of all episodes. Upcoming episodes:
 | Date  |  Topic | Host(s)  | Time  |
 |---|---|---|---|
 | January 7, 2022  | Review of K8s 1.23 (both episodes) | Joe Beda with 1.23 Release Lead Rey Lejano | 1PM PST |
-| January 14, 2022  | [Karpenter](https://karpenter.sh/) | Naadir Jeewa  | 1PM PST |
-| January 21, 2022  | TBD |   | 1PM PST |
+| January 14, 2022  | TBD |   | 1PM PST |
+| January 21, 2022  | [Karpenter](https://karpenter.sh/) | Naadir Jeewa  | 1PM PST |
 | January 28, 2022  | [Sonobuoy](https://github.com/vmware-tanzu/sonobuoy) | John Schnake  | 1PM PST |
 | February 4, 2022  | TBD |   | 1PM PST |
 | February 11, 2022  | [Cartographer](https://github.com/vmware-tanzu/cartographer) | David Espejo  | 1PM PST |
