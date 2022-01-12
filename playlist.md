@@ -1,8 +1,16 @@
 # TGIK Playlist Index
 
-- [177: ClusterAPI - ClusterClass and Managed Topologies](episodes/178/README.md)
+- [180: Kubernetes 1.23 release review](episodes/180/README.md)
+- 179: Project Sigstore
+- [178: ClusterAPI - ClusterClass and Managed Topologies](episodes/178/README.md)
 - [177: Tanzu Community Edition](episodes/177/README.md)
+- 176: Cluster API Provider Bring Your Own Host
+- 175: Cloudnative WAF with Curiefence
+- [174: Verifying Signed Images with Connaisseur](episodes/174/README.md)
 - [173: Pulumi Kubernetes Operator](episodes/173/README.md)
+- 172: Profiling in Kubernetes
+- [171: Pod Security Problems](episodes/171/README.md)
+- 170: Testing with the new E2E framework
 - [169: Exploring CSI idempotency and leaky resources](episodes/169/README.md)
 - [168: The K8s rainbow: GKE, Minishift, Tanzu, local-up-cluster, and windows-dev-tools](episodes/168/README.md)
 - [167: NetworkPolicy++ and pod security policies.next](episodes/167/README.md)
