@@ -9,9 +9,8 @@ The [index](playlist.md) contains a list of all episodes. Upcoming episodes:
 
 | Date  |  Topic | Host(s)  | Time  |
 |---|---|---|---|
-| February 11, 2022  | [Cartographer](https://github.com/vmware-tanzu/cartographer) | David Espejo  | 1PM PST |
-| February 18, 2022  | TBD | TBD  | 1PM PST |
-| February 25, 2022  | [Pinniped](https://pinniped.dev/) | Margo Crawford  | 1PM PST |
+| March 18, 2022  | Image Signing MVP | Pushkar Joglekar and Adolfo García Veytia from Chainguard  | 1PM PST |
+| March 25, 2022  | [vCluster](https://www.vcluster.com/) | Daniel Esponda  | 1PM PST |
 
 The [official YouTube channel can be found here](https://tgik.io).
 
