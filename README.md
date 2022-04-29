@@ -3,14 +3,9 @@
 
 Official repository for TGIK!
 
-TGIK is a weekly live video stream all about Kubernetes that we broadcast from various locations around the world. Our standard start time is 1PM PST, and as of November 2021 we have also begun broadcasting episodes that are friendlier to APAC and EMEA time zones. See the schedule below for details.
+TGIK is a monthly live video stream all about Kubernetes that we broadcast from various locations around the world. Our standard start time is 1PM PST, with occasional APAC/EMEA-friendly episodes.
 
-The [index](playlist.md) contains a list of all episodes. Upcoming episodes:
-
-| Date  |  Topic | Host(s)  | Time  |
-|---|---|---|---|
-| March 18, 2022  | Image Signing MVP | Pushkar Joglekar and Adolfo García Veytia from Chainguard  | 1PM PST |
-| March 25, 2022  | [vCluster](https://www.vcluster.com/) | Daniel Esponda  | 1PM PST |
+The [index](playlist.md) contains a list of all episodes.
 
 The [official YouTube channel can be found here](https://tgik.io).
 
