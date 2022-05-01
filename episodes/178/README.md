@@ -41,7 +41,7 @@
 ## Resources
 * [ClusterAPI concepts](https://cluster-api.sigs.k8s.io/user/concepts.html)
 * [ClusterClass & Managed Topologies Blog](https://kubernetes.io/blog/2021/10/08/capi-clusterclass-and-managed-topologies/)
-* [ClusterClass proposal doc](https://github.com/kubernetes-sigs/cluster-api/blob/65d65d2859cc99c4e8b247b28deebe1007bba799/docs/proposals/202105256-cluster-class-and-managed-topologies.md)
+* [ClusterClass proposal doc](https://github.com/kubernetes-sigs/cluster-api/blob/65d65d2859cc99c4e8b247b28deebe1007bba799/docs/proposals/20210526-cluster-class-and-managed-topologies.md)
 * [clusterctl provider contract for ClusterClass](https://cluster-api.sigs.k8s.io/clusterctl/provider-contract.html#clusterclass-definitions)
 * [MHC for ClusterClass](https://github.com/kubernetes-sigs/cluster-api/pull/5511) 
 
